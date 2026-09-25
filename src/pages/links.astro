@@ -1,0 +1,120 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import LinkCard from "../components/LinkCard.astro";
+import LinkFilterBar from "../components/LinkFilterBar.astro";
+import { CATEGORIES, ALL_LINKS, allTags } from "../lib/links";
+
+const tags = allTags();
+---
+
+<BaseLayout
+  title="The link shelf"
+  description={`${ALL_LINKS.length} curated engineering links across ${CATEGORIES.length} shelves — every href verified before it earned a seat.`}
+>
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="kicker" data-reveal>links</p>
+      <h1 data-reveal>The link shelf, <span class="mark">in order.</span></h1>
+      <p class="lede" data-reveal>
+        {ALL_LINKS.length} links on {CATEGORIES.length} shelves. The internet is a
+        library with its thumb in every book — this is my shelf: papers, tools,
+        manuals, and rabbit holes I went down and came back from.
+        <span class="annote">— every href verified before it earned a seat</span>
+      </p>
+      <div class="statline statline--links" data-reveal>
+        <span>
+          <b>{ALL_LINKS.length}</b>
+          links
+        </span>
+        <span>
+          <b>{CATEGORIES.length}</b>
+          shelves
+        </span>
+        <span>
+          <b>{tags.length}</b>
+          tags
+        </span>
+        <span>
+          <b>0</b>
+          dead links
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--step" style="padding-top:0">
+    <div class="container">
+      <div class="shelf-index" data-reveal>
+        {CATEGORIES.map((cat, i) => (
+          <a class="shelf-tile" href={`/links/${cat.id}/`}>
+            <span class="lc-type">{("0" + (i + 1)).slice(-2)}</span>
+            <span class="shelf-name">{cat.name}</span>
+            <span class="shelf-count mono">{cat.items.length}</span>
+            <span class="shelf-blurb">{cat.blurb}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="band" style="padding-top:1rem">
+    <div class="container">
+      <div class="filter-wrap" data-reveal>
+        <LinkFilterBar
+          categories={CATEGORIES.map((c) => ({ id: c.id, name: c.name }))}
+          total={ALL_LINKS.length}
+        />
+      </div>
+
+      <div id="fs-empty" class="no-results" hidden>
+        <p class="muted">Nothing on this shelf matches — loosen the filter or check another shelf.</p>
+      </div>
+
+      {CATEGORIES.map((cat) => (
+        <section class="lc-shelf" data-reveal style="margin-bottom:3.2rem">
+          <div class="lc-shelf-head">
+            <h2 style="font-size:1.35rem;margin:1.6rem 0 0">
+              <a href={`/links/${cat.id}/`} style="text-decoration:none">
+                <span class="mono" style="color:var(--accent-text);font-size:0.8rem;letter-spacing:0.1em">
+                  {cat.id} ·
+                </span>
+                {cat.name}
+              </a>
+            </h2>
+            <span class="mono lc-shelf-count">{cat.items.length} links · open shelf ↗</span>
+          </div>
+          <div class="lc-grid">
+            {cat.items.map((item) => (
+              <div
+                class="lci"
+                data-lc
+                data-cat={cat.id}
+                data-type={item.type}
+                data-search={`${item.title} ${item.description} ${item.tags.join(" ")}`.toLowerCase()}
+              >
+                <LinkCard item={item} />
+              </div>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  </section>
+
+  <section class="band band--ink" data-reveal>
+    <div class="container">
+      <div class="card cta-box" style="background:transparent;border-color:var(--line)">
+        <span class="cb-k">the bench, on hire</span>
+        <h3>About half of my job is having the right shelf.</h3>
+        <p>
+          The rest is knowing which link to reach for when. If you want that
+          judgment aimed at your product, the bench is open.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/hire">Work with me <span class="arr">↗</span></a>
+          <a class="btn btn-ghost" href="/blog">Reading notes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

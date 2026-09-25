@@ -1,0 +1,101 @@
+---
+import { TYPE_LABELS } from "../lib/links";
+
+interface Props {
+  categories?: Array<{ id: string; name: string }>;
+  total: number;
+}
+
+const { categories = [], total } = Astro.props;
+---
+
+<div class="filter-bar" role="search" aria-label="Filter links">
+  <label class="fs-field">
+    <span>Search</span>
+    <input
+      class="fs-input"
+      id="fs-q"
+      type="search"
+      placeholder="search titles, notes…"
+      autocomplete="off"
+    />
+  </label>
+
+  <label class="fs-field">
+    <span>Type</span>
+    <select class="fs-select" id="fs-type">
+      <option value="">all types</option>
+      {Object.entries(TYPE_LABELS).map(([value, label]) => (
+        <option value={value}>{label}</option>
+      ))}
+    </select>
+  </label>
+
+  {categories.length > 0 && (
+    <label class="fs-field">
+      <span>Shelf</span>
+      <select class="fs-select" id="fs-cat">
+        <option value="">all shelves</option>
+        {categories.map((cat) => (
+          <option value={cat.id}>{cat.name}</option>
+        ))}
+      </select>
+    </label>
+  )}
+
+  <span class="fs-count mono" id="fs-count">{total} shown</span>
+</div>
+
+<script>
+  interface FilterState {
+    q: string;
+    type: string;
+    cat: string;
+  }
+
+  const q = document.getElementById("fs-q") as HTMLInputElement | null;
+  const t = document.getElementById("fs-type") as HTMLSelectElement | null;
+  const c = document.getElementById("fs-cat") as HTMLSelectElement | null;
+  const count = document.getElementById("fs-count") as HTMLElement | null;
+  const items = Array.from(document.querySelectorAll<HTMLElement>("[data-lc]"));
+  const empty = document.getElementById("fs-empty");
+
+  function persist(state: FilterState) {
+    const params = new URLSearchParams();
+    if (state.q) params.set("q", state.q);
+    if (state.type) params.set("type", state.type);
+    if (state.cat) params.set("cat", state.cat);
+    const hash = params.toString();
+    history.replaceState(
+      null,
+      "",
+      hash ? "#" + hash : window.location.pathname + window.location.search
+    );
+  }
+
+  function apply() {
+    const query = (q?.value ?? "").trim().toLowerCase();
+    const type = t?.value ?? "";
+    const cat = c?.value ?? "";
+    let shown = 0;
+    for (const el of items) {
+      const ok =
+        (!query || (el.dataset.search ?? "").includes(query)) &&
+        (!type || el.dataset.type === type) &&
+        (!cat || el.dataset.cat === cat);
+      el.hidden = !ok;
+      if (ok) shown++;
+    }
+    if (empty) empty.hidden = shown !== 0;
+    if (count) count.textContent = `${shown} shown`;
+    persist({ q: query, type, cat });
+  }
+
+  const params = new URLSearchParams(window.location.hash.slice(1));
+  if (q && params.get("q")) q.value = params.get("q") ?? "";
+  if (t && params.get("type")) t.value = params.get("type") ?? "";
+  if (c && params.get("cat")) c.value = params.get("cat") ?? "";
+
+  for (const el of [q, t, c]) el?.addEventListener("input", apply);
+  apply();
+</script>

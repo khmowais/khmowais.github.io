@@ -1,0 +1,111 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { GOSHAWK } from "../../config";
+
+const services = [
+  {
+    id: "digital-experiences",
+    n: "S/01",
+    title: "Digital experiences",
+    blurb: "Websites and interfaces people actually enjoy using — and that don't need a maintenance budget of anxiety.",
+    note: "the front door",
+    price: "1–2 weeks · fixed",
+    items: [
+      ["Marketing sites", "Fast, scannable, score 90+ without trying hard."],
+      ["Web apps & dashboards", "Real interfaces for real workflows, not brochureware."],
+      ["Content & SEO", "Structure, metadata and copy that search engines actually parse."],
+      ["Hand-built static", "No 14MB bundles, no tracking scripts, no build anxiety."],
+    ],
+  },
+  {
+    id: "intelligent-systems",
+    n: "S/02",
+    title: "Intelligent systems",
+    blurb: "AI features with a real product case — retrieval, agents and tool use scoped to a workflow that already exists.",
+    note: "models with a reason to exist",
+    price: "timeboxed · evals included",
+    items: [
+      ["RAG pipelines", "Document ingestion, retrieval, citations you can trace."],
+      ["Agentic systems", "Planning, tool use and multi-agent coordination with guardrails."],
+      ["LLM application integration", "Models placed inside products, not beside them."],
+      ["Evaluation & observability", "A harness that reports where the system fails, on every deploy."],
+    ],
+  },
+  {
+    id: "business-software",
+    n: "S/03",
+    title: "Business software",
+    blurb: "Internal tools, backends and APIs that remove whole classes of work — measured in hours returned.",
+    note: "paid for itself last month",
+    price: "fixed scope · owned by you",
+    items: [
+      ["Internal tools & portals", "Software for the people whose time matters most."],
+      ["Backends & APIs", "FastAPI services with tests, docs and clean seams."],
+      ["System integrations", "Two systems that stop pretending they're unrelated."],
+      ["Dashboards & reporting", "A single screen for the numbers that matter daily."],
+    ],
+  },
+  {
+    id: "automation",
+    n: "S/04",
+    title: "Automation",
+    blurb: "Quiet, boring automation that deletes work. Logged, monitored, reversible — never a surprise.",
+    note: "the highest-ROI thing we build",
+    price: "small · high-ROI",
+    items: [
+      ["Workflow automation", "Processes that no longer need a human in the loop."],
+      ["ETL & data pipelines", "Raw to ready, on schedule, with retries."],
+      ["Business process automation", "The paperwork, flattened into a few scripts."],
+      ["Scheduled processing", "Nightly jobs that run themselves and report back."],
+    ],
+  },
+];
+---
+
+<BaseLayout goshawk title="Services" description="Goshawk Labs services: digital experiences, intelligent systems, business software, and automation.">
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="kicker" data-reveal>02 — services</p>
+      <h1 data-reveal>Four things we do <span class="mark">for a living.</span></h1>
+      <p class="lede" data-reveal>
+        Everything else, we refer. Every engagement starts with a scoping call — partly to
+        scope the work, mostly to tell you honestly whether you need us at all.
+        <span class="annote">— capabilities listed like a parts sheet</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="band" style="padding-top:0">
+    <div class="container">
+      {services.map((s) => (
+        <article class="case" id={s.id} data-reveal style="padding:2.4rem 0.2rem;border-top:2px solid var(--ink)">
+          <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;align-items:baseline">
+            <div>
+              <span class="mono" style="font-size:0.74rem;letter-spacing:0.1em;color:var(--accent)">{s.n}</span>
+              <h2 style="margin-top:0.3rem;margin-bottom:0.2rem">{s.title}</h2>
+              <span class="annote">{s.note}</span>
+            </div>
+            <span class="mono" style="font-size:0.76rem;color:var(--faint)">{s.price}</span>
+          </div>
+          <p class="lead" style="margin-top:1.1rem">{s.blurb}</p>
+          <div class="svc-list" style="margin-top:1.2rem">
+            {s.items.map(([t, d]) => (
+              <div class="svc-item"><div class="t">{t}</div><p>{d}</p></div>
+            ))}
+          </div>
+        </article>
+      ))}
+
+      <aside class="card" style="margin-top:2.5rem" data-reveal>
+        <span class="card-k">larger engagements</span>
+        <h3>This scope in one paragraph:</h3>
+        <p class="muted" style="font-size:0.97rem;max-width:70ch">
+          The studio's sweet spot is structured work: an AI system with an eval harness and a
+          handover, or a platform across several months — not a single landing page followed by
+          silence. If what you're describing is bigger than one card above, that's exactly why
+          you're here. <a href={GOSHAWK.basePath + "/process"} style="color:var(--accent)">See how the process handles it →</a>
+        </p>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>

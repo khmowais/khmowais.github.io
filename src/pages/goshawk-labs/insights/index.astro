@@ -1,0 +1,64 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import PostCard from "../../../components/PostCard.astro";
+import { byAudience, sortByDate, allTags, tagSlug } from "../../../lib/posts";
+import { GOSHAWK } from "../../../config";
+
+const posts = sortByDate(byAudience(await getCollection("posts"), "goshawk"));
+const tags = allTags(posts);
+---
+
+<BaseLayout
+  goshawk
+  title="Insights"
+  description="Goshawk Labs Insights — practical field notes on building AI systems, software and websites that ship."
+>
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="kicker" data-reveal>05 — insights</p>
+      <h1 data-reveal>Field notes from <span class="mark">the studio floor.</span></h1>
+      <p class="lede" data-reveal>
+        What we learn building AI systems and software — shared unfiltered, evals
+        included. The ceiling of what we know, written down.
+        <span class="annote">— {posts.length} notes and counting</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="band" style="padding-top:0">
+    <div class="container">
+      {posts.length > 0 && (
+        <div class="tag-row" data-reveal style="margin-bottom:1.6rem">
+          {tags.map((t) => (
+            <a class="pill" href={`/blog/tag/${tagSlug(t)}/`} style="text-decoration:none">{t}</a>
+          ))}
+        </div>
+      )}
+      {posts.length > 0 ? (
+        <div style="margin-top:1rem">
+          {posts.map((post) => (
+            <PostCard
+              title={post.data.title}
+              description={post.data.description}
+              date={post.data.pubDate}
+              tags={post.data.tags}
+              href={`${GOSHAWK.basePath}/insights/${post.id}/`}
+              minutes={post.data.readingMinutes}
+            />
+          ))}
+        </div>
+      ) : (
+        <div class="card" data-reveal>
+          <span class="card-k">ink · still wet</span>
+          <h3>First field notes land soon.</h3>
+          <p class="mb-0" style="color:var(--muted);max-width:64ch">
+            They'll cover retrieval, agents, evaluations and the unglamorous parts of
+            shipping — the parts that actually decide whether a build survives contact
+            with production. Meanwhile, the solo bench's <a href="/blog" style="color:var(--accent)">notes</a> cover most of the same ground.
+          </p>
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>

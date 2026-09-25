@@ -1,0 +1,83 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { GOSHAWK } from "../../config";
+
+const manifesto = [
+  {
+    t: "The bird, the method",
+    body: "Goshawk Labs is named for an accipiter with one rule: pick a bird, fly a line, commit. The studio is run the same way — small, opinionated builds made to be handed over, not lived in by us.",
+  },
+  {
+    t: "Why it exists",
+    body: "We started on contract work where the deliverable was a demo and the client kept the risk. Goshawk Labs exists for the other kind: shipped systems — evaluated, documented, owned by the client — built by a bench that treats the workshop as the product.",
+  },
+  {
+    t: "What we build",
+    body: "AI-shaped products and the software around them: agents, RAG pipelines, evaluation harnesses, local-first infrastructure, and the integrations that make a demo into a service. We use the sharpest boring stack — FastAPI, SQLite, Tailwind, Astro — and we open the schemas.",
+  },
+  {
+    t: "What we don't",
+    body: "We don't sell widgets on marketing timelines, we don't do offshore body-shopping by the hour, and we don't hold your data roadmap hostage. If you speak in sprints and deadlines, we still speak your language — just with ownership on your side of the fence.",
+  },
+];
+
+const numbers = [
+  { b: "100%", t: "client-owned code, from repo one" },
+  { b: "3", t: "person bench, one senior pair of hands" },
+  { b: "5", t: "timezones we live in — and work across" },
+  { b: "0", t: "unearned dashboards or demo-ware screenshots" },
+];
+---
+
+<BaseLayout goshawk title="About" description="Who Goshawk Labs is — the accipiter, the method, and the fixed-price, client-owned builds we ship.">
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="kicker" data-reveal>about goshawk labs</p>
+      <h1 data-reveal>A studio that ships <span class="mark">and hands over.</span></h1>
+      <p class="lede" data-reveal>
+        Goshawk Labs is a small AI-engineering studio. The name is the method: pick
+        a bird, fly a line, commit. We build evaluated, documented systems and put
+        the keys in your hand.
+        <span class="annote">— the field notes are public; so is the code we ship</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="band band--step" style="padding-top:1rem">
+    <div class="container">
+      <div class="statline" data-reveal style="margin-bottom:2.6rem">
+        {numbers.map((n) => (
+          <span>
+            <b>{n.b}</b>
+            {n.t}
+          </span>
+        ))}
+      </div>
+      {manifesto.map((m, i) => (
+        <div class="pstep" data-reveal>
+          <div></div>
+          <div>
+            <h4>{("0" + (i + 1)).slice(-2)} {m.t}</h4>
+            <p>{m.body}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="container">
+      <p class="kicker" data-reveal>the thesis</p>
+      <h2 data-reveal>The boring is the product.</h2>
+      <p class="lead" data-reveal style="max-width:60ch">
+        The writing is field notes. The link shelf is evidence. The most honest
+        thing a studio can publish is the work — so the work is what we publish.
+      </p>
+      <div style="margin-top:2.4rem;display:flex;gap:1rem;flex-wrap:wrap">
+        <a class="btn btn-primary" href={GOSHAWK.basePath + "/contact"}>Start with the brief <span class="arr">↗</span></a>
+        <a class="btn btn-ghost" href="/links">Read the link shelf</a>
+        <a class="btn btn-ghost" href={GOSHAWK.basePath + "/insights"}>Read the field notes</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

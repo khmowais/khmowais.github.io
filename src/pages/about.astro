@@ -1,0 +1,166 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { GOSHAWK, SOCIALS } from "../config";
+
+const dossier: [string, string][] = [
+  ["name", "Khawaja Muhammad Owais"],
+  ["callsign", "AP2-02-1004 — amateur radio"],
+  ["location", "Pakistan (UTC+5)"],
+  ["role", "AI Engineer · Systems Builder"],
+  ["current tech stack", "Python · FastAPI · LangChain/LangGraph · Fedora Linux"],
+  ["frequency", "HF when the bands are open; LLM APIs daily"],
+  ["availability", "open to freelance & contract — start at /hire"],
+];
+
+const timeline = [
+  { y: "2019–now", t: "AI, everywhere", d: "teaching, research, freelance, and building. The common thread is systems that work on real hardware." },
+  { y: "2025–now", t: "Goshawk Labs", d: "founder — websites, custom software and AI systems for clients, with the science in Pakistan running alongside." },
+  { y: "~2 yrs", t: "Cyblytics Lab", d: "research lead — applied language systems and evaluation." },
+  { y: "lab", t: "UAV GCS", d: "AI-assisted ground control work for a university UAV laboratory." },
+  { y: "3 terms", t: "FAST NUCES", d: "served as an AI teaching assistant for three semesters in the cybersecurity department — from introducing students to AI and running lectures and hands-on tutorials, to managing assignments, quizzes and marks across semesters for over 200 undergrad students. Also ran 4+ Python, AI and cybersecurity workshops and bootcamps." },
+  { y: "2024–now", t: "CSConnect Pakistan", d: "mentor, 5,000+ students reached — podcasts, teaching computer networks, and a near-daily cadence of advising across the community." },
+];
+
+const facts = [
+  "Professional AI engineering ~1 year, on top of freelance and university research — stated plainly, not inflated.",
+  "My favourite tool is the one I can still understand in six months.",
+  "I write notes publicly because half-finished thoughts are a storage problem, not a shame.",
+];
+---
+
+<BaseLayout
+  title="About"
+  description="Khawaja M. Owais — AI engineer and systems builder. Local-first, simple-over-clever, radio on the side."
+>
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="kicker" data-reveal>about</p>
+      <h1 data-reveal>
+        The operator, <span class="mark">by the numbers</span> — and the stories under them.
+      </h1>
+      <p class="lede" data-reveal>
+        I build AI systems that respect the people using them, the budgets paying for them,
+        and the reality they run in. <span class="annote">— everything below is stated honestly</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- operator card -->
+  <section class="band band--step" style="padding-top:1rem">
+    <div class="container" style="max-width:900px">
+      <div class="card" style="padding:2rem" data-reveal>
+        <span class="card-k">operator dossier · v{dossier.length}.0</span>
+        <div class="spec-sheet" style="border-top:none">
+          {dossier.map(([k, v]) => (
+            <div class="spec-item" style="grid-template-columns:150px minmax(0,1fr);padding:0.8rem 0.1rem">
+              <span class="spec-k">{k}</span>
+              <div class="spec-v"><span class="mono" style="font-size:0.95rem">{v}</span></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- what I work on -->
+  <section class="band">
+    <div class="container">
+      <p class="kicker" data-reveal>work areas</p>
+      <h2 data-reveal style="max-width:26ch">A machine, a model, and a deadline.</h2>
+      <div class="spec-sheet" style="margin-top:2rem">
+        {[
+          { k: "A/01", t: "AI engineering", d: "agents, RAG, tool calling, evaluation — <a href='/services#ai-llm'>full catalog</a>", n: "where the models come in" },
+          { k: "A/03", t: "Software & APIs", d: "FastAPI backends, integrations, internal tools", n: "boring on purpose" },
+          { k: "A/04", t: "Local-first & self-hosting", d: "services and models that run on owned hardware", n: "the exit ramp is a feature" },
+          { k: "A/05", t: "Teaching & research", d: "AI/ML, FYP guidance, workshops, bootcamps", n: "5,000+ students and counting" },
+        ].map((s) => (
+          <div class="spec-item" data-reveal>
+            <span class="spec-k">{s.k}</span>
+            <div class="spec-v">
+              <h3>{s.t}</h3>
+              <p set:html={s.d}></p>
+              <span class="annote">{s.n}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- philosophy -->
+  <section class="band band--ink">
+    <div class="container">
+      <p class="kicker" data-reveal>how I think</p>
+      <h2 data-reveal>Short rules, long results.</h2>
+      <div style="margin-top:2rem">
+        {[
+          "Simple beats clever. The best system is the one you can debug at 3am with a mug of tea.",
+          "Local-first. Your data and your models should behave on your machine first; cloud is an option, not a default.",
+          "Resilience over polish. Offline-friendly, self-healing, boring by design.",
+          "Good output starts with good inputs. Context engineering and evaluation beat hype.",
+        ].map((rule, i) => (
+          <div class="belief" data-reveal>
+            <span class="num">{"0" + (i + 1)}</span>
+            <div>
+              <h3 style="font-weight:600">{rule.split(". ")[0]}.<span class="serif band-mark"> {rule.split(". ").slice(1).join(". ")}</span></h3>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- timeline -->
+  <section class="band">
+    <div class="container">
+      <div class="section-head" style="display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+        <p class="kicker" data-reveal style="margin-bottom:0.3rem">timeline</p>
+        <a class="mono" href="/projects" style="text-decoration:none;color:var(--muted);font-size:0.8rem">full work log ↗</a>
+      </div>
+      <h2 data-reveal>Where the years went.</h2>
+      <div style="margin-top:1.8rem">
+        {timeline.map((t) => (
+          <div class="logrow" data-reveal style="cursor:default">
+            <span class="log-date">{t.y}</span>
+            <span class="log-title">
+              {t.t}
+              <span class="serif">{t.d}</span>
+            </span>
+            <span class="log-tag">—</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- honesty note -->
+  <section class="band">
+    <div class="container" style="max-width:820px">
+      <div class="card" data-reveal>
+        <span class="card-k">plain-speaking clause</span>
+        <h3>Three facts I refuse to round up.</h3>
+        <ul class="prose mb-0" style="margin-top:0.6rem">
+          {facts.map((f) => <li>{f}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- work with me -->
+  <section class="band">
+    <div class="container" style="max-width:860px;text-align:left">
+      <p class="kicker" data-reveal>now</p>
+      <h2 data-reveal>Currently:</h2>
+      <p class="lead" data-reveal>
+        Building <a href={GOSHAWK.basePath + "/"}>Goshawk Labs</a>, writing the
+        <a href="/blog"> notes</a>, and studying what makes agentic systems actually
+        reliable in production. Open to <a href="/services">freelance work</a>,
+        mentoring, and collaborations that respect the terms on this page.
+      </p>
+      <div class="btn-row" data-reveal>
+        <a class="btn btn-primary" href={`mailto:${SOCIALS.email}`}>Say hello <span class="arr">↗</span></a>
+        <a class="btn btn-ghost" href="/services">Browse the catalog</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

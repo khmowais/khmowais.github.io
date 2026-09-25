@@ -1,0 +1,95 @@
+---
+interface Props {
+  recipient: string;
+  note?: string;
+}
+
+const { recipient, note } = Astro.props;
+const subjectDefault = "Project inquiry";
+---
+
+<div class="card inquiry" data-reveal>
+  <span class="card-k" style="display:block;margin-bottom:1rem">the short brief</span>
+  <p class="mt-0" style="color:var(--muted);font-size:0.95rem;max-width:64ch">
+    Four fields, no account, no CRM. This composes an email in your own mail client —
+    nothing is stored anywhere.
+  </p>
+  <form class="inquiry-form" data-recipient={recipient} data-subject={subjectDefault}>
+    <div class="grid-2">
+      <div class="field">
+        <label for="inq-name">Your name</label>
+        <input id="inq-name" name="name" type="text" autocomplete="name" required />
+      </div>
+      <div class="field">
+        <label for="inq-contact">Email or contact method</label>
+        <input id="inq-contact" name="contact" type="text" autocomplete="email" required />
+      </div>
+    </div>
+    <div class="field">
+      <label for="inq-what">What do you need built? <span>(problem, not stack)</span></label>
+      <textarea id="inq-what" name="what" required placeholder="We need an assistant that answers questions from our documents — about 2000 files, internal only."></textarea>
+    </div>
+    <div class="grid-2">
+      <div class="field">
+        <label for="inq-scope">Approximate scope</label>
+        <select id="inq-scope" name="scope">
+          <option>defined / small — days</option>
+          <option>mid — a few weeks</option>
+          <option>larger / structured — consider the studio</option>
+          <option>advice / audit — an hour or two</option>
+          <option>mentoring / coaching</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="inq-timing">Budget + timeline <span>(optional)</span></label>
+        <input id="inq-timing" name="timing" type="text" placeholder="e.g. ≈ $1–2k, need it in 4 weeks" />
+      </div>
+    </div>
+    <div class="field">
+      <label for="inq-links">Links or files <span>(optional — repo, docs, spec)</span></label>
+      <input id="inq-links" name="links" type="text" placeholder="https://…" />
+    </div>
+    <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">
+      Compose the email ↗
+    </button>
+    <p class="form-note mb-0">
+      {note ?? "Replies within a day, usually fast. If the honest answer is “you don't need me”, you get that instead."}
+      Prefer your own client? Write to{" "}
+      <a href={`mailto:${recipient}?subject=${encodeURIComponent(subjectDefault)}`}>{recipient}</a>.
+    </p>
+  </form>
+</div>
+
+<script is:inline>
+  (function () {
+    const form = document.querySelector(".inquiry-form");
+    if (!form) return;
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const get = (id) => (form.querySelector("#" + id)?.value || "").trim();
+      const name = get("inq-name");
+      const contact = get("inq-contact");
+      const what = get("inq-what");
+      const scope = get("inq-scope");
+      const timing = get("inq-timing");
+      const links = get("inq-links");
+      const recipient = form.dataset.recipient || "";
+      const subject = `Project inquiry${name ? " — " + name : ""}`;
+      const body = [
+        "Hi Owais,",
+        "",
+        what,
+        "",
+        scope ? "Scope: " + scope : "",
+        timing ? "Budget/timeline: " + timing : "",
+        links ? "Links: " + links : "",
+        "",
+        "— " + name + (contact ? " (" + contact + ")" : ""),
+      ]
+        .filter((l) => l !== null && l.length)
+        .join("\n");
+      window.location.href =
+        "mailto:" + recipient + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    });
+  })();
+</script>

@@ -1,0 +1,98 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import BaseLayout from "./BaseLayout.astro";
+import PostCard from "../components/PostCard.astro";
+import { SITE, GOSHAWK } from "../config";
+import { tagSlug, relatedPosts } from "../lib/posts";
+
+interface Props {
+  post: CollectionEntry<"posts">;
+  goshawk?: boolean;
+}
+
+const { post, goshawk = false } = Astro.props;
+const canonicalUrl = `https://owais.qzz.io/blog/${post.id}/`;
+const readingMinutes =
+  post.data.readingMinutes ??
+  Math.max(1, Math.round((post.body?.split(/\s+/).length ?? 400) / 200));
+const posts = await getCollection("posts");
+const related = relatedPosts(posts, post, 3).slice(0, 3);
+const tagHome = goshawk ? GOSHAWK.basePath + "/insights" : "/blog";
+---
+
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  goshawk={goshawk}
+  ogType="article"
+  showProgress
+  canonical={
+    goshawk
+      ? canonicalUrl
+      : new URL(`/blog/${post.id}/`, SITE.url).href
+  }
+>
+  <article class="container-narrow" style="padding-top:4.5rem;padding-bottom:2rem">
+    <header class="post-header">
+      <a class="mono" href={tagHome} style="text-decoration:none;font-size:0.78rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted)">
+        ← {goshawk ? "all insights" : "all notes"}
+      </a>
+      <h1 style="margin-top:1.2rem">{post.data.title}</h1>
+      <div class="post-meta">
+        <span>
+          <time datetime={post.data.pubDate.toISOString()}>
+            {post.data.pubDate.toLocaleDateString("en-GB", { year: "numeric", month: "long", day: "numeric" })}
+          </time>
+        </span>
+        <span>{readingMinutes} min read</span>
+        <span>{post.data.author}</span>
+      </div>
+      {post.data.tags.length > 0 && (
+        <div class="tag-row" style="margin-top:1.1rem">
+          {post.data.tags.map((t) => (
+            <a class="pill" href={`/blog/tag/${tagSlug(t)}/`} style="text-decoration:none">{t}</a>
+          ))}
+        </div>
+      )}
+    </header>
+
+    <div class="prose">
+      <slot />
+    </div>
+
+    {related.length > 0 && (
+      <aside class="related" aria-label="Related notes">
+        <p class="kicker" style="margin-bottom:0.6rem">related notes</p>
+        {related.map((r) => (
+          <PostCard
+            title={r.data.title}
+            description={r.data.description}
+            date={r.data.pubDate}
+            tags={r.data.tags}
+            href={`/blog/${r.id}/`}
+            minutes={r.data.readingMinutes ?? 5}
+          />
+        ))}
+      </aside>
+    )}
+
+    <div class="card cta-box" data-reveal>
+      <span class="cb-k">{goshawk ? "found this useful?" : "end of the note"}</span>
+      <h3>{goshawk ? "This bench takes clients." : "Want this built for you?"}</h3>
+      <p>
+        {goshawk
+          ? "Practical AI systems, custom software and data platforms — brief, build, handover. The studio runs on the same engineering this page describes."
+          : "Most notes here started as a client problem. Yours gets the same treatment — fixed scope, weekly progress, owned by you at the end."}
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href={goshawk ? GOSHAWK.basePath + "/contact" : "/hire"}>
+          {goshawk ? "Start a project" : "Work with me"} <span class="arr">↗</span>
+        </a>
+        <a class="btn btn-ghost" href={goshawk ? GOSHAWK.basePath + "/process" : "/services"}>
+          {goshawk ? "How it works" : "Browse the catalog"}
+        </a>
+      </div>
+    </div>
+  </article>
+</BaseLayout>

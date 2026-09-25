@@ -1,0 +1,305 @@
+[
+  {
+    "title": "Amnesty International",
+    "url": "https://www.amnesty.org/",
+    "description": "Independent human rights reporting; its Kashmir material is part of any honest reading list.",
+    "tags": [
+      "rights",
+      "documentation"
+    ],
+    "type": "org",
+    "subcategory": "rights"
+  },
+  {
+    "title": "ARChik / The 'Chronicle of the Kings' context",
+    "url": "https://en.wikipedia.org/wiki/Rajatarangini",
+    "description": "Wikipedia's introduction to the Rajatarangini and Kalhana — context for the primary text above.",
+    "tags": [
+      "rajatarangini",
+      "wiki",
+      "context"
+    ],
+    "type": "archive",
+    "subcategory": "context"
+  },
+  {
+    "title": "Digital South Asia Library (DSAL)",
+    "url": "https://dsal.uchicago.edu/",
+    "description": "University of Chicago's digitized South Asia collections — dictionaries, gazetteers and journals for the whole region.",
+    "tags": [
+      "archive",
+      "reference",
+      "south-asia"
+    ],
+    "type": "org",
+    "subcategory": "archives"
+  },
+  {
+    "title": "DSAL Dictionaries collection",
+    "url": "https://dsal.uchicago.edu/dictionaries/",
+    "description": "DSAL's extensive dictionaries of the languages of the north-west — lexical primary sources in searchable form.",
+    "tags": [
+      "dictionaries",
+      "languages",
+      "reference"
+    ],
+    "type": "tool",
+    "subcategory": "archives"
+  },
+  {
+    "title": "Falconry in the Valley of the Indus (Burton)",
+    "url": "https://archive.org/details/falconryinvalley00burt",
+    "description": "Again, because it lives in both shelves: Richard F. Burton's 1852 hawking journal along the Indus — primary color for AJK&K lowlands.",
+    "tags": [
+      "book",
+      "falconry",
+      "memoir"
+    ],
+    "type": "book",
+    "subcategory": "primary",
+    "year": 1852,
+    "source": "Internet Archive"
+  },
+  {
+    "title": "Gazetteer of Kashmir and Ladakh",
+    "url": "https://archive.org/details/dli.csl.3088",
+    "description": "A gazetteer of Kashmir and Ladak with routes in the territories — the kind of administrative source you read for its honesty about place.",
+    "tags": [
+      "gazetteer",
+      "primary-source",
+      "ladakh"
+    ],
+    "type": "book",
+    "subcategory": "primary",
+    "source": "Internet Archive"
+  },
+  {
+    "title": "Gazetteer of the World (concise)",
+    "url": "https://en.wikipedia.org/wiki/Azad_Kashmir",
+    "description": "A careful overview of AJK: status, geography, history and the dispute, with citations chasing onward to primary sources.",
+    "tags": [
+      "ajk",
+      "wiki",
+      "overview"
+    ],
+    "type": "archive",
+    "subcategory": "region"
+  },
+  {
+    "title": "Government of Azad Jammu & Kashmir",
+    "url": "https://www.ajk.gov.pk/",
+    "description": "The official portal of Azad Jammu and Kashmir — laws, budgets, census and administrative records.",
+    "tags": [
+      "ajk",
+      "government",
+      "official"
+    ],
+    "type": "org",
+    "subcategory": "region"
+  },
+  {
+    "title": "HathiTrust",
+    "url": "https://www.hathitrust.org/",
+    "description": "A research library partnership digitizing millions of volumes — searchable full text, free to the world.",
+    "tags": [
+      "archive",
+      "books",
+      "research"
+    ],
+    "type": "org",
+    "subcategory": "archives"
+  },
+  {
+    "title": "History of Kashmir and the Kashmiris: The Happy Valley",
+    "url": "https://archive.org/details/ftyB_history-of-kashmir-and-the-kashmiris-the-happy-valley-w-wakefield",
+    "description": "W. Wakefield's first-hand account of Kashmir and its people — a direct, plain-spoken primary source.",
+    "tags": [
+      "book",
+      "memoir",
+      "primary-source"
+    ],
+    "type": "book",
+    "subcategory": "primary",
+    "source": "Internet Archive"
+  },
+  {
+    "title": "Human Rights Watch",
+    "url": "https://www.hrw.org/",
+    "description": "Documented reporting on human rights in Kashmir — cite it as a report, not a verdict.",
+    "tags": [
+      "rights",
+      "documentation"
+    ],
+    "type": "org",
+    "subcategory": "rights"
+  },
+  {
+    "title": "Imperial Gazetteer of India (search)",
+    "url": "https://dsal.uchicago.edu/reference/gazetteer/",
+    "description": "Search the 26-volume Imperial Gazetteer from DSAL — the standard turn-of-century reference for every district of the subcontinent.",
+    "tags": [
+      "gazetteer",
+      "reference"
+    ],
+    "type": "tool",
+    "subcategory": "archives"
+  },
+  {
+    "title": "India Office Records",
+    "url": "https://en.wikipedia.org/wiki/India_Office_Records",
+    "description": "The British Library's India Office Records — the central colonial-era documentation of Kashmir and the north-west, described and indexed here.",
+    "tags": [
+      "archive",
+      "colonial",
+      "records"
+    ],
+    "type": "archive",
+    "subcategory": "archives"
+  },
+  {
+    "title": "International Crisis Group",
+    "url": "https://www.crisisgroup.org/",
+    "description": "Field-based conflict analysis; has published Kashmir studies that straddle the two sides.",
+    "tags": [
+      "conflict",
+      "analysis"
+    ],
+    "type": "org",
+    "subcategory": "rights"
+  },
+  {
+    "title": "Internet Archive",
+    "url": "https://archive.org/",
+    "description": "The free digital library behind most of this shelf — and the search engine for more primary sources.",
+    "tags": [
+      "archive",
+      "books",
+      "digital"
+    ],
+    "type": "org",
+    "subcategory": "archives"
+  },
+  {
+    "title": "Internet Archive advanced search",
+    "url": "https://archive.org/advancedsearch.php",
+    "description": "The API/search interface for finding a specific digitized text by title, author or collection.",
+    "tags": [
+      "archive",
+      "search",
+      "tool"
+    ],
+    "type": "tool",
+    "subcategory": "archives"
+  },
+  {
+    "title": "Internet Archive — Kashmir subject",
+    "url": "https://archive.org/search?query=subject%3A%22Kashmir%22",
+    "description": "The open search for everything labelled Kashmir on the Archive — a fine way to get lost productively.",
+    "tags": [
+      "search",
+      "kashmir",
+      "books"
+    ],
+    "type": "tool",
+    "subcategory": "archives"
+  },
+  {
+    "title": "Kalhana's Rajatarangini (trans. M.A. Stein)",
+    "url": "https://archive.org/details/hmkx_kalhanas-rajatarangini-a-chronicle-of-the-kings-of-kashmir-by-kalhana-trans",
+    "description": "Stein's standard translation of Kalhana's 12th-century chronicle of the kings of Kashmir — the indispensable primary narrative.",
+    "tags": [
+      "book",
+      "rajatarangini",
+      "primary-source",
+      "kalhana"
+    ],
+    "type": "book",
+    "subcategory": "primary",
+    "source": "Internet Archive"
+  },
+  {
+    "title": "Library of Congress — South Asia",
+    "url": "https://www.loc.gov/",
+    "description": "The Library of Congress, whose South Asia holdings include gazetteers, maps and rare works on Kashmir.",
+    "tags": [
+      "archive",
+      "research"
+    ],
+    "type": "org",
+    "subcategory": "archives"
+  },
+  {
+    "title": "Old Maps Online",
+    "url": "https://www.oldmapsonline.org/",
+    "description": "Search and layer historical maps of Kashmir and the north-west across hundreds of collections.",
+    "tags": [
+      "maps",
+      "history",
+      "tool"
+    ],
+    "type": "tool",
+    "subcategory": "archives"
+  },
+  {
+    "title": "Pakistan Bureau of Statistics",
+    "url": "https://www.census.gov.pk/",
+    "description": "Official census reports for AJK and other regions — data, not opinion.",
+    "tags": [
+      "ajk",
+      "data",
+      "census"
+    ],
+    "type": "org",
+    "subcategory": "region"
+  },
+  {
+    "title": "Panjab Digital Library",
+    "url": "https://panjabdigilib.org/",
+    "description": "Thousands of digitized rare books and manuscripts covering Punjab, Kashmir and the north-west.",
+    "tags": [
+      "archive",
+      "manuscripts",
+      "panjab"
+    ],
+    "type": "org",
+    "subcategory": "archives"
+  },
+  {
+    "title": "The National Archives (UK)",
+    "url": "https://www.nationalarchives.gov.uk/",
+    "description": "The UK's archives — including the India Office records that hold most colonial-era original documents about Kashmir.",
+    "tags": [
+      "archive",
+      "colonial",
+      "records"
+    ],
+    "type": "org",
+    "subcategory": "archives"
+  },
+  {
+    "title": "The Valley of Kashmir (Lawrence)",
+    "url": "https://archive.org/details/valleyofkashmir00lawr",
+    "description": "Walter R. Lawrence's 1895 gazetteer-cum-study of the valley: land, people, agriculture and state under the Maharaja.",
+    "tags": [
+      "book",
+      "gazetteer",
+      "primary-source"
+    ],
+    "type": "book",
+    "subcategory": "primary",
+    "source": "Internet Archive"
+  },
+  {
+    "title": "Travels in Kashmir, Ladak, Iskardo ... and the Countries Adjoining",
+    "url": "https://archive.org/details/travelsinkashmir01vign",
+    "description": "G.T. Vigne's early-19th-century travels across the mountains of the North West — maps and impressions of a Kashmir still medieval.",
+    "tags": [
+      "book",
+      "travel",
+      "primary-source"
+    ],
+    "type": "book",
+    "subcategory": "primary",
+    "source": "Internet Archive"
+  }
+]

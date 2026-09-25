@@ -1,0 +1,248 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PostCard from "../components/PostCard.astro";
+import { sortByDate, published } from "../lib/posts";
+import { serviceGroups } from "../data/services";
+import { SOCIALS, GOSHAWK } from "../config";
+
+const notes = sortByDate(published(await getCollection("posts")));
+const latest = notes.slice(0, 4);
+const metrics = {
+  notes: notes.length,
+  links: 141,
+  services: serviceGroups.reduce((n, g) => n + g.items.length, 0),
+};
+
+const builds = [
+  { k: "A/01", t: "Intelligent systems", d: "AI assistants, RAG pipelines, agentic systems and tool-calling — scoped to a real workflow, evaluated before launch, honest about failure.", note: "the machine, with a paper trail" },
+  { k: "A/02", t: "Data & ML", d: "Exploratory analysis, predictive models, pipelines, dashboards and experiments that produce numbers you can trust.", note: "measure twice, ship once" },
+  { k: "A/03", t: "Software engineering", d: "FastAPI backends, APIs, internal tools and small applications in Python — boring stacks, clean seams, zero lock-in.", note: "the backbone, kept quiet" },
+  { k: "A/04", t: "Automation & infrastructure", d: "ETL, scheduled work, integrations, Linux boxes and self-hosted services that run themselves.", note: "make work evaporate" },
+  { k: "A/05", t: "Teaching & mentoring", d: "AI/ML, Python and data science guidance for students, teams and researchers — from FYP reviews to workshop design.", note: "5,000+ students mentored" },
+];
+
+const beliefs = [
+  { t: "Local-first is a philosophy, not a mode.", d: "Running models and services on hardware you control is faster, cheaper, more private and more reliable. The cloud is an option, not a default." },
+  { t: "Simple beats clever. Every time.", d: "The best system is the one you can debug at 3am with a mug of tea. If a script beats a model, we write the script and say so." },
+  { t: "Fail loudly, recover quietly.", d: "Systems should announce their problems in clear language and get back on their feet without a ceremony. That is what 'resilient' means." },
+  { t: "The data is yours. So is the exit.", d: "No lock-in, no sneaky exports, no hostage negotiation with your own information. Build things people can walk away from." },
+];
+
+const log = [
+  { y: "now", tag: "studio", t: "Goshawk Labs", n: "FOUNDER — an independent engineering studio for software, websites and AI systems.", href: "/goshawk-labs/" },
+  { y: "2024–26", tag: "research", t: "Cyblytics Lab", n: "RESEARCH LEAD, ~2 YEARS — applied AI research group building language systems and evaluation artifacts.", href: "/projects#cyblytics" },
+  { y: "lab", tag: "autonomous", t: "UAV Ground Control System", n: "GCS AI INTEGRATION — telemetry and decision support for the university UAV laboratory.", href: "/projects#uav-gcs" },
+  { y: "3 terms", tag: "teaching", t: "AI Teaching & Mentorship", n: "TA, WORKSHOPS, BOOTCAMPS — and CSConnect Pakistan mentor for 5,000+ students.", href: "/projects#teaching" },
+];
+
+const stations = [
+  { code: "HAM", t: "Amateur radio", d: "the original distributed system — PARS, HF, and late-night propagation musings." },
+  { code: "FDS", t: "Fedora & FOSS", d: "desktop Linux since forever; the distro that ships on time." },
+  { code: "SRO", t: "Self-hosting", d: "my own cloud on my own shelf; uptime is a hobby." },
+  { code: "KBD", t: "Mechanical keyboards", d: "a collection that is never finished and never needs to be." },
+  { code: "TRF", t: "Transformers", d: "attention, tokenizers, and why scale is a remarkably honest deity." },
+  { code: "LOC", t: "Local-first AI", d: "chips, models and data that behave on your machine first." },
+];
+---
+
+<BaseLayout>
+  <!-- 00 · opening field note -->
+  <section class="hero gridpaper">
+    <div class="container hero-inner">
+      <p class="statusline" data-reveal>
+        <span>FIELD NOTE 014</span><span>·</span><span>KHWAJA M. OWAIS</span><span>·</span><span>AI ENGINEER, PAKISTAN</span><span>·</span><span>UTC+5</span>
+      </p>
+      <h1 data-reveal class="d1">
+        I build AI systems that <span class="mark">respect people,</span> budgets, and reality.
+      </h1>
+      <p class:list={["lede", "d2"]} data-reveal>
+        I'm an AI engineer and systems builder. I design agentic systems and data
+        pipelines, write about AI engineering, and operate radios when the models
+        misbehave.
+        <span class="annote">— field notes, v.0.4</span>
+      </p>
+      <div class:list={["btn-row", "d3"]} data-reveal>
+        <a class="btn btn-primary" href="/hire">Work with me <span class="arr">↗</span></a>
+        <a class="btn btn-ghost" href={`mailto:${SOCIALS.email}?subject=Project%20inquiry`}>Discuss a project</a>
+        <a class="btn btn-ghost" href="/blog">Read the notes</a>
+      </div>
+      <div class:list={["statline", "d4"]} data-reveal style="margin-top:2.2rem">
+        <span><b>{metrics.notes}</b> field notes on the blog</span>
+        <span><b>{metrics.links}</b> curated links</span>
+        <span><b>{metrics.services}</b> service capabilities</span>
+      </div>
+    </div>
+    <div class="hero-arrow" aria-hidden="true">
+      scroll
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+  </section>
+
+  <!-- 01 · what I build -->
+  <section class="band">
+    <div class="container">
+      <p class="kicker" data-reveal>01 — what I build</p>
+      <h2 style="max-width:24ch" data-reveal>Machines, models, and the wires between them.</h2>
+      <p class="lead" data-reveal>
+        The thread that holds it together: I like understanding and building
+        <span class="annote">systems</span> — whether the system is a neural net, a
+        FastAPI service, a UAV ground station, or a radio network.
+      </p>
+      <div class="spec-sheet" style="margin-top:2.2rem">
+        {builds.map((b) => (
+          <div class="spec-item" data-reveal>
+            <span class="spec-k">{b.k}</span>
+            <div class="spec-v">
+              <h3>{b.t}</h3>
+              <p>{b.d}</p>
+              <span class="annote">{b.note}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 · what I believe -->
+  <section class="band band--ink">
+    <div class="container">
+      <p class="kicker" data-reveal>02 — what I believe</p>
+      <h2 style="max-width:22ch" data-reveal>
+        Four rules <span class="serif band-mark">taped to the bench.</span>
+      </h2>
+      <div style="margin-top:2.4rem">
+        {beliefs.map((b, i) => (
+          <article class="belief" data-reveal>
+            <span class="num">{"0" + (i + 1) + " ·"}</span>
+            <div>
+              <h3>{b.t}</h3>
+              <p>{b.d}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 · field log -->
+  <section class="band">
+    <div class="container">
+      <div class="section-head" style="display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+        <p class="kicker" data-reveal style="margin-bottom:0.4rem">03 — field log</p>
+        <a class="mono" href="/projects" style="text-decoration:none;color:var(--muted);font-size:0.8rem">full log ↗</a>
+      </div>
+      <h2 data-reveal>Selected expeditions.</h2>
+      <div style="margin-top:1.8rem">
+        {log.map((l) => (
+          <a class="logrow" href={l.href} data-reveal>
+            <span class="log-date">{l.y}</span>
+            <span class="log-title">
+              {l.t}
+              <span class="serif">{l.n}</span>
+            </span>
+            <span class="log-tag">{l.tag}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 · stations / interests -->
+  <section class="band band--step">
+    <div class="container">
+      <p class="kicker" data-reveal>04 — stations in the field</p>
+      <h2 data-reveal>The bench has a lot of knobs.</h2>
+      <p class="lead" data-reveal>
+        The non-obvious part of the setup:
+        <span class="annote">six reasons I'm hard to describe in one LinkedIn line.</span>
+      </p>
+      <div class="bench-strip" data-reveal style="margin-top:1.6rem">
+        <b>on the bench right now:</b>
+        <span class="item">an eval harness for agent loops that fits in a spreadsheet</span>
+        <span class="item">why HF propagation contradicts every weather forecast</span>
+        <span class="item">the self-hosted stack I keep promising to rewrite</span>
+        <span class="item">FYP season</span>
+      </div>
+      <div class="grid grid-3" style="margin-top:2.4rem">
+        {stations.map((s, i) => (
+          <div class="card" data-reveal class-delay={i}>
+            <span class="card-k">{s.code}</span>
+            <h3>{s.t}</h3>
+            <p>{s.d}</p>
+          </div>
+        ))}
+      </div>
+      <details class="fn" data-reveal style="max-width:720px">
+        <summary>field note — why the mixed bag is the point</summary>
+        <p>
+          Each station trains the same muscles: pick the abstraction, find the failure
+          mode, fix it without breaking the system. Radios are systems; agents are
+          systems; the spreadsheet is warning you that your eval harness has a bug.
+          Broad interests, one skill.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- 05 · latest field notes -->
+  <section class="band">
+    <div class="container">
+      <div class="section-head" style="display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+        <p class="kicker" data-reveal style="margin-bottom:0.4rem">05 — recent field notes</p>
+        <a class="mono" href="/blog" style="text-decoration:none;color:var(--muted);font-size:0.8rem">all notes ↗</a>
+      </div>
+      <h2 data-reveal>Writing things down keeps me honest.</h2>
+      <div style="margin-top:1.8rem">
+        {latest.map((post, i) => (
+          <PostCard
+            title={post.data.title}
+            description={post.data.description}
+            date={post.data.pubDate}
+            tags={post.data.tags}
+            href={`/blog/${post.id}/`}
+            minutes={post.data.readingMinutes ?? 5}
+            index={i === 0 ? "newest" : undefined}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 · work with me -->
+  <section class="band band--ink">
+    <div class="container" style="max-width:920px">
+      <p class="kicker" data-reveal>06 — work with me</p>
+      <h2 data-reveal style="text-align:left">Pick your lane.</h2>
+      <p class="lead" style="color:color-mix(in srgb, var(--paper) 70%, transparent);max-width:56ch" data-reveal>
+        I work with people and smaller teams directly, and with larger or more
+        structured engagements through the studio. Both routes lead to the same bench.
+      </p>
+      <div class="duotile" style="margin-top:2.4rem">
+        <a class="tile" href="/hire" data-reveal>
+          <span class="tile-k">direct · freelance</span>
+          <h3>Hire me directly</h3>
+          <p>
+            AI &amp; LLM engineering, data science, software, automation and mentoring.
+            You talk to me; I build it. {metrics.services} capabilities, scoped, priced,
+            and owned by you.
+          </p>
+          <span class="tile-meta">solo engineer · startup / researcher / individual</span>
+        </a>
+        <a class="tile" href={GOSHAWK.basePath + "/"} data-reveal class-delay="1">
+          <span class="tile-k">studio · engineering</span>
+          <h3>Goshawk Labs</h3>
+          <p>
+            The studio arm for larger or structured work — AI systems, custom software,
+            data/ML platforms. Same philosophy, more hands, bigger scope.
+          </p>
+          <span class="tile-meta">studio · founders / teams</span>
+        </a>
+      </div>
+      <div class="btn-row" data-reveal style="margin-top:2rem">
+        <a class="btn btn-primary" href="/hire">Work with me <span class="arr">↗</span></a>
+        <a class="btn btn-ghost" href="/services">Browse the catalog</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

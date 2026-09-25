@@ -1,0 +1,517 @@
+[
+  {
+    "title": "Archive Team",
+    "url": "https://www.archiveteam.org/",
+    "description": "The scrappy volunteer force that works to download and save internet history classes before they're deleted.",
+    "tags": [
+      "preservation",
+      "community"
+    ],
+    "type": "org",
+    "subcategory": "preservation"
+  },
+  {
+    "title": "Archive.org 'Classic PC Games'",
+    "url": "https://archive.org/details/classicpcgames",
+    "description": "Browser-playable classic DOS/Windows games hosted on the Internet Archive.",
+    "tags": [
+      "games",
+      "preservation",
+      "archive"
+    ],
+    "type": "archive",
+    "subcategory": "games"
+  },
+  {
+    "title": "BlueMaxima's Flashpoint",
+    "url": "https://bluemaxima.org/flashpoint/",
+    "description": "The full Flash-compatible archive — tens of thousands of swf animations and games rescued from the URL-bar era.",
+    "tags": [
+      "flash",
+      "games",
+      "preservation"
+    ],
+    "type": "project",
+    "subcategory": "games"
+  },
+  {
+    "title": "Calibre",
+    "url": "https://calibre-ebook.com/",
+    "description": "The open ebook manager — the tool that makes 'your library is yours' practical.",
+    "tags": [
+      "ebooks",
+      "library",
+      "tool"
+    ],
+    "type": "project",
+    "subcategory": "books"
+  },
+  {
+    "title": "CalyxOS",
+    "url": "https://calyxos.org/",
+    "description": "Privacy-focused Android without Google services — own your phone again.",
+    "tags": [
+      "android",
+      "privacy",
+      "os"
+    ],
+    "type": "project",
+    "subcategory": "devices"
+  },
+  {
+    "title": "Choose a License",
+    "url": "https://choosealicense.com/",
+    "description": "The practical, pick-by-prose license chooser — good for deciding what your repo *you* keeps.",
+    "tags": [
+      "licensing",
+      "tool"
+    ],
+    "type": "tool",
+    "subcategory": "foss"
+  },
+  {
+    "title": "Cory Doctorow — Craphound",
+    "url": "https://craphound.com/",
+    "description": "Essays, novels and talks on copyright, DRM and general computation — the literary wing of the digital-ownership argument.",
+    "tags": [
+      "essays",
+      "copyright",
+      "author"
+    ],
+    "type": "org",
+    "subcategory": "ethics"
+  },
+  {
+    "title": "DeDRM_tools",
+    "url": "https://github.com/noDRM/DeDRM_tools",
+    "description": "Plugins that remove DRM from ebooks you already own, for the ever-allowed backups and cross-device reading. Also: get the plugin from CRedM for a signed build.",
+    "tags": [
+      "drm",
+      "ebooks",
+      "plugins"
+    ],
+    "type": "repo",
+    "subcategory": "books"
+  },
+  {
+    "title": "Defective by Design",
+    "url": "https://www.defectivebydesign.org/",
+    "description": "The FSF/EFF campaign against DRM — background, actions and the thinking on why DRM is a design defect.",
+    "tags": [
+      "drm",
+      "activism",
+      "org"
+    ],
+    "type": "org",
+    "subcategory": "ethics"
+  },
+  {
+    "title": "DOSBox",
+    "url": "https://www.dosbox.com/",
+    "description": "Emulator for DOS-era software — the gateway to three decades of abandoned DOS titles.",
+    "tags": [
+      "dos",
+      "emulator",
+      "games"
+    ],
+    "type": "project",
+    "subcategory": "games"
+  },
+  {
+    "title": "F-Droid",
+    "url": "https://f-droid.org/",
+    "description": "The catalog of free and open-source Android apps — no tracking, no ads.",
+    "tags": [
+      "android",
+      "apps",
+      "foss"
+    ],
+    "type": "project",
+    "subcategory": "devices"
+  },
+  {
+    "title": "Fairphone",
+    "url": "https://www.fairphone.com/",
+    "description": "The modular, user-repairable phone — counterpoint to the sealed-tight smartphone era.",
+    "tags": [
+      "repair",
+      "hardware",
+      "phone"
+    ],
+    "type": "project",
+    "subcategory": "repair"
+  },
+  {
+    "title": "Framework",
+    "url": "https://frame.work/",
+    "description": "The repairable, upgradeable laptop — repair advocacy sold as a product.",
+    "tags": [
+      "repair",
+      "hardware"
+    ],
+    "type": "project",
+    "subcategory": "repair"
+  },
+  {
+    "title": "Free Software Foundation",
+    "url": "https://www.fsf.org/",
+    "description": "The NGO behind the GPL — campaigning for software freedom since 1985.",
+    "tags": [
+      "foss",
+      "licensing",
+      "org"
+    ],
+    "type": "org",
+    "subcategory": "foss"
+  },
+  {
+    "title": "GNU Licenses",
+    "url": "https://www.gnu.org/licenses/",
+    "description": "The definitive texts of the GPL, LGPL, AGPL and the license-choice guide.",
+    "tags": [
+      "licensing",
+      "gpl",
+      "docs"
+    ],
+    "type": "docs",
+    "subcategory": "foss"
+  },
+  {
+    "title": "GNU Philosophy library",
+    "url": "https://www.gnu.org/philosophy/",
+    "description": "Essays on free software, from 'Why Open Source misses the point' to the economics of copyleft.",
+    "tags": [
+      "philosophy",
+      "essays",
+      "foss"
+    ],
+    "type": "docs",
+    "subcategory": "foss"
+  },
+  {
+    "title": "GrapheneOS",
+    "url": "https://grapheneos.org/",
+    "description": "The hardened-Android gold standard — hardened kernel, verified boot, no Google by default.",
+    "tags": [
+      "android",
+      "privacy",
+      "security"
+    ],
+    "type": "project",
+    "subcategory": "devices"
+  },
+  {
+    "title": "iFixit",
+    "url": "https://www.ifixit.com/",
+    "description": "The repair teardowns, manuals and advocacy that spearheaded the right-to-repair movement.",
+    "tags": [
+      "repair",
+      "manuals",
+      "org"
+    ],
+    "type": "org",
+    "subcategory": "repair"
+  },
+  {
+    "title": "IIIF — International Image Interoperability Framework",
+    "url": "https://iiif.io/",
+    "description": "The shared standard letting museums and libraries serve deep-zoom images to the world.",
+    "tags": [
+      "digitization",
+      "standards"
+    ],
+    "type": "org",
+    "subcategory": "preservation"
+  },
+  {
+    "title": "Internet Archive (preservation side)",
+    "url": "https://archive.org/",
+    "description": "500 billion web pages, millions of books and software — humanity's biggest hedge against digital forgetting.",
+    "tags": [
+      "preservation",
+      "books",
+      "archive"
+    ],
+    "type": "org",
+    "subcategory": "preservation"
+  },
+  {
+    "title": "Local-first software: you own your data",
+    "url": "https://www.inkandswitch.com/local-first/",
+    "description": "Ink & Switch's landmark essay on software where your data lives on your device and syncs peer-to-peer.",
+    "tags": [
+      "local-first",
+      "essay",
+      "sync"
+    ],
+    "type": "article",
+    "subcategory": "local-first",
+    "source": "Ink & Switch"
+  },
+  {
+    "title": "Localfirst Web",
+    "url": "https://localfirstweb.dev/",
+    "description": "A directory of local-first technology and a friendly index into the movement.",
+    "tags": [
+      "local-first",
+      "directory"
+    ],
+    "type": "project",
+    "subcategory": "local-first"
+  },
+  {
+    "title": "LOCKSS",
+    "url": "https://www.lockss.org/",
+    "description": "'Lots of Copies Keep Stuff Safe' — the distributed dark-archive archiving model for scholarly literature.",
+    "tags": [
+      "preservation",
+      "distributed",
+      "journals"
+    ],
+    "type": "project",
+    "subcategory": "preservation"
+  },
+  {
+    "title": "Open Source Initiative",
+    "url": "https://opensource.org/",
+    "description": "The steward of the OSI-approved list — where 'open source' gets its formal definition.",
+    "tags": [
+      "foss",
+      "licensing",
+      "org"
+    ],
+    "type": "org",
+    "subcategory": "foss"
+  },
+  {
+    "title": "Pi-hole",
+    "url": "https://pi-hole.net/",
+    "description": "Network-wide DNS ad-blocking — install on a Raspberry Pi and protect the whole home network from trackers.",
+    "tags": [
+      "dns",
+      "ad-blocking",
+      "raspberry-pi"
+    ],
+    "type": "project",
+    "subcategory": "devices"
+  },
+  {
+    "title": "Prelinger Archives",
+    "url": "https://archive.org/details/prelinger",
+    "description": "The famous collection of ephemeral film — ads, industrial and amateur film from the 20th century.",
+    "tags": [
+      "film",
+      "archive",
+      "preservation"
+    ],
+    "type": "archive",
+    "subcategory": "preservation"
+  },
+  {
+    "title": "Right to Repair Europe",
+    "url": "https://repair.eu/",
+    "description": "The coalition behind the EU push toward repairable, modular products.",
+    "tags": [
+      "repair",
+      "policy",
+      "org"
+    ],
+    "type": "org",
+    "subcategory": "repair"
+  },
+  {
+    "title": "ScummVM",
+    "url": "https://www.scummvm.org/",
+    "description": "The engine re-implementation that keeps LucasArts-style point-and-click adventures playable.",
+    "tags": [
+      "games",
+      "preservation",
+      "project"
+    ],
+    "type": "project",
+    "subcategory": "games"
+  },
+  {
+    "title": "Shadow libraries — what they are",
+    "url": "https://en.wikipedia.org/wiki/Shadow_library",
+    "description": "The background on shadow libraries: scale, legality and the preservation arguments around them — read the topic, not the services.",
+    "tags": [
+      "piracy",
+      "knowledge",
+      "ethics",
+      "wiki"
+    ],
+    "type": "archive",
+    "subcategory": "ethics"
+  },
+  {
+    "title": "Software Freedom Conservancy",
+    "url": "https://sfconservancy.org/",
+    "description": "The nonprofit that does the legal and fiscal legwork that keeps many free-software projects alive.",
+    "tags": [
+      "foss",
+      "org",
+      "legal"
+    ],
+    "type": "org",
+    "subcategory": "foss"
+  },
+  {
+    "title": "Software Heritage",
+    "url": "https://www.softwareheritage.org/",
+    "description": "The archive of public source code — harvesting every public repo before it vanishes.",
+    "tags": [
+      "preservation",
+      "source",
+      "archive"
+    ],
+    "type": "project",
+    "subcategory": "preservation"
+  },
+  {
+    "title": "Software Library (Internet Archive)",
+    "url": "https://archive.org/details/software",
+    "description": "Tens of thousands of archived programs — the closest thing to a public-software museum.",
+    "tags": [
+      "preservation",
+      "software",
+      "archive"
+    ],
+    "type": "archive",
+    "subcategory": "preservation"
+  },
+  {
+    "title": "Solid — your data, your choice",
+    "url": "https://solidproject.org/",
+    "description": "Tim Berners-Lee's framework for web apps where users own and re-purpose their own data.",
+    "tags": [
+      "data-ownership",
+      "web",
+      "solid"
+    ],
+    "type": "project",
+    "subcategory": "local-first"
+  },
+  {
+    "title": "Standard Notes",
+    "url": "https://standardnotes.com/",
+    "description": "End-to-end encrypted notes you can self-host — private notes without the cloud.",
+    "tags": [
+      "notes",
+      "encryption",
+      "privacy"
+    ],
+    "type": "project",
+    "subcategory": "devices"
+  },
+  {
+    "title": "The Repair Association",
+    "url": "https://www.repair.org/",
+    "description": "US/global trade association and advocacy network for the right to repair.",
+    "tags": [
+      "repair",
+      "org"
+    ],
+    "type": "org",
+    "subcategory": "repair"
+  },
+  {
+    "title": "The Right to Read",
+    "url": "https://www.gnu.org/philosophy/right-to-read.en.html",
+    "description": "Richard Stallman's paradigm-shifting dystopian essay (1997) on a world where reading is licensed, not owned — the moral foreword to the whole modern DRM debate.",
+    "tags": [
+      "essay",
+      "drm",
+      "philosophy",
+      "stallman"
+    ],
+    "type": "article",
+    "subcategory": "ethics",
+    "year": 1997,
+    "source": "GNU"
+  },
+  {
+    "title": "Tor Project",
+    "url": "https://www.torproject.org/",
+    "description": "The Onion Router — anonymous browsing and the circumvention tool for censored networks.",
+    "tags": [
+      "privacy",
+      "anonymity",
+      "tool"
+    ],
+    "type": "org",
+    "subcategory": "devices"
+  },
+  {
+    "title": "TorrentFreak",
+    "url": "https://torrentfreak.com/",
+    "description": "The news site that covers the piracy debates, copyright rulings and preservation stories without an agenda-noise filter.",
+    "tags": [
+      "piracy",
+      "news",
+      "copyright"
+    ],
+    "type": "news",
+    "subcategory": "ethics"
+  },
+  {
+    "title": "U.S. PIRG",
+    "url": "https://pirg.org/",
+    "description": "The consumer advocacy group driving state-level right-to-repair — the policy engine behind repairable gadgets.",
+    "tags": [
+      "repair",
+      "policy",
+      "consumer"
+    ],
+    "type": "org",
+    "subcategory": "repair"
+  },
+  {
+    "title": "Video Game History Foundation",
+    "url": "https://gamehistory.org/",
+    "description": "Research library and preservation project documenting video game history before it evaporates.",
+    "tags": [
+      "games",
+      "preservation",
+      "org"
+    ],
+    "type": "org",
+    "subcategory": "games"
+  },
+  {
+    "title": "Wayback Machine",
+    "url": "https://web.archive.org/",
+    "description": "Browse 25+ years of the web as it actually was — the single most important preservation tool for the internet.",
+    "tags": [
+      "preservation",
+      "web",
+      "tool"
+    ],
+    "type": "tool",
+    "subcategory": "preservation"
+  },
+  {
+    "title": "What is DRM?",
+    "url": "https://www.eff.org/issues/drm",
+    "description": "The Electronic Frontier Foundation's primer on digital rights management and why it changes consumers' rights.",
+    "tags": [
+      "drm",
+      "rights"
+    ],
+    "type": "article",
+    "subcategory": "ethics",
+    "source": "EFF"
+  },
+  {
+    "title": "YunoHost",
+    "url": "https://yunohost.org/",
+    "description": "Debian-based self-hosting for everyone — one-click installs of Nextcloud, Jellyfin, WordPress and hundreds of apps.",
+    "tags": [
+      "self-hosted",
+      "server",
+      "apps"
+    ],
+    "type": "project",
+    "subcategory": "devices"
+  }
+]

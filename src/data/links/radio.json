@@ -1,0 +1,839 @@
+[
+  {
+    "title": "Airspy",
+    "url": "https://airspy.com/",
+    "description": "High-performance SDR hardware — the software-defined radio darling of the HF/VHF hobby.",
+    "tags": [
+      "sdr",
+      "hardware"
+    ],
+    "type": "org",
+    "subcategory": "sdr"
+  },
+  {
+    "title": "Antenna Theory",
+    "url": "https://www.antenna-theory.com/",
+    "description": "Clear, no-nonsense antenna theory — the tutorial for understanding what you actually hang in the sky.",
+    "tags": [
+      "antennas",
+      "theory",
+      "tutorial"
+    ],
+    "type": "guide",
+    "subcategory": "antennas"
+  },
+  {
+    "title": "APRS protocol reference",
+    "url": "http://www.aprs.org/",
+    "description": "WB4APR's original APRS protocol documentation — the ground truth behind aprs.fi and direwolf.",
+    "tags": [
+      "aprs",
+      "protocol",
+      "docs"
+    ],
+    "type": "docs",
+    "subcategory": "aprs"
+  },
+  {
+    "title": "APRS-IS",
+    "url": "http://www.aprs-is.net/",
+    "description": "The APRS Internet System — the backbone that relays APRS packets between RF and the internet.",
+    "tags": [
+      "aprs",
+      "protocol",
+      "network"
+    ],
+    "type": "org",
+    "subcategory": "aprs"
+  },
+  {
+    "title": "aprs.fi",
+    "url": "https://aprs.fi/",
+    "description": "The live map of APRS traffic worldwide — positions, weather, telemetry and digipeaters.",
+    "tags": [
+      "aprs",
+      "map",
+      "telemetry"
+    ],
+    "type": "tool",
+    "subcategory": "aprs"
+  },
+  {
+    "title": "APRSdroid",
+    "url": "https://aprsdroid.org/",
+    "description": "APRS on an Android phone with a $10 radio cable — position, messaging, telemetry.",
+    "tags": [
+      "aprs",
+      "android"
+    ],
+    "type": "project",
+    "subcategory": "aprs"
+  },
+  {
+    "title": "AREDN — Amateur Radio Emergency Data Network",
+    "url": "https://www.arednmesh.org/",
+    "description": "Building high-speed data mesh networks on amateur microwave bands for emergencies.",
+    "tags": [
+      "emcomm",
+      "mesh",
+      "broadband"
+    ],
+    "type": "project",
+    "subcategory": "emcomm"
+  },
+  {
+    "title": "ARES — Amateur Radio Emergency Service",
+    "url": "https://www.arrl.org/ares",
+    "description": "The ARRL's organized emergency-response ham network.",
+    "tags": [
+      "emcomm",
+      "org"
+    ],
+    "type": "docs",
+    "subcategory": "emcomm"
+  },
+  {
+    "title": "ARRL Band Plan",
+    "url": "https://www.arrl.org/band-plan",
+    "description": "The authoritative US HF/VHF/UHF band allocations and segment usage.",
+    "tags": [
+      "bands",
+      "hf",
+      "reference"
+    ],
+    "type": "docs",
+    "subcategory": "licensing"
+  },
+  {
+    "title": "ARRL Field Day",
+    "url": "https://www.arrl.org/field-day",
+    "description": "The annual emergency-preparedness exercise that turns harmless radio people into a field force.",
+    "tags": [
+      "emcomm",
+      "field"
+    ],
+    "type": "docs",
+    "subcategory": "hf"
+  },
+  {
+    "title": "ARRL Licensing, Education & Training",
+    "url": "https://www.arrl.org/licensing-education-training",
+    "description": "The US licensing path — Technician, General, Extra — plus course materials and the exam question pools.",
+    "tags": [
+      "licensing",
+      "education"
+    ],
+    "type": "docs",
+    "subcategory": "licensing"
+  },
+  {
+    "title": "ARRL Logbook of The World",
+    "url": "https://loTW.arrl.org/",
+    "description": "The ARRL's cryptographic QSL confirmation system (LoTW) for contest and DXCC credit.",
+    "tags": [
+      "logbook",
+      "dxcc",
+      "qsl"
+    ],
+    "type": "tool",
+    "subcategory": "logbook"
+  },
+  {
+    "title": "ARRL — American Radio Relay League",
+    "url": "https://www.arrl.org/",
+    "description": "The national amateur radio association: licensing, bands, ARES emergency communications, and the journals that define the hobby.",
+    "tags": [
+      "org",
+      "licensing",
+      "emcomm"
+    ],
+    "type": "org",
+    "subcategory": "org"
+  },
+  {
+    "title": "AX.25 Link Layer Protocol Specification 2.2",
+    "url": "https://www.ax25.net/AX25.2.2-Jul%2098-2.pdf",
+    "description": "The AX.25 protocol spec — the link-layer format behind packet radio, APRS and direwolf.",
+    "tags": [
+      "ax.25",
+      "protocol",
+      "packet"
+    ],
+    "type": "paper",
+    "subcategory": "packet",
+    "source": "AX25.net/TAPR"
+  },
+  {
+    "title": "Broadcastify",
+    "url": "https://www.broadcastify.com/",
+    "description": "The largest collection of live scanner feeds — listen to public safety radio worldwide.",
+    "tags": [
+      "scanner",
+      "streams"
+    ],
+    "type": "tool",
+    "subcategory": "culture"
+  },
+  {
+    "title": "Club Log",
+    "url": "https://clublog.org/",
+    "description": "Weekly DXCC database, league tables for DXpeditions, and the most-populated log aggregation in DXing.",
+    "tags": [
+      "dx",
+      "logbook"
+    ],
+    "type": "tool",
+    "subcategory": "logbook"
+  },
+  {
+    "title": "Contest Calendar (WA7BNM)",
+    "url": "https://www.contestcalendar.com/",
+    "description": "The global calendar of radio contests, with notes on each.",
+    "tags": [
+      "contesting",
+      "hf"
+    ],
+    "type": "tool",
+    "subcategory": "hf"
+  },
+  {
+    "title": "CubicSDR",
+    "url": "https://cubicsdr.com/",
+    "description": "Cross-platform SDR client that keeps the waterfall the center of the world.",
+    "tags": [
+      "sdr",
+      "receiver"
+    ],
+    "type": "project",
+    "subcategory": "sdr"
+  },
+  {
+    "title": "Direwolf",
+    "url": "https://github.com/wb2osz/direwolf",
+    "description": "Software TNC for APRS and packet over a sound card — robust and well-documented.",
+    "tags": [
+      "packet",
+      "aprs",
+      "tnc"
+    ],
+    "type": "repo",
+    "subcategory": "packet"
+  },
+  {
+    "title": "DX Summit",
+    "url": "https://dxsummit.fi/",
+    "description": "Real-time HF spotting network — where DXers watch the bands and plan their next QSO.",
+    "tags": [
+      "hf",
+      "dx",
+      "spots"
+    ],
+    "type": "tool",
+    "subcategory": "hf"
+  },
+  {
+    "title": "eQSL.cc",
+    "url": "https://www.eqsl.cc/qslcard/index.cfm",
+    "description": "Electronic QSL card bureau — confirm contacts without paper.",
+    "tags": [
+      "logbook",
+      "qsl"
+    ],
+    "type": "org",
+    "subcategory": "logbook"
+  },
+  {
+    "title": "FCC ULS — license lookups",
+    "url": "https://www.fcc.gov/uls",
+    "description": "The FCC Universal Licensing System — look up any callsign or track your own license.",
+    "tags": [
+      "licensing",
+      "fcc",
+      "lookup"
+    ],
+    "type": "tool",
+    "subcategory": "licensing"
+  },
+  {
+    "title": "fldigi / FLdigi suite (W1HKJ)",
+    "url": "https://www.w1hkj.com/",
+    "description": "The FLDigi/FLMsg/FLamp suite of free digital-mode software — PSK31, RTTY, Olivia, DominoEx, and more.",
+    "tags": [
+      "digital-modes",
+      "psk31",
+      "software"
+    ],
+    "type": "project",
+    "subcategory": "digital"
+  },
+  {
+    "title": "FT8 — the digital mode that changed HF",
+    "url": "https://en.wikipedia.org/wiki/FT8",
+    "description": "What FT8/FT4 are, protocol-wise, and why they changed weak-signal HF overnight.",
+    "tags": [
+      "ft8",
+      "digital-modes",
+      "wiki"
+    ],
+    "type": "archive",
+    "subcategory": "digital"
+  },
+  {
+    "title": "GNU Radio",
+    "url": "https://www.gnuradio.org/",
+    "description": "Free software-defined radio toolkit — build signal-processing flows with Python and C++.",
+    "tags": [
+      "sdr",
+      "dsp",
+      "signal"
+    ],
+    "type": "org",
+    "subcategory": "sdr"
+  },
+  {
+    "title": "GNU Radio Wiki & Tutorials",
+    "url": "https://wiki.gnuradio.org/",
+    "description": "The tutorials that get you from hello world to a working demodulator block.",
+    "tags": [
+      "docs",
+      "sdr",
+      "tutorials"
+    ],
+    "type": "docs",
+    "subcategory": "sdr"
+  },
+  {
+    "title": "Gqrx SDR",
+    "url": "https://gqrx.dk/",
+    "description": "Popular multi-platform SDR receiver ideal for RTL-SDR and Airspy on Linux.",
+    "tags": [
+      "sdr",
+      "receiver",
+      "linux"
+    ],
+    "type": "project",
+    "subcategory": "sdr"
+  },
+  {
+    "title": "HackRF One",
+    "url": "https://greatscottgadgets.com/hackrf/",
+    "description": "The $300 half-duplex transceiver that broke SDR cost barriers — 1 MHz to 6 GHz.",
+    "tags": [
+      "sdr",
+      "transceiver",
+      "hardware"
+    ],
+    "type": "project",
+    "subcategory": "sdr"
+  },
+  {
+    "title": "Ham Radio Crash Course",
+    "url": "https://www.youtube.com/@HamRadioCrashCourse",
+    "description": "Josh (KI6NAZ)'s channel — modern ham video content from beginner to field ops.",
+    "tags": [
+      "youtube",
+      "video",
+      "culture"
+    ],
+    "type": "video",
+    "subcategory": "culture"
+  },
+  {
+    "title": "HamStudy",
+    "url": "https://hamstudy.org/",
+    "description": "Free practice exams and flashcards for the US pools; search questions, track progress.",
+    "tags": [
+      "study",
+      "exams"
+    ],
+    "type": "tool",
+    "subcategory": "licensing"
+  },
+  {
+    "title": "History of amateur radio",
+    "url": "https://en.wikipedia.org/wiki/History_of_amateur_radio",
+    "description": "Background on how hams got the airwaves they have, from spark-gap experiments to the receiver wars.",
+    "tags": [
+      "history",
+      "wiki"
+    ],
+    "type": "archive",
+    "subcategory": "org"
+  },
+  {
+    "title": "IARU — International Amateur Radio Union",
+    "url": "https://www.iaru.org/",
+    "description": "The federation of national amateur radio societies — international spectrum, band planning, DXCC cooperation.",
+    "tags": [
+      "org",
+      "international"
+    ],
+    "type": "org",
+    "subcategory": "org"
+  },
+  {
+    "title": "JS8Call",
+    "url": "https://js8call.com/",
+    "description": "Weak-signal keyboard chat built on FT8's engine, with messaging, relaying and lightweight QSOs.",
+    "tags": [
+      "keyboard",
+      "weak-signal",
+      "network"
+    ],
+    "type": "project",
+    "subcategory": "digital"
+  },
+  {
+    "title": "JS8Call GitHub",
+    "url": "https://github.com/js8call/js8call",
+    "description": "Source and issues for JS8Call.",
+    "tags": [
+      "keyboard",
+      "source"
+    ],
+    "type": "repo",
+    "subcategory": "digital"
+  },
+  {
+    "title": "KB6NU No-Nonsense Study Guides",
+    "url": "https://www.kb6nu.com/study-guides/",
+    "description": "Dan Romanchik's practical, low-cost guides to the US license exams.",
+    "tags": [
+      "study",
+      "guides"
+    ],
+    "type": "guide",
+    "subcategory": "licensing"
+  },
+  {
+    "title": "KiwiSDR",
+    "url": "https://kiwisdr.com/",
+    "description": "Wideband HF receiver built as a Raspberry Pi cape; there's a growing public network of them.",
+    "tags": [
+      "sdr",
+      "hf",
+      "hardware"
+    ],
+    "type": "project",
+    "subcategory": "sdr"
+  },
+  {
+    "title": "LoRa Alliance",
+    "url": "https://lora-alliance.org/",
+    "description": "The standards body for LoRaWAN — low-power, long-range IoT networking.",
+    "tags": [
+      "lora",
+      "lorawan",
+      "iot"
+    ],
+    "type": "org",
+    "subcategory": "lora"
+  },
+  {
+    "title": "Meshtastic",
+    "url": "https://meshtastic.org/",
+    "description": "Open GPS-mesh radios over LoRa — no cell towers, no internet, your own encrypted text network for off-grid areas.",
+    "tags": [
+      "lora",
+      "mesh",
+      "off-grid"
+    ],
+    "type": "project",
+    "subcategory": "lora"
+  },
+  {
+    "title": "Meshtastic documentation",
+    "url": "https://meshtastic.org/docs/",
+    "description": "Config, firmware, radios and the Python SDK for Meshtastic nodes.",
+    "tags": [
+      "docs",
+      "lora",
+      "mesh"
+    ],
+    "type": "docs",
+    "subcategory": "lora"
+  },
+  {
+    "title": "NOAA Space Weather Prediction Center",
+    "url": "https://www.swpc.noaa.gov/",
+    "description": "Solar flux, K-index, alerts — the data ham HF propagation forecasts are built on.",
+    "tags": [
+      "propagation",
+      "space-weather"
+    ],
+    "type": "org",
+    "subcategory": "propagation"
+  },
+  {
+    "title": "Nomad Network",
+    "url": "https://github.com/markqvist/NomadNet",
+    "description": "Peer-to-peer text sites over Reticulum — RSS-like without servers.",
+    "tags": [
+      "reticulum",
+      "p2p",
+      "content"
+    ],
+    "type": "repo",
+    "subcategory": "reticulum"
+  },
+  {
+    "title": "Off Grid Ham",
+    "url": "https://offgridham.com/",
+    "description": "Notes and reviews for running amateur radio where there's no grid and no internet.",
+    "tags": [
+      "off-grid",
+      "emcomm"
+    ],
+    "type": "article",
+    "subcategory": "offgrid"
+  },
+  {
+    "title": "OH8STN Ham Radio Station",
+    "url": "https://oh8stn.org/",
+    "description": "How to be a portable off-grid ham — solar, batteries, lightweight gear that works.",
+    "tags": [
+      "off-grid",
+      "portable"
+    ],
+    "type": "article",
+    "subcategory": "offgrid"
+  },
+  {
+    "title": "OpenWebRX",
+    "url": "https://www.openwebrx.de/",
+    "description": "Multi-user SDR server that turns one radio into a web-accessible receiver anyone can tune.",
+    "tags": [
+      "sdr",
+      "web",
+      "multi-user"
+    ],
+    "type": "project",
+    "subcategory": "sdr"
+  },
+  {
+    "title": "Packet radio — the '80s BBS network",
+    "url": "https://en.wikipedia.org/wiki/Packet_radio",
+    "description": "How hams built a store-and-forward text network on HF/VHF decades before the public internet.",
+    "tags": [
+      "packet",
+      "history",
+      "bbs"
+    ],
+    "type": "archive",
+    "subcategory": "packet"
+  },
+  {
+    "title": "PlutoSDR (Analog Devices)",
+    "url": "https://wiki.analog.com/university/tools/pluto",
+    "description": "A $200 self-contained SDR transceiver that's a full lab instrument — and GNU Radio friendly.",
+    "tags": [
+      "sdr",
+      "transceiver",
+      "education"
+    ],
+    "type": "docs",
+    "subcategory": "sdr"
+  },
+  {
+    "title": "POTA — Parks on the Air",
+    "url": "https://pota.app/",
+    "description": "Activators and hunters making contacts from parks and wilderness areas; free to join, deeply satisfying.",
+    "tags": [
+      "portable",
+      "parks"
+    ],
+    "type": "project",
+    "subcategory": "portable"
+  },
+  {
+    "title": "PropNET",
+    "url": "http://www.propnet.net/",
+    "description": "A 6m/2m propagation beacon and reporting network used to watch opens.",
+    "tags": [
+      "propagation",
+      "vhf"
+    ],
+    "type": "tool",
+    "subcategory": "propagation"
+  },
+  {
+    "title": "PSK Reporter",
+    "url": "https://pskreporter.info/",
+    "description": "A worldwide live map of who can decode whom — the graph that illustrates propagation in real time.",
+    "tags": [
+      "propagation",
+      "digital-modes"
+    ],
+    "type": "tool",
+    "subcategory": "digital"
+  },
+  {
+    "title": "QRZ.com",
+    "url": "https://www.qrz.com/",
+    "description": "The de-facto directory of the amateur radio world — callsign lookups, forums, log search.",
+    "tags": [
+      "callsign",
+      "directory",
+      "community"
+    ],
+    "type": "tool",
+    "subcategory": "logbook"
+  },
+  {
+    "title": "RadioReference",
+    "url": "https://www.radioreference.com/",
+    "description": "The definitive reference for scanner frequencies, trunking systems and radio IDs.",
+    "tags": [
+      "scanner",
+      "database",
+      "reference"
+    ],
+    "type": "org",
+    "subcategory": "culture"
+  },
+  {
+    "title": "Reticulum",
+    "url": "https://reticulum.network/",
+    "description": "A cryptographic networking stack that works over packet radio, LoRa, TCP/UDP and even audio — the 'internet that doesn't need the internet'.",
+    "tags": [
+      "reticulum",
+      "mesh",
+      "encryption"
+    ],
+    "type": "project",
+    "subcategory": "reticulum"
+  },
+  {
+    "title": "Reticulum (GitHub)",
+    "url": "https://github.com/markqvist/Reticulum",
+    "description": "The cryptographic networking stack itself — source, issues and the manual for RNS transports and building self-created networks.",
+    "tags": [
+      "docs",
+      "reticulum"
+    ],
+    "type": "repo",
+    "subcategory": "reticulum"
+  },
+  {
+    "title": "RSGB — Radio Society of Great Britain",
+    "url": "https://rsgb.org/",
+    "description": "The UK's national amateur radio society.",
+    "tags": [
+      "org",
+      "licensing"
+    ],
+    "type": "org",
+    "subcategory": "org"
+  },
+  {
+    "title": "RTL-SDR dongles and the blog",
+    "url": "https://www.rtl-sdr.com/",
+    "description": "The $25 dongle that launched desktop SDR — blog with reviews, experiments and tutorials.",
+    "tags": [
+      "sdr",
+      "hardware",
+      "tutorials"
+    ],
+    "type": "article",
+    "subcategory": "sdr"
+  },
+  {
+    "title": "SDR++",
+    "url": "https://github.com/AlexandreRouma/SDRPlusPlus",
+    "description": "Cross-platform SDR receiver with a clean interface, wide device support and iPhone port.",
+    "tags": [
+      "sdr",
+      "receiver"
+    ],
+    "type": "repo",
+    "subcategory": "sdr"
+  },
+  {
+    "title": "SDRplay",
+    "url": "https://www.sdrplay.com/",
+    "description": "Wideband SDR receivers with excellent HF performance at consumer prices.",
+    "tags": [
+      "sdr",
+      "hardware",
+      "hf"
+    ],
+    "type": "org",
+    "subcategory": "sdr"
+  },
+  {
+    "title": "Shortwave.info",
+    "url": "https://www.short-wave.info/",
+    "description": "Live shortwave news and frequency schedules.",
+    "tags": [
+      "shortwave",
+      "frequencies"
+    ],
+    "type": "tool",
+    "subcategory": "propagation"
+  },
+  {
+    "title": "Sideband",
+    "url": "https://github.com/markqvist/Sideband",
+    "description": "LoRa/radio chat client for the Reticulum stack, on phone and desktop.",
+    "tags": [
+      "reticulum",
+      "chat",
+      "lora"
+    ],
+    "type": "repo",
+    "subcategory": "reticulum"
+  },
+  {
+    "title": "SolarHam",
+    "url": "https://www.solarham.net/",
+    "description": "The ham-friendly home of current solar conditions and their HF implications",
+    "tags": [
+      "propagation",
+      "solar"
+    ],
+    "type": "article",
+    "subcategory": "propagation"
+  },
+  {
+    "title": "SOTA — Summits on the Air",
+    "url": "https://www.sota.org.uk/",
+    "description": "HF/VHF contacts from mountain summits; hiking meets ham radio.",
+    "tags": [
+      "portable",
+      "summits"
+    ],
+    "type": "project",
+    "subcategory": "portable"
+  },
+  {
+    "title": "TAPR",
+    "url": "https://www.tapr.org/",
+    "description": "Tucson Amateur Packet Radio — the nonprofit behind packet radio history and the laboratory amateur radio.",
+    "tags": [
+      "org",
+      "packet",
+      "research"
+    ],
+    "type": "org",
+    "subcategory": "packet"
+  },
+  {
+    "title": "The Things Network",
+    "url": "https://www.thethingsnetwork.org/",
+    "description": "Community LoRaWAN infrastructure — gateways and a worldwide public data network for sensors.",
+    "tags": [
+      "lora",
+      "lorawan",
+      "community"
+    ],
+    "type": "org",
+    "subcategory": "lora"
+  },
+  {
+    "title": "USRP / Ettus Research",
+    "url": "https://www.ettus.com/products/",
+    "description": "The professional-grade SDR family behind serious DSP research.",
+    "tags": [
+      "sdr",
+      "hardware",
+      "research"
+    ],
+    "type": "org",
+    "subcategory": "sdr"
+  },
+  {
+    "title": "VOACAP",
+    "url": "https://www.voacap.com/",
+    "description": "HF propagation prediction tools — entering from HF, making IONCAP-style predictions accessible.",
+    "tags": [
+      "propagation",
+      "hf",
+      "prediction"
+    ],
+    "type": "tool",
+    "subcategory": "propagation"
+  },
+  {
+    "title": "W2AEW — Alan Wolke",
+    "url": "https://www.youtube.com/@w2aew",
+    "description": "Oscilloscope and analog electronics explanations that deserve a textbook audience.",
+    "tags": [
+      "youtube",
+      "electronics",
+      "video"
+    ],
+    "type": "video",
+    "subcategory": "culture"
+  },
+  {
+    "title": "WebSDR",
+    "url": "http://websdr.org/",
+    "description": "University-run online shortwave receivers — tune real radios around the world from your browser.",
+    "tags": [
+      "sdr",
+      "receiver",
+      "web"
+    ],
+    "type": "tool",
+    "subcategory": "sdr"
+  },
+  {
+    "title": "Winlink Global Radio Email",
+    "url": "https://winlink.org/",
+    "description": "Radio-based email network — messages ride HF, VHF or Pactor when the internet goes away.",
+    "tags": [
+      "emcomm",
+      "email",
+      "hf"
+    ],
+    "type": "org",
+    "subcategory": "emcomm"
+  },
+  {
+    "title": "WSJT Home / documentation",
+    "url": "https://wsjt.sourceforge.io/wsjtx.html",
+    "description": "Official site and manuals for WSJT-X and its protocols.",
+    "tags": [
+      "docs",
+      "ft8",
+      "wspr"
+    ],
+    "type": "docs",
+    "subcategory": "digital"
+  },
+  {
+    "title": "WSJT-X",
+    "url": "https://sourceforge.net/projects/wsjt/",
+    "description": "The suite that made weak-signal digital modes standard: FT8, FT4, JT65, JT9, WSPR, MSK144.",
+    "tags": [
+      "digital-modes",
+      "weak-signal",
+      "ft8"
+    ],
+    "type": "project",
+    "subcategory": "digital"
+  },
+  {
+    "title": "Xastir",
+    "url": "https://github.com/Xastir/Xastir",
+    "description": "The classic Linux APRS tracker and mapping client.",
+    "tags": [
+      "aprs",
+      "linux",
+      "mapping"
+    ],
+    "type": "repo",
+    "subcategory": "aprs"
+  },
+  {
+    "title": "YAAC",
+    "url": "https://www.ka2ddo.org/ka2ddo/yaac.html",
+    "description": "Yet Another APRS Client — Java, works headless/small, no bloat.",
+    "tags": [
+      "aprs",
+      "client"
+    ],
+    "type": "project",
+    "subcategory": "aprs"
+  }
+]

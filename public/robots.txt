@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://owais.qzz.io/sitemap-index.xml

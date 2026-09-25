@@ -1,0 +1,118 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { GOSHAWK } from "../../config";
+
+const work = [
+  {
+    title: "Relay",
+    kind: "Concept · RAG knowledge assistant",
+    problem: "Teams drown in documents and answer the same questions by hand. The concept: a retrieval assistant that answers from the organisation's own material — and proves it with sources.",
+    architecture: [
+      ["docs", "ingest + chunk"],
+      ["retrieval", "search + rerank"],
+      ["LLM", "answer with citations"],
+      ["interface", "chat / search"],
+    ],
+    built: [
+      "Document ingestion pipeline with a chunking strategy that held up to evaluation",
+      "Retrieval layer with reranking, judged against a labelled test set",
+      "Answer formatting with traceable in-context citations",
+    ],
+    state: "Concept — walkable demo, evals documented.",
+  },
+  {
+    title: "Stockroom",
+    kind: "Concept · internal inventory system",
+    problem: "A warehouse ran on spreadsheets, and every month the reconciliation ritual consumed a day. The concept: a lightweight internal system non-technical staff can use on day one.",
+    architecture: [
+      ["frontline", "simple web UI"],
+      ["backend", "FastAPI"],
+      ["data", "inventory database"],
+      ["boring", "exports, always"],
+    ],
+    built: [
+      "An internal inventory interface designed for people who hate software",
+      "FastAPI backend with a database that stays consistent",
+      "CSV exports everywhere — lock-in prevention as a feature",
+    ],
+    state: "Concept prototype.",
+  },
+  {
+    title: "Frontline",
+    kind: "Concept · lead response system",
+    problem: "Inbound enquiries piled up and died of latency. The concept: qualify automatically, hand warm ones to a human with context already attached.",
+    architecture: [
+      ["inbox", "enquiries land"],
+      ["AI triage", "qualify + route"],
+      ["context pack", "summary + intent"],
+      ["human", "reply with context"],
+    ],
+    built: [
+      "An AI triage step that classifies and prioritises inbound leads",
+      "Context packs so handoff means informed, not transferred",
+      "Score-based routing to keep the loop honest",
+    ],
+    state: "Concept prototype.",
+  },
+];
+---
+
+<BaseLayout goshawk title="Work" description="Selected Goshawk Labs concepts and builds — RAG assistants, internal tools, AI triage.">
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="kicker" data-reveal>03 — work</p>
+      <h1 data-reveal>Concepts, <span class="mark">prototypes,</span> builds.</h1>
+      <p class="lede" data-reveal>
+        What the bench turns out. Problem, architecture, what was built — and an honest
+        status note on each. Client work under NDA is walked through on a call instead.
+        <span class="annote">— a log, not a highlight reel</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="band" style="padding-top:0">
+    <div class="container">
+      {work.map((c) => (
+        <article class="case" data-reveal style="padding:2.6rem 0.2rem;border-top:2px solid var(--ink)">
+          <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;align-items:baseline">
+            <div>
+              <span class="mono" style="font-size:0.74rem;letter-spacing:0.1em;color:var(--accent);text-transform:uppercase">{c.kind}</span>
+              <h2 style="margin-top:0.3rem">{c.title}</h2>
+            </div>
+          </div>
+          <p class="lead" style="margin-top:1.2rem">{c.problem}</p>
+          <p class="mono" style="font-size:0.72rem;color:var(--faint);text-transform:uppercase;letter-spacing:0.1em;margin:1.8rem 0 0.5rem">architecture</p>
+          <div class="arch">
+            {c.architecture.map(([b, sub], i) => (
+              <>
+                {i > 0 && <span class="flow">→</span>}
+                <div class="block"><b>{b}</b><span>{sub}</span></div>
+              </>
+            ))}
+          </div>
+          <div class="grid grid-2" style="margin-top:1.8rem;gap:2rem">
+            <div>
+              <p class="mono" style="font-size:0.72rem;color:var(--faint);text-transform:uppercase;letter-spacing:0.1em">what was built</p>
+              <ul class="prose" style="margin-top:0.6rem">
+                {c.built.map((b) => <li>{b}</li>)}
+              </ul>
+            </div>
+            <div>
+              <p class="mono" style="font-size:0.72rem;color:var(--faint);text-transform:uppercase;letter-spacing:0.1em">status</p>
+              <p class="muted" style="margin-top:0.6rem;font-size:0.95rem">{c.state}</p>
+            </div>
+          </div>
+        </article>
+      ))}
+
+      <aside class="card" style="margin-top:2.5rem" data-reveal>
+        <span class="card-k">want this energy on your problem?</span>
+        <h3>Your project could be the next entry.</h3>
+        <p class="mb-0">
+          The pipeline is short: <a href={GOSHAWK.basePath + "/process"} style="color:var(--accent)">brief → build → handover</a>.
+          Start with a free scoping call — <a href={GOSHAWK.basePath + "/contact"} style="color:var(--accent)">contact ↗</a>
+        </p>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>

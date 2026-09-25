@@ -1,0 +1,40 @@
+---
+import type { LinkItem } from "../lib/links";
+import { TYPE_LABELS } from "../lib/links";
+
+interface Props {
+  item: LinkItem;
+}
+
+const { item } = Astro.props;
+let host = item.url;
+try {
+  host = new URL(item.url).hostname.replace(/^www\./, "");
+} catch {
+  /* keep raw url on malformed input */
+}
+const meta: string[] = [];
+if (item.source) meta.push(item.source);
+if (item.year) meta.push(String(item.year));
+if (item.subcategory) meta.push(item.subcategory.replace(/-/g, " "));
+const metaText = meta.join(" · ") || host;
+---
+
+<a
+  class="lc"
+  href={item.url}
+  target="_blank"
+  rel="noopener noreferrer"
+  title={item.title}
+>
+  <div class="lc-head">
+    <span class="lc-type">{TYPE_LABELS[item.type]}</span>
+    <span class="lc-host">{host}</span>
+  </div>
+  <h3 class="lc-title">{item.title}</h3>
+  <p class="lc-desc">{item.description}</p>
+  <div class="lc-foot">
+    <span class="lc-meta">{metaText}</span>
+    <span class="lc-go" aria-hidden="true">↗</span>
+  </div>
+</a>

@@ -1,0 +1,91 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import InquiryCard from "../components/InquiryCard.astro";
+import { SOCIALS, GOSHAWK } from "../config";
+
+const channels = [
+  { code: "01", label: "Email", value: SOCIALS.email, href: `mailto:${SOCIALS.email}?subject=Hi`, note: "Best for project and work inquiries. Replies within a day, usually faster." },
+  { code: "02", label: "GitHub", value: "khmowais", href: SOCIALS.github, note: "Code, experiments, and the odd abandoned branch." },
+  { code: "03", label: "LinkedIn", value: "in/the-mohammad-owais", href: SOCIALS.linkedin, note: "Slower replies, but they happen." },
+];
+
+const hours = [
+  ["windows", "Mon–Fri, ~09:00–20:00 PKT"],
+  ["queue", "available for new projects — see /services"],
+  ["reply", "within a day, usually hours"],
+];
+---
+
+<BaseLayout
+  title="Contact"
+  description="Have a technical problem? Tell me what you're trying to build — email, or the short brief below. No form farms, no ticket systems."
+>
+  <section class="hero">
+    <div class="container hero-inner" style="max-width:920px">
+      <p class="kicker" data-reveal>contact</p>
+      <h1 data-reveal>
+        Have a technical problem? <span class="mark">Tell me what you're building.</span>
+      </h1>
+      <p class="lede" data-reveal>
+        Project work, a consultation, or an argument about local-first software — the
+        inbox is open. <span class="annote">— one human, the actual builder</span>
+      </p>
+      <div class="btn-row" data-reveal>
+        <a class="btn btn-primary" href={`mailto:${SOCIALS.email}?subject=Reachout`}>
+          Email me directly <span class="arr">↗</span>
+        </a>
+        <a class="btn btn-ghost" href="/hire">See the Work-With-Me page</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--step" style="padding-top:0.5rem">
+    <div class="container" style="max-width:920px">
+      <div class="grid grid-2">
+        {channels.map((c) => (
+          <a class="card" href={c.href} target={c.href.startsWith("http") ? "_blank" : undefined} rel={c.href.startsWith("http") ? "noopener" : undefined} data-reveal>
+            <span class="card-k">{c.code} · {c.label}</span>
+            <h3>{c.value}</h3>
+            <p style="color:var(--muted);font-size:0.92rem">{c.note}</p>
+          </a>
+        ))}
+        <div class="card" style="background:var(--paper-step)" data-reveal>
+          <span class="card-k">operator status</span>
+          <h3>When I'm reachable.</h3>
+          <ul class="list-plain" style="display:grid;gap:0.5rem;margin-top:0.4rem">
+            {hours.map(([k, v]) => (
+              <li class="mono" style="font-size:0.82rem"><span style="color:var(--accent-text)">{k}:</span> {v}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:1.6rem">
+        <div>
+          <p class="kicker" data-reveal>the short brief</p>
+          <InquiryCard recipient={SOCIALS.email} note="No server, no storage — this composes an email in your mail client." />
+        </div>
+        <div>
+          <p class="kicker" data-reveal>after you write</p>
+          <div class="spec-sheet" data-reveal style="margin-top:1.4rem">
+            {[
+              ["reply", "within a business day"],
+              ["call", "a 30-minute scoping call, free"],
+              ["next", "a fixed-price proposal, in writing"],
+            ].map(([k, v], i) => (
+              <div class="spec-item" style="grid-template-columns:52px minmax(0,1fr);padding:1rem 0.2rem">
+                <span class="spec-k">{"0" + (i + 1)}</span>
+                <div class="spec-v"><h3>{k}</h3><p>{v}</p></div>
+              </div>
+            ))}
+          </div>
+          <blockquote class="prose" style="margin-top:1.8rem">
+            Need a studio instead of a solo engineer?{" "}
+            <a href={GOSHAWK.basePath + "/contact"}>Goshawk Labs ↗</a> has a different
+            queue and the same bench.
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

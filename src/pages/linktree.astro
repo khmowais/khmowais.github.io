@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SOCIALS } from "../config";
+---
+
+<BaseLayout
+  title="Linktree"
+  description="Everywhere Khawaja M. Owais lives on the internet, in one place."
+>
+  <section class="band" style="padding-top:clamp(5rem,12vw,8rem)">
+    <div class="container-narrow" style="text-align:center;max-width:600px">
+      <p class="kicker" style="justify-content:center" data-reveal>owais.qzz.io</p>
+      <h1 data-reveal>Khawaja M. Owais</h1>
+      <p class="muted" data-reveal style="margin-bottom:2.5rem;font-family:var(--font-serif);font-style:italic;font-size:1.2rem">
+        AI engineer · systems builder · radio operator
+      </p>
+      <div class="grid" style="gap:0.6rem;text-align:left">
+        {[
+          { code: "site", t: "This website", v: "owais.qzz.io", href: "/" },
+          { code: "notes", t: "The field notebook", v: "blog / AI engineering", href: "/blog" },
+          { code: "catalog", t: "Freelance services", v: "AI · data · software · teaching", href: "/services" },
+          { code: "studio", t: "Goshawk Labs", v: "engineering studio", href: "/goshawk-labs/" },
+          { code: "code", t: "GitHub", v: "khmowais", href: SOCIALS.github },
+          { code: "career", t: "LinkedIn", v: "in/the-mohammad-owais", href: SOCIALS.linkedin },
+          { code: "inbox", t: "Email", v: SOCIALS.email, href: `mailto:${SOCIALS.email}` },
+        ].map((l) => (
+          <a class="logrow" href={l.href} target={l.href.startsWith("http") ? "_blank" : undefined} rel={l.href.startsWith("http") ? "noopener" : undefined} data-reveal>
+            <span class="log-date">{l.code}</span>
+            <span class="log-title">
+              {l.t}
+              <span class="serif">{l.v}</span>
+            </span>
+            <span class="log-tag">↗</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

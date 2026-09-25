@@ -1,0 +1,171 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostCard from "../../components/PostCard.astro";
+import { byAudience, sortByDate } from "../../lib/posts";
+import { GOSHAWK } from "../../config";
+
+const services = [
+  { n: "01", t: "Digital experiences", d: "Websites and interfaces that are fast, accessible, and honest to maintain.", n2: "the front door, built not to fall over", href: GOSHAWK.basePath + "/services#digital-experiences" },
+  { n: "02", t: "Intelligent systems", d: "AI-assisted software with an actual product case — not a demo.", n2: "models with a reason to exist", href: GOSHAWK.basePath + "/services#intelligent-systems" },
+  { n: "03", t: "Business software", d: "Internal tools, dashboards, automations that save real hours each week.", n2: "measured in hours returned", href: GOSHAWK.basePath + "/services#business-software" },
+  { n: "04", t: "Automation", d: "Quiet, boring automation that removes whole classes of work.", n2: "the highest-ROI thing we build", href: GOSHAWK.basePath + "/services#automation" },
+];
+
+const manifesto = [
+  { t: "We ship, then we make it bigger.", d: "Under-scope the first release, over-scope the plan. Working software beats a beautiful roadmap." },
+  { t: "The client owns everything.", d: "Code, domain, docs, exit ramp. Lock-in is a failure mode, not a business model." },
+  { t: "AI is a tool, not an identity.", d: "If a script beats a model, we write the script and say so. Eval before launch, always." },
+  { t: "Boring is a design goal.", d: "Static by default. Offline-friendly. No trackers. Systems a stranger can maintain." },
+];
+
+const bench = [
+  { k: "STATIC", t: "Static-first architecture", d: "Pages that can't be slow, hacked, or knocked over by a cold start." },
+  { k: "EVAL", t: "Evaluations before launch", d: "Every AI system ships with a harness that says where it fails." },
+  { k: "OWN", t: "You own the stack", d: "Repositories, credentials, DNS — transferred on day one of handover." },
+  { k: "PLAIN", t: "Plain-language reporting", d: "Weekly updates in sentences, not ticket soup." },
+];
+
+const insights = sortByDate(byAudience(await getCollection("posts"), "goshawk")).slice(0, 3);
+---
+
+<BaseLayout goshawk>
+  <section class="hero gridpaper">
+    <div class="container hero-inner">
+      <p class="statusline" data-reveal>
+        <span>GOSHawk.LABS</span><span>·</span><span>ENGINEERING STUDIO</span><span>·</span><span>EST. 2025</span>
+      </p>
+      <h1 data-reveal>
+        Software, websites &amp; AI systems <span class="mark">built simple, fast,</span> and to last.
+      </h1>
+      <p class="lede" data-reveal>
+        An independent engineering studio for founders and teams who need things to
+        work — websites that ship in days, AI systems that survive production, and
+        software without a subscription to heartburn.
+        <span class="annote">— brief → build → handover. three steps, total</span>
+      </p>
+      <div class="btn-row" data-reveal>
+        <a class="btn btn-primary" href={GOSHAWK.basePath + "/contact"}>Start a project <span class="arr">↗</span></a>
+        <a class="btn btn-ghost" href={GOSHAWK.basePath + "/work"}>See the work</a>
+        <a class="btn btn-ghost" href={GOSHAWK.basePath + "/process"}>How it works</a>
+      </div>
+      <div class="statline" data-reveal style="margin-top:2.2rem">
+        <span><b>4</b> service lines</span>
+        <span><b>3</b> process steps</span>
+        <span><b>0</b> trackers, ever</span>
+      </div>
+    </div>
+    <div class="hero-arrow" aria-hidden="true">
+      scroll
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+  </section>
+
+  <!-- 01 · what we do -->
+  <section class="band">
+    <div class="container">
+      <p class="kicker" data-reveal>01 — what we do</p>
+      <h2 data-reveal>Four lines, one bench.</h2>
+      <div class="spec-sheet" style="margin-top:2.2rem">
+        {services.map((s) => (
+          <a class="spec-item" href={s.href} data-reveal style="text-decoration:none">
+            <span class="spec-k">{s.n}</span>
+            <div class="spec-v">
+              <h3>{s.t}</h3>
+              <p>{s.d}</p>
+              <span class="annote">{s.n2}</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 · manifesto -->
+  <section class="band" style="background:var(--accent);color:var(--accent-ink)">
+    <div class="container">
+      <p class="kicker" data-reveal style="color:var(--accent-ink)">02 — studio manifesto</p>
+      <h2 data-reveal>How we'll treat the problem, and you.</h2>
+      {manifesto.map((m, i) => (
+        <div style="display:grid;grid-template-columns:52px minmax(0,1fr);gap:1.4rem;padding:1.3rem 0;border-bottom:1px solid color-mix(in srgb, var(--accent-ink) 20%, transparent)" data-reveal>
+          <span class="mono" style="color:var(--accent-ink);opacity:0.7">{"0" + (i + 1)}</span>
+          <div>
+            <h3 style="color:var(--accent-ink);margin:0 0 0.3em">{m.t}</h3>
+            <p style="margin:0;color:var(--accent-ink);opacity:0.85;max-width:60ch">{m.d}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 03 · the bench -->
+  <section class="band band--step">
+    <div class="container">
+      <p class="kicker" data-reveal>03 — the bench</p>
+      <h2 data-reveal>What ships on every build.</h2>
+      <div class="grid grid-4" style="margin-top:2.2rem">
+        {bench.map((b) => (
+          <div class="card" data-reveal>
+            <span class="card-k">{b.k}</span>
+            <h3>{b.t}</h3>
+            <p>{b.d}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 · insights -->
+  <section class="band">
+    <div class="container">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+        <p class="kicker" data-reveal style="margin-bottom:0.4rem">04 — insights</p>
+        <a class="mono" href={GOSHAWK.basePath + "/insights"} style="text-decoration:none;color:var(--muted);font-size:0.8rem">all insights ↗</a>
+      </div>
+      <h2 data-reveal>Field notes from the studio floor.</h2>
+      <div style="margin-top:1.8rem">
+        {insights.length > 0 ? insights.map((post) => (
+          <PostCard
+            title={post.data.title}
+            description={post.data.description}
+            date={post.data.pubDate}
+            tags={post.data.tags}
+            href={`${GOSHAWK.basePath}/insights/${post.id}/`}
+            minutes={post.data.readingMinutes}
+          />
+        )) : (
+          <div class="card" data-reveal>
+            <span class="card-k">ink · still wet</span>
+            <h3>First field notes are landing soon.</h3>
+            <p class="mb-0" style="color:var(--muted)">
+              They'll cover what actually works when building AI systems and software —
+              shared unfiltered, evaluations included.
+            </p>
+          </div>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 · engage -->
+  <section class="band" style="background:var(--paper-deep)">
+    <div class="container" style="max-width:920px">
+      <p class="kicker" data-reveal>05 — engage</p>
+      <h2 data-reveal>Two ways to work with us.</h2>
+      <div class="duotile" style="margin-top:2.4rem">
+        <a class="tile" href={GOSHAWK.basePath + "/contact"} data-reveal>
+          <span class="tile-k">studio · structured</span>
+          <h3>Engage the studio</h3>
+          <p>Websites, software, AI systems — brief, spec, fixed price, weekly increments, full handover.</p>
+          <span class="tile-meta">for founders &amp; teams with a real scope</span>
+        </a>
+        <a class="tile" href="/services" data-reveal>
+          <span class="tile-k">solo · flexible</span>
+          <h3>Hire Owais directly</h3>
+          <p>Smaller, advisory, or one-off freelance work — same bench, one person leading it.</p>
+          <span class="tile-meta">for individuals, startups &amp; researchers</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

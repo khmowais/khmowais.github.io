@@ -1,0 +1,266 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+interface Case {
+  id: string;
+  title: string;
+  code: string;
+  meta: [string, string][];
+  problem: string;
+  architecture?: { label: string; blocks: [string, string][] }[];
+  stack?: string[];
+  decisions?: string[];
+  built: string[];
+  state: string;
+  href?: string;
+}
+
+const cases: Case[] = [
+  {
+    id: "uav-gcs",
+    title: "UAV Ground Control System",
+    code: "W/01",
+    meta: [
+      ["domain", "autonomous systems"],
+      ["role", "AI + GCS software"],
+      ["status", "university lab work"],
+    ],
+    problem:
+      "A university UAV laboratory needed the ground control station to do more than display telemetry — the operator had to make sense of live flight data, spot problems, and respond before the drone made the decision for them.",
+    architecture: [
+      {
+        label: "telemetry flow",
+        blocks: [
+          ["UAV", "flight + sensor stream"],
+          ["GCS ingest", "telemetry capture & decode"],
+          ["AI analysis", "anomaly + decision support"],
+          ["operator UI", "alerted, not flooded"],
+        ],
+      },
+    ],
+    stack: ["Python", "telemetry pipelines", "embedded ↔ software boundary"],
+    decisions: [
+      "Alert, don't flood. Raw telemetry is noise to a human; the layer's job was to convert streams into a single actionable signal.",
+      "Worked inside the existing GCS workflow rather than replacing it — integration beats greenfield in a lab that flies hardware.",
+    ],
+    built: [
+      "Integrated an AI-assisted analysis layer into the ground control workflow",
+      "Turned raw flight telemetry into signals the operator could act on",
+      "Worked across the embedded ↔ software boundary with the flight team",
+    ],
+    state: "Lab work — details live in the lab's repository, on request.",
+  },
+  {
+    id: "cyblytics",
+    title: "Cyblytics Lab",
+    code: "W/02",
+    meta: [
+      ["domain", "AI research"],
+      ["role", "research lead, ~2 years"],
+      ["status", "research group"],
+    ],
+    problem:
+      "A group of research-minded folks wanted applied AI work that outlived the paper cycle — language systems and evaluation artifacts with enough reproducibility to be honest.",
+    architecture: [
+      {
+        label: "research loop",
+        blocks: [
+          ["question", "scoped problem"],
+          ["experiment", "model + eval"],
+          ["artifact", "code + data + writeup"],
+          ["share", "papers & team talks"],
+        ],
+      },
+    ],
+    stack: ["Python", "LLMs", "evaluation tooling"],
+    decisions: [
+      "Reproducibility over demos. Every result ships with the code, data, and eval that produced it — or it doesn't ship.",
+      "Wrote things down. Direction and review ran on written artifacts so a half-finished thought survived holidays.",
+    ],
+    built: [
+      "Led the group's applied AI research — language systems and evaluation",
+      "Built reproducible artifacts (code, data, results) rather than one-off demos",
+      "Ran the team: direction, review, and the discipline of writing things down",
+    ],
+    state: "Ongoing research activity, done at research pace.",
+  },
+  {
+    id: "goshawk",
+    title: "Goshawk Labs",
+    code: "W/03",
+    meta: [
+      ["domain", "engineering studio"],
+      ["role", "founder"],
+      ["status", "current"],
+    ],
+    problem:
+      "Freelance work kept arriving in shapes that deserved a home: websites, custom software, AI systems. Rather than a LinkedIn cave, an explicit studio with a philosophy attached.",
+    architecture: [
+      {
+        label: "engagement",
+        blocks: [
+          ["brief", "problem, not stack"],
+          ["build", "weekly visible increments"],
+          ["deliver", "code + docs + deploy"],
+          ["handover", "you own everything"],
+        ],
+      },
+    ],
+    stack: ["FastAPI", "Astro", "Python", "Linux deployments"],
+    decisions: [
+      "Static-first. Pages that can't be slow, hacked, or knocked over by a cold start.",
+      "Ownership transferred on day one of handover — the client can always leave.",
+    ],
+    built: [
+      "An independent studio for software, websites and AI systems",
+      "A process that fits in three steps: brief → build → handover",
+      "The same opinionated bench as this site, applied to client work",
+    ],
+    state: "Taking on structured and larger engagements.",
+    href: "/goshawk-labs/",
+  },
+  {
+    id: "teaching",
+    title: "Teaching, Workshops & Mentorship",
+    code: "W/04",
+    meta: [
+      ["domain", "education"],
+      ["role", "TA · mentor · instructor"],
+      ["status", "3 terms + ongoing"],
+    ],
+    problem:
+      "AI education in universities leans theory-heavy and hands-off. Students leave with vocabulary they can't operate on real data with. The fix is unglamorous and obvious: more reps, more real work.",
+    architecture: [
+      {
+        label: "session",
+        blocks: [
+          ["context", "where the student is"],
+          ["demo", "a working example"],
+          ["reps", "hands-on build"],
+          ["review", "feedback that sticks"],
+        ],
+      },
+    ],
+    stack: ["Python", "AI/ML", "CyberSecurity"],
+    decisions: [
+      "Reps over lectures. A student who ships one scrappy notebook learns more than one who watched ten slides.",
+      "Teaching at scale is a systems problem — assignments, quizzes, marks, questions — and got run like one.",
+    ],
+    built: [
+      "Teaching assistant for AI courses across three semesters",
+      "AI & programming workshops plus summer bootcamps",
+      "Mentor with CSConnect Pakistan — 5,000+ students reached",
+    ],
+    state: "Available for workshops, bootcamps and 1:1 mentoring.",
+    href: "/services#teaching",
+  },
+];
+---
+
+<BaseLayout
+  title="Work"
+  description="Selected builds — UAV ground control, AI research, an engineering studio, and a lot of teaching. Problem, architecture, decisions, and an honest status for each."
+>
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="kicker" data-reveal>work</p>
+      <h1 data-reveal>The field log, <span class="mark">expanded.</span></h1>
+      <p class="lede" data-reveal>
+        Every entry as an engineering artifact: problem, architecture, the interesting
+        decisions, and what actually shipped. Where numbers would be invented rather than
+        measured, they're left out.
+        <span class="annote">— a log, not a trophy case</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="band" style="padding-top:0">
+    <div class="container">
+      {cases.map((c) => (
+        <article class="case" id={c.id} data-reveal style="padding:2.6rem 0.2rem;border-top:2px solid var(--ink)">
+          <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;align-items:baseline">
+            <div>
+              <span class="mono" style="font-size:0.74rem;letter-spacing:0.1em;color:var(--accent-text);text-transform:uppercase">{c.code} — {c.id}</span>
+              <h2 style="margin-top:0.4rem">{c.title}</h2>
+            </div>
+            <div class="mono" style="font-size:0.78rem;color:var(--muted);display:grid;gap:0.25rem;text-align:right">
+              {c.meta.map(([k, v]) => <span><span style="color:var(--faint)">{k}:</span> {v}</span>)}
+            </div>
+          </div>
+
+          <p class="lead" style="margin-top:1.4rem">{c.problem}</p>
+
+          {c.architecture && c.architecture.map((arc) => (
+            <>
+              <p class="mono" style="font-size:0.72rem;color:var(--faint);text-transform:uppercase;letter-spacing:0.1em;margin:1.8rem 0 0.4rem">{arc.label}</p>
+              <div class="arch">
+                {arc.blocks.map(([b, sub], i) => (
+                  <>
+                    {i > 0 && <span class="flow">→</span>}
+                    <div class="block"><b>{b}</b><span>{sub}</span></div>
+                  </>
+                ))}
+              </div>
+            </>
+          ))}
+
+          {c.stack && (
+            <div style="margin-top:1.4rem">
+              <p class="mono" style="font-size:0.72rem;color:var(--faint);text-transform:uppercase;letter-spacing:0.1em">domain stack</p>
+              <div class="chips" style="margin-top:0.5rem">
+                {c.stack.map((s) => <span class="chip">{s}</span>)}
+              </div>
+            </div>
+          )}
+
+          <div class="grid grid-2" style="margin-top:1.8rem;gap:2rem">
+            <div>
+              <p class="mono" style="font-size:0.72rem;color:var(--faint);text-transform:uppercase;letter-spacing:0.1em">what I built</p>
+              <ul class="prose" style="margin-top:0.6rem">
+                {c.built.map((b) => <li>{b}</li>)}
+              </ul>
+            </div>
+            <div>
+              {c.decisions && (
+                <>
+                  <p class="mono" style="font-size:0.72rem;color:var(--faint);text-transform:uppercase;letter-spacing:0.1em">engineering decisions</p>
+                  <ul class="prose" style="margin-top:0.6rem">
+                    {c.decisions.map((d) => <li>{d}</li>)}
+                  </ul>
+                </>
+              )}
+              <p class="mono" style="font-size:0.72rem;color:var(--faint);text-transform:uppercase;letter-spacing:0.1em;margin-top:1.2rem">status</p>
+              <p class="muted" style="margin-top:0.6rem;font-size:0.95rem">
+                {c.state}
+                {c.href && <> <a href={c.href} style="color:var(--accent-text)">↗</a></>}
+              </p>
+            </div>
+          </div>
+        </article>
+      ))}
+
+      <aside class="card" style="margin-top:2.5rem" data-reveal>
+        <span class="card-k">the fine print</span>
+        <h3>Most client work has an NDA attached.</h3>
+        <p class="mb-0">
+          That's true for direct freelance and studio work alike. What's listed here is what
+          can be talked about in public — the rest gets walked through on a call.
+          <a href="/goshawk-labs/work" style="color:var(--accent-text)"> Goshawk Labs' selected work →</a>
+        </p>
+      </aside>
+
+      <div class="card cta-box" data-reveal>
+        <span class="cb-k">the next entry could be yours</span>
+        <h3>Yours, as problem + architecture + build.</h3>
+        <p>
+          A project like the ones above, written up the same way — and done before that.
+          Fixed scope, fixed price, owned by you.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/hire">Work with me <span class="arr">↗</span></a>
+          <a class="btn btn-ghost" href="/services">Read the catalog</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

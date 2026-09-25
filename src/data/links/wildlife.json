@@ -1,0 +1,526 @@
+[
+  {
+    "title": "All About Birds",
+    "url": "https://www.allaboutbirds.org/",
+    "description": "Cornell's standard species encyclopedia — range maps, vocalizations, life history.",
+    "tags": [
+      "birds",
+      "reference",
+      "identification"
+    ],
+    "type": "guide",
+    "subcategory": "reference"
+  },
+  {
+    "title": "All About Birds — Northern Goshawk",
+    "url": "https://www.allaboutbirds.org/guide/Northern_Goshawk/",
+    "description": "The Cornell species page for the northern goshawk: ID, habitat, behavior, sounds.",
+    "tags": [
+      "goshawk",
+      "reference",
+      "identification"
+    ],
+    "type": "guide",
+    "subcategory": "goshawk"
+  },
+  {
+    "title": "Animal Diversity Web",
+    "url": "https://animaldiversity.org/",
+    "description": "University of Michigan's species encyclopedia with trait and behavior write-ups.",
+    "tags": [
+      "reference",
+      "species"
+    ],
+    "type": "docs",
+    "subcategory": "reference"
+  },
+  {
+    "title": "Astola Island — Pakistan's Offshore Haven",
+    "url": "https://en.wikipedia.org/wiki/Astola_Island",
+    "description": "Pakistan's largest offshore island and a critical nesting site for turtles and seabirds in the Arabian Sea.",
+    "tags": [
+      "pakistan",
+      "island",
+      "marine"
+    ],
+    "type": "archive",
+    "subcategory": "pakistan"
+  },
+  {
+    "title": "Audubon Field Guide",
+    "url": "https://www.audubon.org/",
+    "description": "National Audubon's field-guide content and conservation work.",
+    "tags": [
+      "birds",
+      "conservation"
+    ],
+    "type": "org",
+    "subcategory": "reference"
+  },
+  {
+    "title": "BirdLife International",
+    "url": "https://www.birdlife.org/",
+    "description": "The global partnership of bird conservation NGOs — Red List assessments and Important Bird Areas.",
+    "tags": [
+      "birds",
+      "conservation",
+      "global"
+    ],
+    "type": "org",
+    "subcategory": "org"
+  },
+  {
+    "title": "Birds of the World",
+    "url": "https://birdsoftheworld.org/",
+    "description": "The definitive curated species accounts (paywalled, but the flagship of ornithological reference).",
+    "tags": [
+      "birds",
+      "reference"
+    ],
+    "type": "tool",
+    "subcategory": "reference"
+  },
+  {
+    "title": "Chitral National Park",
+    "url": "https://en.wikipedia.org/wiki/Chitral_National_Park",
+    "description": "Home to markhor, snow leopards, Tibetan wolves and the rare western tragopan — one of Pakistan's most biodiverse corners.",
+    "tags": [
+      "pakistan",
+      "national-park",
+      "biodiversity"
+    ],
+    "type": "archive",
+    "subcategory": "pakistan"
+  },
+  {
+    "title": "CITES",
+    "url": "https://cites.org/",
+    "description": "The treaty regulating international trade in species — including all the falcons and hawks.",
+    "tags": [
+      "conservation",
+      "treaty"
+    ],
+    "type": "org",
+    "subcategory": "conservation"
+  },
+  {
+    "title": "Cornell Bird Cams",
+    "url": "https://www.allaboutbirds.org/cams/",
+    "description": "Live camera nests — birds doing bird things, streamed year-round from the Cornell Lab.",
+    "tags": [
+      "webcam",
+      "birds",
+      "live"
+    ],
+    "type": "video",
+    "subcategory": "reference"
+  },
+  {
+    "title": "Dachigam National Park",
+    "url": "https://en.wikipedia.org/wiki/Dachigam_National_Park",
+    "description": "The lifeline of the hangul deer — also black bears, leopards and 150+ bird species in the Kashmir valley.",
+    "tags": [
+      "kashmir",
+      "national-park",
+      "hangul"
+    ],
+    "type": "archive",
+    "subcategory": "pakistan"
+  },
+  {
+    "title": "eBird",
+    "url": "https://ebird.org/",
+    "description": "Cornell's citizen-science bird checklist platform — occurrence data that powers modern ornithology.",
+    "tags": [
+      "birds",
+      "data",
+      "citizen-science"
+    ],
+    "type": "tool",
+    "subcategory": "data"
+  },
+  {
+    "title": "eBird species map — Northern Goshawk",
+    "url": "https://ebird.org/species/norgos",
+    "description": "Live checklist and distribution data for Accipiter gentilis, from the Cornell database.",
+    "tags": [
+      "goshawk",
+      "data"
+    ],
+    "type": "tool",
+    "subcategory": "goshawk"
+  },
+  {
+    "title": "Falconry in the Valley of the Indus",
+    "url": "https://archive.org/details/falconryinvalley00burt",
+    "description": "Sir Richard Burton's account of hawking the Indus while a young officer in the East India Company — the volume that sent this archive's falconry shelf running. Scanned, searchable, mine for a shirt-flap of primary detail.",
+    "tags": [
+      "book",
+      "falconry",
+      "burton",
+      "primary-source"
+    ],
+    "type": "book",
+    "subcategory": "falconry",
+    "year": 1852,
+    "source": "Internet Archive"
+  },
+  {
+    "title": "GBIF",
+    "url": "https://www.gbif.org/",
+    "description": "The global biodiversity information facility — species occurrence data at planetary scale.",
+    "tags": [
+      "biodiversity",
+      "data"
+    ],
+    "type": "org",
+    "subcategory": "data"
+  },
+  {
+    "title": "Hangul — Kashmir's Critically Endangered Red Deer",
+    "url": "https://en.wikipedia.org/wiki/Kashmir_stag",
+    "description": "The hangul (Kashmir stag), the only surviving red-deer subspecies in South Asia, holds on in Dachigam National Park.",
+    "tags": [
+      "hangul",
+      "kashmir",
+      "endangered"
+    ],
+    "type": "archive",
+    "subcategory": "pakistan"
+  },
+  {
+    "title": "HawkWatch International",
+    "url": "https://www.hawkwatch.org/",
+    "description": "Raptor migration counts and research across the flyways — their migration dashboards are an addiction.",
+    "tags": [
+      "raptors",
+      "migration",
+      "org"
+    ],
+    "type": "org",
+    "subcategory": "raptors"
+  },
+  {
+    "title": "Himalayan Brown Bear of Deosai Plains",
+    "url": "https://en.wikipedia.org/wiki/Himalayan_brown_bear",
+    "description": "The Deosai National Park in Gilgit-Baltistan protects one of the last high-altitude strongholds of the Himalayan brown bear.",
+    "tags": [
+      "brown-bear",
+      "gilgit-baltistan",
+      "pakistan"
+    ],
+    "type": "archive",
+    "subcategory": "pakistan"
+  },
+  {
+    "title": "Himalayan Monal — Danphe",
+    "url": "https://en.wikipedia.org/wiki/Himalayan_monal",
+    "description": "The iridescent monal found across the Himalayas including Azad Kashmir — among the most striking birds on earth.",
+    "tags": [
+      "monal",
+      "himalayas",
+      "kashmir"
+    ],
+    "type": "archive",
+    "subcategory": "pakistan"
+  },
+  {
+    "title": "Himalayan Musk Deer",
+    "url": "https://en.wikipedia.org/wiki/Himalayan_musk_deer",
+    "description": "The elusive musk deer hunted for its gland — critically endangered across the high Kashmir and Pakistan ranges.",
+    "tags": [
+      "musk-deer",
+      "pakistan",
+      "endangered"
+    ],
+    "type": "archive",
+    "subcategory": "pakistan"
+  },
+  {
+    "title": "iNaturalist",
+    "url": "https://www.inaturalist.org/",
+    "description": "Observation platform for every taxon, where a blurry raptor from your phone can get an expert ID.",
+    "tags": [
+      "biodiversity",
+      "observations",
+      "community"
+    ],
+    "type": "tool",
+    "subcategory": "data"
+  },
+  {
+    "title": "Indus River Dolphin",
+    "url": "https://en.wikipedia.org/wiki/Indus_river_dolphin",
+    "description": "One of the world's rarest mammals — the blind Indus river dolphin, fewer than 2,000 left in the Indus system.",
+    "tags": [
+      "dolphin",
+      "indus",
+      "endangered"
+    ],
+    "type": "archive",
+    "subcategory": "pakistan"
+  },
+  {
+    "title": "International Association for Falconry",
+    "url": "https://en.wikipedia.org/wiki/Falconry",
+    "description": "The federation of national falconry associations, an UNESCO-recognized traditional craft — see 'Falconry' for the wider history.",
+    "tags": [
+      "falconry",
+      "international",
+      "wiki"
+    ],
+    "type": "archive",
+    "subcategory": "falconry"
+  },
+  {
+    "title": "IUCN Pakistan",
+    "url": "https://iucnp.org/",
+    "description": "The Pakistan country office of the IUCN — Red List work and conservation policy for AJK and Gilgit-Baltistan.",
+    "tags": [
+      "pakistan",
+      "conservation",
+      "org"
+    ],
+    "type": "org",
+    "subcategory": "pakistan"
+  },
+  {
+    "title": "IUCN Red List",
+    "url": "https://www.iucnredlist.org/",
+    "description": "The global extinction-risk database — look up the conservation status of any goshawk, snow leopard, or shisham.",
+    "tags": [
+      "conservation",
+      "status",
+      "data"
+    ],
+    "type": "tool",
+    "subcategory": "data"
+  },
+  {
+    "title": "Looking for the Goshawk",
+    "url": "https://archive.org/details/lookingforgoshaw0000jame",
+    "description": "Conor Jameson's modern search for the northern goshawk across Britain — a field book that reads like a detective story.",
+    "tags": [
+      "book",
+      "goshawk",
+      "conservation"
+    ],
+    "type": "book",
+    "subcategory": "goshawk",
+    "source": "Internet Archive"
+  },
+  {
+    "title": "Macaulay Library",
+    "url": "https://www.macaulaylibrary.org/",
+    "description": "Cornell's archive of photos, sound and video — the world's largest media collection of birds.",
+    "tags": [
+      "birds",
+      "media",
+      "archive"
+    ],
+    "type": "tool",
+    "subcategory": "reference"
+  },
+  {
+    "title": "North American Falconers' Association (NAFA)",
+    "url": "https://www.n-a-f-a.com/",
+    "description": "The US/Canada falconry organization — apprentice mentoring, meets, and legal advocacy for the sport.",
+    "tags": [
+      "falconry",
+      "org",
+      "license"
+    ],
+    "type": "org",
+    "subcategory": "falconry"
+  },
+  {
+    "title": "Pakistan's Ramsar Wetland Sites",
+    "url": "https://en.wikipedia.org/wiki/List_of_Ramsar_sites_in_Pakistan",
+    "description": "The 19 Ramsar sites — critical staging and wintering habitat for birds migrating from Siberia to Africa.",
+    "tags": [
+      "wetlands",
+      "pakistan",
+      "migration"
+    ],
+    "type": "archive",
+    "subcategory": "pakistan"
+  },
+  {
+    "title": "Raptor Research Foundation",
+    "url": "https://raptorresearchfoundation.org/",
+    "description": "The scientific society for raptor researchers and the publishers of the Journal of Raptor Research.",
+    "tags": [
+      "raptors",
+      "science",
+      "org"
+    ],
+    "type": "org",
+    "subcategory": "raptors"
+  },
+  {
+    "title": "Raptor Resource Project",
+    "url": "https://www.raptorresource.org/",
+    "description": "The falcon-cam project full of nesting cams and restoration programs.",
+    "tags": [
+      "raptors",
+      "webcam",
+      "org"
+    ],
+    "type": "org",
+    "subcategory": "raptors"
+  },
+  {
+    "title": "RSPB",
+    "url": "https://www.rspb.org.uk/",
+    "description": "The UK's bird conservation charity — reserve guides and species info.",
+    "tags": [
+      "birds",
+      "conservation",
+      "org"
+    ],
+    "type": "org",
+    "subcategory": "org"
+  },
+  {
+    "title": "Serengeti Live Cam",
+    "url": "https://www.explore.org/livecams/serengeti/serengeti-live-cam",
+    "description": "Live cameras over the Serengeti — lions, elephants and the greatest show on earth, streamed.",
+    "tags": [
+      "live-cam",
+      "africa",
+      "safari"
+    ],
+    "type": "video",
+    "subcategory": "reference"
+  },
+  {
+    "title": "Snow Leopard Trust",
+    "url": "https://snowleopard.org/",
+    "description": "The main snow leopard science and community-conservation org across the Himalayas including Pakistan.",
+    "tags": [
+      "snow-leopard",
+      "himalaya",
+      "org"
+    ],
+    "type": "org",
+    "subcategory": "pakistan"
+  },
+  {
+    "title": "SORA — Searchable Ornithological Research Archive",
+    "url": "https://sora.unm.edu/",
+    "description": "Free digital archive of ornithological journals — Auk, Condor, Wilson Bulletin and others, fully searchable.",
+    "tags": [
+      "birds",
+      "journals",
+      "archive"
+    ],
+    "type": "archive",
+    "subcategory": "data"
+  },
+  {
+    "title": "Thar & Cholistan — Desert Wildlife",
+    "url": "https://en.wikipedia.org/wiki/Thar_Desert",
+    "description": "Chinkara gazelle, desert foxes and bustards — the surprising biodiversity of Pakistan's sand seas.",
+    "tags": [
+      "desert",
+      "pakistan",
+      "thar"
+    ],
+    "type": "archive",
+    "subcategory": "pakistan"
+  },
+  {
+    "title": "The British Falconers' Club",
+    "url": "https://www.britishfalconersclub.co.uk/",
+    "description": "The UK's flagship falconry club, running since 1927.",
+    "tags": [
+      "falconry",
+      "org"
+    ],
+    "type": "org",
+    "subcategory": "falconry"
+  },
+  {
+    "title": "The Markhor — Pakistan's National Animal",
+    "url": "https://en.wikipedia.org/wiki/Markhor",
+    "description": "The magnificent spiral-horned markhor of Pakistan's north — a conservation success story, endangered to vulnerable.",
+    "tags": [
+      "markhor",
+      "pakistan",
+      "conservation"
+    ],
+    "type": "archive",
+    "subcategory": "pakistan"
+  },
+  {
+    "title": "The Natural History of Selborne",
+    "url": "https://archive.org/details/naturalhistoryof0000gilb_l8y9",
+    "description": "Gilbert White's 1789 letters on the natural history of his parish — the book that quietly invented ecological natural-history writing.",
+    "tags": [
+      "book",
+      "naturalist",
+      "classic"
+    ],
+    "type": "book",
+    "subcategory": "nature-writing",
+    "source": "Internet Archive"
+  },
+  {
+    "title": "The Northern Goshawk (species text)",
+    "url": "https://en.wikipedia.org/wiki/Northern_goshawk",
+    "description": "The accessible species page — taxonomy, range, hunting behavior and the goshawk's role in falconry.",
+    "tags": [
+      "goshawk",
+      "wiki"
+    ],
+    "type": "archive",
+    "subcategory": "goshawk"
+  },
+  {
+    "title": "The Peregrine Fund",
+    "url": "https://peregrinefund.org/",
+    "description": "The raptor conservation nonprofit — from the peregrine recovery to today's global raptor programs.",
+    "tags": [
+      "raptors",
+      "conservation",
+      "org"
+    ],
+    "type": "org",
+    "subcategory": "raptors"
+  },
+  {
+    "title": "Tibetan Wolf",
+    "url": "https://en.wikipedia.org/wiki/Tibetan_wolf",
+    "description": "The key predator of Pakistan's northern alpine ecosystem.",
+    "tags": [
+      "wolf",
+      "himalayas",
+      "predator"
+    ],
+    "type": "archive",
+    "subcategory": "pakistan"
+  },
+  {
+    "title": "US Fish & Wildlife Service",
+    "url": "https://www.fws.gov/",
+    "description": "Federal wildlife agency; the falconry regulations page and migratory bird oversight are the legal reference here.",
+    "tags": [
+      "falconry",
+      "regulation",
+      "org"
+    ],
+    "type": "org",
+    "subcategory": "falconry"
+  },
+  {
+    "title": "WWF Pakistan",
+    "url": "https://www.wwfpak.org/",
+    "description": "WWF's Pakistan program — the country's key conservation datasets (snow leopard, markhor campaigns).",
+    "tags": [
+      "pakistan",
+      "conservation"
+    ],
+    "type": "org",
+    "subcategory": "pakistan"
+  }
+]

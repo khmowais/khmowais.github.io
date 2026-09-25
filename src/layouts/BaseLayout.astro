@@ -1,0 +1,187 @@
+---
+import { SITE, GOSHAWK, SOCIALS } from "../config";
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  theme?: "personal" | "goshawk";
+  goshawk?: boolean;
+  ogType?: "website" | "article";
+  showProgress?: boolean;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  theme = "personal",
+  goshawk = theme === "goshawk",
+  ogType = "website",
+  showProgress = false,
+} = Astro.props;
+
+const branding = goshawk ? GOSHAWK : SITE;
+const wordmark = goshawk ? "GOSHawk_//labs" : "Khawaja Owais";
+const pageTitle = title
+  ? `${title} — ${goshawk ? GOSHAWK.name : SITE.name}`
+  : `${goshawk ? GOSHAWK.name : SITE.name} / ${goshawk ? GOSHAWK.description : SITE.description}`;
+const pageDesc = description ?? branding.description;
+const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE.url).href;
+const navLinks = goshawk
+  ? [
+      { href: GOSHAWK.basePath + "/", label: "Home", n: "01" },
+      { href: GOSHAWK.basePath + "/services", label: "Services", n: "02" },
+      { href: GOSHAWK.basePath + "/work", label: "Work", n: "03" },
+      { href: GOSHAWK.basePath + "/process", label: "Process", n: "04" },
+      { href: GOSHAWK.basePath + "/insights", label: "Insights", n: "05" },
+      { href: GOSHAWK.basePath + "/about", label: "About", n: "06" },
+    ]
+  : [
+      { href: "/", label: "Home", n: "01" },
+      { href: "/about", label: "About", n: "02" },
+      { href: "/projects", label: "Work", n: "03" },
+      { href: "/services", label: "Services", n: "04" },
+      { href: "/blog", label: "Writing", n: "05" },
+      { href: "/links", label: "Links", n: "06" },
+      { href: "/contact", label: "Contact", n: "07" },
+    ];
+
+const cta = goshawk
+  ? { href: GOSHAWK.basePath + "/contact", label: "Start a project" }
+  : { href: "/hire", label: "Hire me" };
+const ctaEmail = goshawk ? "owais.a.khawaja@gmail.com" : SOCIALS.email;
+---
+
+<!doctype html>
+<html lang={SITE.locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDesc} />
+    <meta name="author" content={SITE.author} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta name="color-scheme" content={goshawk ? "dark" : "light"} />
+    <meta name="generator" content={Astro.generator} />
+
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDesc} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content={goshawk ? GOSHAWK.name : SITE.name} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDesc} />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..900;1,400..900&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <script is:inline>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body data-theme={goshawk ? "goshawk" : "personal"}>
+    <script>
+      import "../scripts/app.ts";
+    </script>
+    {showProgress && (
+      <div class="progress-track" aria-hidden="true"><div class="bar"></div></div>
+    )}
+
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav" aria-label="Primary">
+          <a class="brand" href={goshawk ? GOSHAWK.basePath + "/" : "/"}>
+            <span class="marker" aria-hidden="true"></span>
+            <span>{wordmark}</span>
+          </a>
+          <div class="nav-links" id="nav-links">
+            {navLinks.map((l) => (
+              <a href={l.href}>
+                {l.n} {l.label}
+              </a>
+            ))}
+            <a class="nav-cta" href={cta.href}>{cta.label} <span class="arr">↗</span></a>
+          </div>
+          <div class="nav-status">
+            {goshawk ? (
+              <><span class="dot" aria-hidden="true"></span> studio</>
+            ) : (
+              <><span class="dot" aria-hidden="true"></span> open for work</>
+            )}
+          </div>
+          <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" type="button">
+            ≡
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div>
+            <span class="brand" style="color:var(--ink)">
+              <span class="marker" aria-hidden="true"></span>
+              <span>{wordmark}</span>
+            </span>
+            <p class="mt-0" style="max-width:34ch">
+              {goshawk
+                ? "An independent engineering studio. Software, websites and AI systems built simple, fast and to last."
+                : "AI engineer, systems builder, amateur radio operator. I write about AI systems and the machines around us."}
+            </p>
+            <a class="btn btn-primary" style="padding:0.6em 1.1em;font-size:0.88rem" href={cta.href}>
+              {cta.label} <span class="arr">↗</span>
+            </a>
+            <p style="margin-top:1.1rem;font-size:0.9rem">
+              or email directly —{" "}
+              <a class="mono" style="text-decoration:none;color:var(--accent-text)" href={`mailto:${ctaEmail}`}>{ctaEmail}</a>
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Index</h4>
+            <ul>
+              {navLinks.map((l) => (
+                <li><a href={l.href}>{l.label}</a></li>
+              ))}
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Elsewhere</h4>
+            <ul>
+              <li><a href={SOCIALS.github} rel="me">GitHub</a></li>
+              <li><a href={SOCIALS.linkedin} rel="me">LinkedIn</a></li>
+              <li><a href="/blog/rss.xml">RSS feed</a></li>
+              {goshawk ? (
+                <li><a href="/">The solo bench</a></li>
+              ) : (
+                <>
+                  <li><a href="/goshawk-labs/">Goshawk Labs</a></li>
+                  <li><a href="/links">Links & shelf</a></li>
+                  <li><a href="/linktree">Linktree</a></li>
+                  <li><a href="/footprint">Footprint test</a></li>
+                  <li><a href="/contact">Contact</a></li>
+                </>
+              )}
+            </ul>
+          </div>
+        </div>
+        <div class="ghost-wordmark" aria-hidden="true">{goshawk ? "goshawk" : "Kh Owais"}</div>
+        <div class="footer-bottom container" style="padding:1.4rem 1.6rem">
+          <span>© {new Date().getFullYear()} {goshawk ? GOSHAWK.name : SITE.name}</span>
+          <span>hand-built · static · no trackers</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

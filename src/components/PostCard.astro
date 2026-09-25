@@ -1,0 +1,24 @@
+---
+import { formatDate } from "../lib/posts";
+
+interface Props {
+  title: string;
+  description: string;
+  date: Date;
+  tags?: string[];
+  href: string;
+  minutes?: number;
+  index?: string;
+}
+
+const { title, date, tags = [], href, minutes, index } = Astro.props;
+---
+
+<a class="logrow" href={href}>
+  <span class="log-date">{formatDate(date)}{minutes ? ` · ${minutes} min` : ""}</span>
+  <span class="log-title">
+    {title}
+    {index && <span class="serif">{index}</span>}
+  </span>
+  <span class="log-tag">{tags[0] ?? "note"}</span>
+</a>

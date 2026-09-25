@@ -1,0 +1,173 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { serviceGroups, packages, freelanceNote } from "../data/services";
+import { SOCIALS } from "../config";
+
+const totalCapabilities = serviceGroups.reduce((n, g) => n + g.items.length, 0);
+const thePriors = [
+  ["“Is AI actually the right tool?”,", "I will tell you the truth in the first call."],
+  ["“How do I know it works?”", "Everything ships with an eval or a test."],
+  ["“Who owns the result?”", "You. Code, data, docs, exit ramp included."],
+  ["“What does it cost?”", "A fixed scope and a fixed price before I start."],
+];
+---
+
+<BaseLayout
+  title="Services"
+  description={`Freelance AI & LLM engineering, data science, software, automation and mentoring — ${totalCapabilities} capabilities across 5 groups, plus 8 engagement packages.`}
+>
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="kicker" data-reveal>services</p>
+      <h1 data-reveal>
+        What I can <span class="mark">actually build</span> for you.
+      </h1>
+      <p class="lede" data-reveal>
+        {totalCapabilities} capabilities, 5 groups, 8 packages. Nothing here is a
+        keyword list — these are things I've shipped or can ship on my own bench.
+        Priced per project, owned by you.
+        <span class="annote">— read the catalog like a spec sheet</span>
+      </p>
+      <div class="statline" data-reveal>
+        <span><b>{serviceGroups.length}</b> capability groups</span>
+        <span><b>{totalCapabilities}</b> capabilities</span>
+        <span><b>{packages.length}</b> engagement packages</span>
+      </div>
+      <div class="btn-row" data-reveal style="margin-top:2rem">
+        <a class="btn btn-primary" href="/hire">Work with me <span class="arr">↗</span></a>
+        <a class="btn btn-ghost" href={`mailto:${SOCIALS.email}?subject=Project%20inquiry`}>Discuss a project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- capability catalog -->
+  <section class="band band--step">
+    <div class="container">
+      <p class="kicker" data-reveal>catalog — 01</p>
+      <h2 data-reveal>Capabilities, grouped like modules.</h2>
+
+      <div class="svc-tabs" data-reveal role="group" aria-label="Filter by group">
+        <button class="pill" data-group="all" aria-current="true" type="button">all</button>
+        {serviceGroups.map((g) => (
+          <button class="pill" data-group={g.id} type="button">{g.code} {g.title}</button>
+        ))}
+      </div>
+
+      {serviceGroups.map((g) => (
+        <section class="svc-group" id={g.id} data-group-body={g.id} data-reveal>
+          <div class="spec-item" style="grid-template-columns:88px minmax(0,1fr);border-top:2px solid var(--ink)">
+            <span class="spec-k">{g.code}</span>
+            <div class="spec-v">
+              <h3 style="font-size:1.6rem">
+                {g.title}
+                <a
+                  class="mono"
+                  style="font-size:0.72rem;vertical-align:middle;margin-left:0.8rem;color:var(--accent-text);text-decoration:none;border-bottom:1px dashed var(--line-strong)"
+                  href={`mailto:${SOCIALS.email}?subject=${encodeURIComponent(g.title + " project inquiry")}&body=${encodeURIComponent("Hi Owais,\n\nI'd like to talk about a " + g.title.toLowerCase() + " project.\n\n")}`}
+                >
+                  hire me for this ↗
+                </a>
+              </h3>
+              <p>{g.blurb}</p>
+              <span class="annote">{g.annote}</span>
+              <span class="cnt" style="font-family:var(--font-mono);font-size:0.74rem;color:var(--muted)">{g.items.length} capabilities</span>
+            </div>
+          </div>
+          <div class="svc-list">
+            {g.items.map((c) => (
+              <div class="svc-item" data-svc={g.id}>
+                <div class="t">{c.t}</div>
+                <p>{c.d}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      ))}
+
+      <p class="mono" style="color:var(--muted);font-size:0.78rem;margin-top:2rem" data-reveal>
+        Crossword note: some capabilities overlap groups on purpose — an RAG system sits
+        between AI and data, and it should.
+      </p>
+    </div>
+  </section>
+
+  <!-- packages -->
+  <section class="band">
+    <div class="container">
+      <p class="kicker" data-reveal>catalog — 02</p>
+      <h2 data-reveal>Engagement packages.</h2>
+      <p class="lead" data-reveal>
+        If you have “a problem” rather than “a tech stack”, start from a package.
+        Scope, deliverables, ideal use, and rough shape — <span class="annote">fixed price after a scoping call, never before.</span>
+      </p>
+
+      <div class="grid grid-2" style="margin-top:2.4rem">
+        {packages.map((pkg) => (
+          <article class="pkg" data-reveal>
+            <span class="pkg-k">{pkg.code}</span>
+            <h3>{pkg.title}</h3>
+            <div class="pkg-for">← ideal for: {pkg.ideal}</div>
+            <div class="pkg-rows">
+              <b>scope</b>
+              {pkg.scope.map((s) => <span class="r">· {s}</span>)}
+              <b>deliverables</b>
+              {pkg.deliverables.map((d) => <span class="r">· {d}</span>)}
+            </div>
+            <span class="pkg-shape">{pkg.shape}</span>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- which one -->
+  <section class="band band--ink">
+    <div class="container" style="max-width:860px">
+      <p class="kicker" data-reveal>catalog — 03</p>
+      <h2 data-reveal>“Which one do I actually need?”</h2>
+      <div style="margin-top:2rem">
+        {thePriors.map(([q, a], i) => (
+          <div class="belief" data-reveal style="grid-template-columns:44px minmax(0,1fr)">
+            <span class="num">{"0" + (i + 1)}</span>
+            <div>
+              <h3 style="font-size:1.35rem">{q} <span class="serif band-mark">{a}</span></h3>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- final cta -->
+  <section class="band">
+    <div class="container" style="max-width:860px;text-align:left">
+      <div class="card cta-box">
+        <span class="cb-k">ready when you are</span>
+        <h3>One of these is your project.</h3>
+        <p>
+          Tell me what you're trying to build and I'll reply with a shape, a ballpark, and
+          a decision — within a day.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/hire">Work with me <span class="arr">↗</span></a>
+          <a class="btn btn-ghost" href={`mailto:${SOCIALS.email}?subject=Project%20inquiry`}>Email me directly</a>
+        </div>
+      </div>
+      <p class="mono muted" style="font-size:0.8rem;margin-top:1.6rem" data-reveal>{freelanceNote}</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  const buttons = document.querySelectorAll(".svc-tabs .pill");
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const group = btn.dataset.group;
+      buttons.forEach((b) => b.removeAttribute("aria-current"));
+      btn.setAttribute("aria-current", "true");
+      document.querySelectorAll("[data-group-body]").forEach((sec) => {
+        sec.classList.toggle("hidden-svc", group !== "all" && sec.dataset.groupBody !== group);
+      });
+    });
+  });
+</script>

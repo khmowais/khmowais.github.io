@@ -1,0 +1,120 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Digital Footprint"
+  description="An experimental digital footprint diagnostic — see what your browser reveals about you."
+>
+  <div class="container" style="padding-top:4rem;max-width:820px">
+    <header class="post-header">
+      <p class="eyebrow mono muted">/footprint</p>
+      <h1>Your browser leaves a trail.</h1>
+      <p class="muted" style="max-width:56ch">
+        This is an <strong>experimental diagnostic</strong>. It runs entirely in your browser and
+        shows you a slice of the fingerprint that websites silently collect — so you know what
+        you're giving away.
+      </p>
+    </header>
+
+    <div class="prose" id="fp-root">
+      <p class="muted">Reading your browser…</p>
+    </div>
+
+    <script is:inline>
+      function platformFromUA() {
+        const ua = navigator.userAgent;
+        const hits = ["Windows NT", "Android", "iPhone", "iPad", "Mac OS X", "X11; Linux", "Linux"].filter((x) => ua.includes(x));
+        return hits[0] ? hits[0].replace("NT", "").trim() : "unknown";
+      }
+      const rows = [
+        ["User agent", navigator.userAgent],
+        ["Language", navigator.language + (navigator.languages?.length ? " (+" + (navigator.languages.length - 1) + " more)" : "")],
+        ["Platform", `${platformFromUA()} · ${navigator.oscpu ?? "inferred from UA"}`],
+        ["Hardware concurrency", `${navigator.hardwareConcurrency ?? "?"} cores`],
+        ["Device memory", navigator.deviceMemory ? `${navigator.deviceMemory} GB` : "not exposed"],
+        ["Online", navigator.onLine ? "yes" : "no"],
+        ["Touch points", navigator.maxTouchPoints ?? "?"],
+        [
+          "Time zone",
+          Intl.DateTimeFormat().resolvedOptions().timeZone + " (UTC" + (new Date().getTimezoneOffset() / -60) + "h shift)",
+        ],
+        ["Screen", `${screen.width}×${screen.height} @ ${screen.colorDepth}-bit color`],
+        ["Window", `${window.innerWidth}×${window.innerHeight} (DPR ${window.devicePixelRatio ?? 1})`],
+        ["WebGL renderer", detectWebGL()],
+        ["Canvas hash", computeCanvasHash("6a6b" + navigator.language.charCodeAt(1))],
+        ["Fonts", detectFonts()],
+        ["TLS / DOH", "via browser — check your own settings today"],
+      ];
+      const root = document.getElementById("fp-root");
+      if (root) {
+        root.innerHTML =
+          "<table class='fp-table'><thead><tr><th>Signal</th><th>Value</th></tr></thead><tbody>" +
+          rows.map(([k, v]) => `<tr><td>${escapeHtml(k)}</td><td style="font-family:var(--font-mono);font-size:0.85rem">${escapeHtml(v)}</td></tr>`).join("") +
+          "</tbody></table>";
+      }
+
+      function escapeHtml(s) {
+        return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+      }
+      function computeCanvasHash(seed) {
+        try {
+          const c = document.createElement("canvas");
+          const ctx = c.getContext("2d");
+          ctx.textBaseline = "top";
+          ctx.font = "14px Arial";
+          ctx.fillStyle = "#f60";
+          ctx.fillRect(0, 0, 128, 40);
+          ctx.fillStyle = "#fff";
+          ctx.fillText(seed, 2, 2);
+          return fnv1a(c.toDataURL());
+        } catch (e) {
+          return "blocked";
+        }
+      }
+      function fnv1a(str) {
+        let h = 0x811c9dc5;
+        for (let i = 0; i < str.length; i++) {
+          h ^= str.charCodeAt(i);
+          h = (h * 0x01000193) >>> 0;
+        }
+        return ("0000000" + h.toString(16)).slice(-8);
+      }
+      function detectFonts() {
+        const test = "mmmmmmmmmmlli";
+        const div = document.createElement("div");
+        div.style = `position:absolute;left:-9999px;visibility:hidden;font-family:monospace;font-size:72px`;
+        div.textContent = test;
+        document.body.appendChild(div);
+        const baseW = div.getBoundingClientRect().width;
+        const found = [];
+        ["Inter", "Space Grotesk", "JetBrains Mono", "Georgia", "Times New Roman", "Arial"].forEach((f) => {
+          div.style.fontFamily = `"${f}", monospace`;
+          if (div.getBoundingClientRect().width !== baseW) found.push(f);
+        });
+        document.body.removeChild(div);
+        return found.length ? found.join(", ") : "standard set only";
+      }
+      function detectWebGL() {
+        try {
+          const gl = document.createElement("canvas").getContext("webgl");
+          if (!gl) return "not available";
+          const info = gl.getExtension("WEBGL_debug_renderer_info");
+          return info ? gl.getParameter(info.UNMASKED_RENDERER_WEBGL) : "undisclosed";
+        } catch (e) {
+          return "blocked";
+        }
+      }
+    </script>
+
+    <aside class="card" style="margin-top:2rem">
+      <h3 class="mt-0">Why this matters</h3>
+      <p class="mb-0" style="font-size:0.95rem">
+        Combine a handful of these signals and a user becomes trackable across sites with no
+        cookies at all. That's called <strong>device fingerprinting</strong>. This page is privacy-respecting
+        itself — no data leaves your browser — but it shows exactly how much a single page can
+        learn about you. (See: the <a href="/links">links</a> section for further reading.)
+      </p>
+    </aside>
+  </div>
+</BaseLayout>

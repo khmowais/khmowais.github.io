@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { GOSHAWK } from "../../config";
+
+const briefGuide = [
+  "What problem are you solving? (one paragraph beats a feature list)",
+  "Who uses it, and how often?",
+  "What does done look like to you — what would you point at?",
+  "When does it need to ship?",
+];
+---
+
+<BaseLayout goshawk title="Contact" description="Start a project with Goshawk Labs — free scoping call, honest advice, no pressure.">
+  <section class="hero">
+    <div class="container hero-inner" style="max-width:920px">
+      <p class="kicker" data-reveal>06 — contact</p>
+      <h1 data-reveal>Tell us the <span class="mark">problem,</span> not the solution.</h1>
+      <p class="lede" data-reveal>
+        Email us two sentences and we'll reply within one business day with a clear next
+        step — even when the honest next step is “you don't need us.”
+        <span class="annote">— scoping call: 30 minutes, free, non-salesy</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="band band--step" style="padding-top:0">
+    <div class="container" style="max-width:920px">
+      <div class="duotile">
+        <a class="card" href="mailto:owais.a.khawaja@gmail.com" data-reveal>
+          <span class="card-k">inbox</span>
+          <h3>owais.a.khawaja@gmail.com</h3>
+          <p style="color:var(--muted);font-size:0.95rem">
+            For briefs, questions and referrals. Reply within one business day — usually hours.
+          </p>
+        </a>
+        <a class="card" href={GOSHAWK.basePath + "/process"} data-reveal>
+          <span class="card-k">before you email</span>
+          <h3>Brief → build → handover</h3>
+          <p style="color:var(--muted);font-size:0.95rem">
+            Wondering what happens next? The process is public, and short.
+          </p>
+        </a>
+      </div>
+
+      <div class="card" style="margin-top:1.6rem" data-reveal>
+        <span class="card-k">a good brief looks like</span>
+        <ul class="prose mb-0" style="margin-top:0.5rem">
+          {briefGuide.map((g) => <li>{g}</li>)}
+        </ul>
+      </div>
+
+      <blockquote class="prose" style="margin-top:2.6rem">
+        For smaller or advisory work — or a project that's really one person's — the
+        <a href="/services">solo bench</a> might be the better fit. Same builder, lighter process.
+      </blockquote>
+    </div>
+  </section>
+</BaseLayout>

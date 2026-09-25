@@ -1,0 +1,989 @@
+[
+  {
+    "title": "The Bitter Lesson",
+    "description": "Rich Sutton's seminal essay on the historic pattern of AI research — leveraging massive computation beats human-engineered knowledge.",
+    "url": "http://www.incompleteideas.net/IncIdeas/BitterLesson.html",
+    "tags": ["ai", "ml", "philosophy", "computation"],
+    "category": "AI & ML"
+  },
+  {
+    "title": "Attention Is All You Need",
+    "description": "The paper that changed everything — introducing the Transformer architecture. Understanding this is the price of admission to modern AI.",
+    "url": "https://arxiv.org/abs/1706.03762",
+    "tags": ["ai", "deep learning", "transformers", "nlp"],
+    "category": "AI & ML"
+  },
+  {
+    "title": "Lil'Log by Lillian Weng",
+    "description": "Some of the clearest technical writing on LLMs, reinforcement learning, and diffusion models. A masterclass in distilling complex papers.",
+    "url": "https://lilianweng.github.io/",
+    "tags": ["ai", "ml", "deep learning", "blog"],
+    "category": "AI & ML"
+  },
+  {
+    "title": "Distill.pub",
+    "description": "Scientific visualization and interactive explanation at its finest. The gold standard for making ML research genuinely understandable.",
+    "url": "https://distill.pub/",
+    "tags": ["ai", "visualization", "education", "interactive"],
+    "category": "AI & ML"
+  },
+  {
+    "title": "The Annotated Transformer",
+    "description": "The Transformer paper with line-by-line PyTorch implementation. Reading this is how you go from 'I get the idea' to 'I can build it'.",
+    "url": "https://nlp.seas.harvard.edu/2018/04/03/attention.html",
+    "tags": ["ai", "transformers", "pytorch", "tutorial"],
+    "category": "AI & ML"
+  },
+  {
+    "title": "Karpathy's Neural Networks: Zero to Hero",
+    "description": "Andrej Karpathy builds neural nets from absolute scratch — no frameworks, just math and code. The best way to actually understand backpropagation.",
+    "url": "https://karpathy.ai/zero-to-hero.html",
+    "tags": ["ai", "deep learning", "education", "video"],
+    "category": "AI & ML"
+  },
+  {
+    "title": "Gwern.net",
+    "description": "A sprawling, meticulous library of essays on AI, statistics, and rationality. Gwern's analysis on scaling laws is required reading.",
+    "url": "https://gwern.net/",
+    "tags": ["ai", "rationality", "statistics", "long-form"],
+    "category": "AI & ML"
+  },
+  {
+    "title": "Reinforcement Learning: An Introduction",
+    "description": "The Bible of RL by Sutton & Barto. If you want to build agents that learn from interaction, this book is non-negotiable.",
+    "url": "http://incompleteideas.net/book/the-book-2nd.html",
+    "tags": ["ai", "reinforcement learning", "book", "robotics"],
+    "category": "AI & ML"
+  },
+  {
+    "title": "The Art of Unix Programming",
+    "description": "Eric Raymond's deep dive into the philosophy and practice that shaped modern software. Why Unix is the way it is.",
+    "url": "http://www.catb.org/~esr/writings/taoup/html/",
+    "tags": ["unix", "software", "philosophy", "programming"],
+    "category": "Systems & Infrastructure"
+  },
+  {
+    "title": "Systems Performance (Brendan Gregg)",
+    "description": "The definitive guide to understanding system performance from kernel to application. A reference I keep within arm's reach.",
+    "url": "https://www.brendangregg.com/systems-performance-2nd-edition-book.html",
+    "tags": ["performance", "linux", "kernel", "debugging"],
+    "category": "Systems & Infrastructure"
+  },
+  {
+    "title": "Computer Systems: A Programmer's Perspective",
+    "description": "The book that makes you understand what your code actually does at the hardware level. Linkers, cache hierarchies, virtual memory.",
+    "url": "http://csapp.cs.cmu.edu/",
+    "tags": ["systems", "architecture", "c", "low-level"],
+    "category": "Systems & Infrastructure"
+  },
+  {
+    "title": "MIT 6.824 Distributed Systems",
+    "description": "The canonical distributed systems course. Lectures, labs, and papers on RPC, consensus, replication, and fault tolerance.",
+    "url": "https://pdos.csail.mit.edu/6.824/",
+    "tags": ["distributed systems", "consensus", "fault tolerance", "course"],
+    "category": "Systems & Infrastructure"
+  },
+  {
+    "title": "Tailscale Blog",
+    "description": "Deep technical dives on building mesh VPNs, WireGuard internals, and networking at scale. They consistently publish engineering gold.",
+    "url": "https://tailscale.com/blog/",
+    "tags": ["networking", "vpn", "wireguard", "infrastructure"],
+    "category": "Systems & Infrastructure"
+  },
+  {
+    "title": "The System Design Primer",
+    "description": "A comprehensive collection of system design resources. Load balancers, CDNs, consensus algorithms explained with diagrams.",
+    "url": "https://github.com/donnemartin/system-design-primer",
+    "tags": ["system design", "architecture", "scalability", "interview prep"],
+    "category": "Systems & Infrastructure"
+  },
+  {
+    "title": "Google Site Reliability Engineering Books",
+    "description": "Google's free SRE books — how the world's largest systems are built, monitored, and maintained. Practical wisdom from the people who run the internet.",
+    "url": "https://sre.google/books/",
+    "tags": ["sre", "reliability", "monitoring", "production"],
+    "category": "Systems & Infrastructure"
+  },
+  {
+    "title": "Teach Yourself Computer Science",
+    "description": "A self-directed curriculum covering the essential CS topics. No fluff, just the real stuff.",
+    "url": "https://teachyourselfcs.com/",
+    "tags": ["computer science", "curriculum", "self-study", "education"],
+    "category": "Programming & Software"
+  },
+  {
+    "title": "MIT Missing Semester",
+    "description": "The tools every programmer should know but nobody teaches — shell, version control, debugging, metaprogramming, and security.",
+    "url": "https://missing.csail.mit.edu/",
+    "tags": ["tools", "shell", "git", "productivity"],
+    "category": "Programming & Software"
+  },
+  {
+    "title": "Crafting Interpreters",
+    "description": "Build a full programming language interpreter from scratch — parsing, bytecode, garbage collection. One of the best technical books ever written.",
+    "url": "https://craftinginterpreters.com/",
+    "tags": ["compilers", "interpreters", "programming languages", "book"],
+    "category": "Programming & Software"
+  },
+  {
+    "title": "Operating Systems: Three Easy Pieces",
+    "description": "The modern OS textbook. Virtualization, concurrency, persistence — explained with clarity.",
+    "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+    "tags": ["operating systems", "concurrency", "virtualization", "book"],
+    "category": "Programming & Software"
+  },
+  {
+    "title": "Build Your Own X",
+    "description": "A curated list of projects that teach you how things work by building them from scratch — databases, git, Docker, compilers.",
+    "url": "https://github.com/codecrafters-io/build-your-own-x",
+    "tags": ["learning-by-building", "projects", "software", "tutorial"],
+    "category": "Programming & Software"
+  },
+  {
+    "title": "NAND to Tetris",
+    "description": "Build a complete computer system from NAND gates up to Tetris. The most satisfying intellectual journey in computer science.",
+    "url": "https://www.nand2tetris.org/",
+    "tags": ["computer architecture", "hardware", "software stack", "course"],
+    "category": "Programming & Software"
+  },
+  {
+    "title": "PX4 Autopilot Guide",
+    "description": "The professional open-source autopilot for drones and UAVs. If you're serious about autonomous flight, this is where you start.",
+    "url": "https://docs.px4.io/main/en/",
+    "tags": ["uav", "drones", "autopilot", "robotics"],
+    "category": "Robotics & Hardware"
+  },
+  {
+    "title": "ArduPilot Documentation",
+    "description": "The most versatile open-source autopilot system. Supports everything from quadcopters to submarines to rovers.",
+    "url": "https://ardupilot.org/",
+    "tags": ["uav", "robotics", "control systems", "open source"],
+    "category": "Robotics & Hardware"
+  },
+  {
+    "title": "ROS 2 Documentation",
+    "description": "The Robot Operating System — actually a middleware framework. The lingua franca of modern robotics development.",
+    "url": "https://docs.ros.org/en/rolling/",
+    "tags": ["robotics", "ros", "middleware", "sensor fusion"],
+    "category": "Robotics & Hardware"
+  },
+  {
+    "title": "Embedded Rust Book",
+    "description": "Rust for bare-metal embedded systems. Memory-safe systems programming for microcontrollers — the future of firmware.",
+    "url": "https://docs.rust-embedded.org/book/",
+    "tags": ["rust", "embedded", "microcontrollers", "systems"],
+    "category": "Robotics & Hardware"
+  },
+  {
+    "title": "3Blue1Brown",
+    "description": "The gold standard of mathematical visualization. Grant Sanderson's geometric explanations of linear algebra, calculus, and neural networks are pure art.",
+    "url": "https://www.3blue1brown.com/",
+    "tags": ["math", "visualization", "education", "animation"],
+    "category": "Science & Math"
+  },
+  {
+    "title": "Better Explained",
+    "description": "Math lessons that focus on intuition over memorization. Explains e, imaginary numbers, and Bayes' theorem so they actually click.",
+    "url": "https://betterexplained.com/",
+    "tags": ["math", "intuition", "education", "learning"],
+    "category": "Science & Math"
+  },
+  {
+    "title": "The Feynman Lectures on Physics",
+    "description": "Feynman's legendary physics lectures, available free online. The gold standard for understanding the fundamental laws of the universe.",
+    "url": "https://www.feynmanlectures.caltech.edu/",
+    "tags": ["physics", "education", "feynman", "science"],
+    "category": "Science & Math"
+  },
+  {
+    "title": "Stanford Encyclopedia of Philosophy",
+    "description": "Peer-reviewed, deep dives into every major philosophical topic. The closest thing the internet has to a formal philosophical reference library.",
+    "url": "https://plato.stanford.edu/",
+    "tags": ["philosophy", "reference", "academic", "deep reading"],
+    "category": "Science & Math"
+  },
+  {
+    "title": "Inferno Operating System",
+    "description": "A distributed OS from the creators of UNIX that treats network resources exactly like local files. A glimpse into an alternate computing timeline.",
+    "url": "https://en.wikipedia.org/wiki/Inferno_(operating_system)",
+    "tags": ["operating systems", "distributed", "unix history"],
+    "category": "Weird Rabbit Holes"
+  },
+  {
+    "title": "The Codeless Code",
+    "description": "Parables about software engineering inspired by Zen koans. Each story will make you think differently about code, teams, and craftsmanship.",
+    "url": "http://thecodelesscode.com/contents",
+    "tags": ["software", "philosophy", "stories", "zen"],
+    "category": "Weird Rabbit Holes"
+  },
+  {
+    "title": "Plan 9 from Bell Labs",
+    "description": "The true successor to Unix — distributed, per-process namespaces, and 9P protocol. It lost the OS war but won the ideas war.",
+    "url": "https://9p.io/plan9/",
+    "tags": ["operating systems", "distributed", "unix history", "bell labs"],
+    "category": "Weird Rabbit Holes"
+  },
+  {
+    "title": "Sneakernet Concept",
+    "description": "A network where data is transferred physically using storage media. Sometimes the highest bandwidth connection is a hard drive on a bicycle.",
+    "url": "https://en.wikipedia.org/wiki/Sneakernet",
+    "tags": ["offline tech", "networking", "resilience", "physical"],
+    "category": "Weird Rabbit Holes"
+  },
+  {
+    "title": "Permacomputing",
+    "description": "A community of practice around resilience and regenerativity in computing, inspired by permaculture. Challenges infinite growth assumptions.",
+    "url": "https://permacomputing.net/",
+    "tags": ["permacomputing", "resilience", "sustainability", "philosophy"],
+    "category": "Weird Rabbit Holes"
+  },
+  {
+    "title": "The Cathedral and the Bazaar",
+    "description": "Eric Raymond's analysis of open source vs closed source development models. The essay that helped define how the internet builds software.",
+    "url": "http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/",
+    "tags": ["open source", "software engineering", "essay", "history"],
+    "category": "Weird Rabbit Holes"
+  },
+  {
+    "title": "Brutalist Websites",
+    "description": "A gallery of websites that embrace the brutalist web design philosophy — raw, honest, and unpolished by intent.",
+    "url": "https://brutalistwebsites.com/",
+    "tags": ["design", "brutalism", "inspiration", "web"],
+    "category": "Design & Inspiration"
+  },
+  {
+    "title": "Hacker News",
+    "description": "Tech's watering hole. Cutting-edge tech discussion, startup news, and the occasional existential crisis.",
+    "url": "https://news.ycombinator.com/",
+    "tags": ["news", "tech", "community", "discussion"],
+    "category": "Design & Inspiration"
+  },
+  {
+    "title": "Stratechery by Ben Thompson",
+    "description": "The sharpest analysis of tech strategy and business models. Thompson's aggregation theory will change how you see the industry.",
+    "url": "https://stratechery.com/",
+    "tags": ["strategy", "business", "tech", "analysis"],
+    "category": "Design & Inspiration"
+  },
+  {
+    "title": "Excalidraw",
+    "description": "A virtual whiteboard for sketching diagrams. Hand-drawn style, collaborative, and surprisingly powerful for system architecture doodles.",
+    "url": "https://excalidraw.com/",
+    "tags": ["diagrams", "whiteboard", "collaboration", "sketching"],
+    "category": "Tools & Utilities"
+  },
+  {
+    "title": "Observable",
+    "description": "Interactive data notebooks in the browser. D3.js meets reactive programming — perfect for exploratory data analysis.",
+    "url": "https://observablehq.com/",
+    "tags": ["data", "visualization", "d3", "notebooks"],
+    "category": "Tools & Utilities"
+  },
+  {
+    "title": "Internet Archive",
+    "description": "The digital time machine — free books, movies, software, and 800 billion web pages. The ultimate bulwark against digital amnesia.",
+    "url": "https://archive.org/",
+    "tags": ["archive", "history", "library", "preservation"],
+    "category": "Tools & Utilities"
+  },
+  {
+    "title": "OpenWebRX",
+    "description": "A web-based SDR receiver that lets you listen to the radio spectrum through your browser. Ham radio, weather satellites, maritime beacons worldwide.",
+    "url": "https://www.openwebrx.de/",
+    "tags": ["radio", "sdr", "signal processing", "web"],
+    "category": "Tools & Utilities"
+  },
+  {
+    "title": "SICP",
+    "description": "The legendary CS textbook that teaches programming as a way of thinking. Scheme, metacircular evaluators, and the beauty of abstraction.",
+    "url": "https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/index.html",
+    "tags": ["computer science", "programming", "classic", "book"],
+    "category": "Books & Learning"
+  },
+  {
+    "title": "Code: The Hidden Language of Computer Hardware and Software",
+    "description": "Charles Petzold's masterful journey from Morse code to CPUs. Explains how computers work at every layer of abstraction.",
+    "url": "https://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319",
+    "tags": ["computer science", "hardware", "fundamentals", "book"],
+    "category": "Books & Learning"
+  },
+  {
+    "title": "Gödel, Escher, Bach",
+    "description": "Douglas Hofstadter's Pulitzer-winning exploration of self-reference, formal systems, and consciousness. A book that rewires your brain.",
+    "url": "https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach",
+    "tags": ["philosophy", "mathematics", "consciousness", "book"],
+    "category": "Books & Learning"
+  },
+  {
+    "title": "The Pragmatic Programmer",
+    "description": "20th anniversary edition of the software craftsmanship classic. Knowledge portfolios, DRY, and the broken window theory.",
+    "url": "https://pragprog.com/titles/tpp20/",
+    "tags": ["software engineering", "craftsmanship", "career", "book"],
+    "category": "Books & Learning"
+  },
+  {
+    "title": "Designing Data-Intensive Applications",
+    "description": "The definitive guide to building reliable, scalable, and maintainable data systems. Non-negotiable if you want to understand distributed systems.",
+    "url": "https://dataintensive.net/",
+    "tags": ["data", "distributed systems", "databases", "book"],
+    "category": "Books & Learning"
+  },
+  {
+    "title": "The Map of Mathematics",
+    "description": "A beautiful visual summary of all branches of math — from algebra to topology. Shows how every discipline connects.",
+    "url": "https://www.youtube.com/watch?v=OmJ-4B-mS-Y",
+    "tags": ["math", "visualization", "education", "video"],
+    "category": "Books & Learning"
+  },
+  {
+    "title": "Explorable Explanations by Nicky Case",
+    "description": "Interactive simulations that teach complex systems and human behavior. Proves that active interaction beats passive reading.",
+    "url": "https://ncase.me/",
+    "tags": ["interactive", "systems", "learning", "simulation"],
+    "category": "Books & Learning"
+  },
+  {
+    "title": "Seeing Theory",
+    "description": "An interactive guide to probability and statistics from Brown University. Visualizes concepts like Bayes' Theorem intuitively.",
+    "url": "https://seeing-theory.brown.edu/",
+    "tags": ["statistics", "data science", "visualization", "interactive"],
+    "category": "Books & Learning"
+  },
+  {
+    "title": "Snow Leopard Trust",
+    "description": "The leading organization working to protect snow leopards across Central Asia, including Pakistan's northern regions. Science-based conservation.",
+    "url": "https://www.snowleopard.org/",
+    "tags": ["wildlife", "snow leopard", "conservation", "pakistan"],
+    "category": "Wildlife & Nature"
+  },
+  {
+    "title": "Markhor — Pakistan's National Animal",
+    "description": "The magnificent spiral-horned markhor found in Pakistan's northern mountains. A conservation success story — from endangered to vulnerable.",
+    "url": "https://en.wikipedia.org/wiki/Markhor",
+    "tags": ["wildlife", "markhor", "pakistan", "conservation"],
+    "category": "Wildlife & Nature"
+  },
+  {
+    "title": "Himalayan Brown Bear in Deosai Plains",
+    "description": "The Deosai National Park in Gilgit-Baltistan protects one of the last remaining habitats of the Himalayan brown bear. A high-altitude wilderness.",
+    "url": "https://en.wikipedia.org/wiki/Himalayan_brown_bear",
+    "tags": ["wildlife", "brown bear", "gilgit-baltistan", "pakistan"],
+    "category": "Wildlife & Nature"
+  },
+  {
+    "title": "Hangul Deer — Kashmir's Critically Endangered Red Deer",
+    "description": "The Hangul (Kashmir stag) is the only surviving subspecies of red deer in South Asia. Found in Dachigam National Park, Kashmir. Critically endangered.",
+    "url": "https://en.wikipedia.org/wiki/Kashmir_stag",
+    "tags": ["wildlife", "kashmir", "hangul", "endangered"],
+    "category": "Wildlife & Nature"
+  },
+  {
+    "title": "Indus River Dolphin",
+    "description": "One of the world's rarest mammals — the blind Indus river dolphin. Found only in the Indus River system in Pakistan. Fewer than 2,000 remain.",
+    "url": "https://en.wikipedia.org/wiki/Indus_river_dolphin",
+    "tags": ["wildlife", "dolphin", "indus", "pakistan", "endangered"],
+    "category": "Wildlife & Nature"
+  },
+  {
+    "title": "Himalayan Monal — National Bird of Nepal",
+    "description": "The iridescent Himalayan monal (danphe) found across the Himalayas including Azad Kashmir. One of the most visually stunning birds on earth.",
+    "url": "https://en.wikipedia.org/wiki/Himalayan_monal",
+    "tags": ["wildlife", "bird", "himalayas", "kashmir"],
+    "category": "Wildlife & Nature"
+  },
+  {
+    "title": "Musk Deer of Kashmir",
+    "description": "The elusive Himalayan musk deer, found in the high altitudes of Kashmir and Northern Pakistan. Hunted for its musk gland — critically endangered.",
+    "url": "https://en.wikipedia.org/wiki/Himalayan_musk_deer",
+    "tags": ["wildlife", "musk deer", "kashmir", "himalayas"],
+    "category": "Wildlife & Nature"
+  },
+  {
+    "title": "Chitral National Park",
+    "description": "Home to markhor, snow leopards, Tibetan wolves, and the rare western tragopan. One of Pakistan's most biodiverse regions.",
+    "url": "https://en.wikipedia.org/wiki/Chitral_National_Park",
+    "tags": ["wildlife", "pakistan", "national park", "biodiversity"],
+    "category": "Wildlife & Nature"
+  },
+  {
+    "title": "Kashmir's Dachigam National Park",
+    "description": "The lifeline of the Hangul deer. Also home to black bears, leopards, and over 150 bird species. A Kashmir valley gem.",
+    "url": "https://en.wikipedia.org/wiki/Dachigam_National_Park",
+    "tags": ["wildlife", "kashmir", "national park", "hangul"],
+    "category": "Wildlife & Nature"
+  },
+  {
+    "title": "Astola Island — Pakistan's Offshore Wildlife Haven",
+    "description": "Pakistan's largest offshore island in the Arabian Sea. Critical nesting site for turtles and seabirds. A forgotten wilderness.",
+    "url": "https://en.wikipedia.org/wiki/Astola_Island",
+    "tags": ["wildlife", "pakistan", "island", "marine"],
+    "category": "Wildlife & Nature"
+  },
+  {
+    "title": "Serengeti Live Cam",
+    "description": "Live streaming wildlife cameras from the Serengeti. Lions, elephants, giraffes, zebras — the greatest wildlife show on earth.",
+    "url": "https://www.explore.org/livecams/serengeti/serengeti-live-cam",
+    "tags": ["wildlife", "live cam", "africa", "safari"],
+    "category": "Wildlife & Nature"
+  },
+  {
+    "title": "ARKive — Wildlife Image Archive (Closed but Mirrored)",
+    "description": "The world's central repository of wildlife imagery. Now preserved on Internet Archive. Thousands of species photographed and documented.",
+    "url": "https://archive.org/details/arkive",
+    "tags": ["wildlife", "archive", "photography", "education"],
+    "category": "Wildlife & Nature"
+  },
+  {
+    "title": "iNaturalist",
+    "description": "Citizen science platform for identifying and logging wildlife sightings. One of the largest biodiversity databases in the world.",
+    "url": "https://www.inaturalist.org/",
+    "tags": ["wildlife", "citizen science", "identification", "biodiversity"],
+    "category": "Wildlife & Nature"
+  },
+  {
+    "title": "WWF Pakistan",
+    "description": "WWF's Pakistan office working on conservation of the Indus dolphin, snow leopard, markhor, and Pakistan's forests and wetlands.",
+    "url": "https://www.wwfpak.org/",
+    "tags": ["wildlife", "conservation", "pakistan", "wwf"],
+    "category": "Wildlife & Nature"
+  },
+  {
+    "title": "Pakistan Wetlands Program",
+    "description": "Information on Pakistan's 19 Ramsar wetland sites — critical habitats for migratory birds from Siberia to Africa.",
+    "url": "https://en.wikipedia.org/wiki/List_of_Ramsar_sites_in_Pakistan",
+    "tags": ["wildlife", "wetlands", "pakistan", "birds", "migration"],
+    "category": "Wildlife & Nature"
+  },
+  {
+    "title": "Living Desert — Thar & Cholistan Wildlife",
+    "description": "The surprising biodiversity of Pakistan's desert regions — chinkara gazelle, desert foxes, bustards, and the resilient life of sand dunes.",
+    "url": "https://en.wikipedia.org/wiki/Thar_Desert",
+    "tags": ["wildlife", "desert", "pakistan", "thar"],
+    "category": "Wildlife & Nature"
+  },
+  {
+    "title": "Tibetan Wolf in Pakistan's North",
+    "description": "The elusive Tibetan wolf found in Pakistan's northern highlands. A key predator in the fragile alpine ecosystem.",
+    "url": "https://en.wikipedia.org/wiki/Tibetan_wolf",
+    "tags": ["wildlife", "wolf", "pakistan", "predator", "himalayas"],
+    "category": "Wildlife & Nature"
+  },
+  {
+    "title": "Vintage Computer Festival",
+    "description": "The world's largest gathering of vintage computer enthusiasts. See Altairs, PDP-11s, Cray supercomputers, and Apple Is in action.",
+    "url": "https://vcfed.org/",
+    "tags": ["retro computing", "vintage", "hardware", "museum"],
+    "category": "Retro & Vintage Computing"
+  },
+  {
+    "title": "The PDP-11 — The Most Influential Computer Ever?",
+    "description": "The DEC PDP-11 shaped modern computing more than almost any other machine. UNIX was born on it. C was developed on it.",
+    "url": "https://en.wikipedia.org/wiki/PDP-11",
+    "tags": ["retro computing", "pdp-11", "unix", "history"],
+    "category": "Retro & Vintage Computing"
+  },
+  {
+    "title": "Cray Supercomputers Archive",
+    "description": "The history of Cray Research — the supercomputers that defined high-performance computing. Vector processors, liquid cooling, and iconic design.",
+    "url": "https://en.wikipedia.org/wiki/Cray",
+    "tags": ["supercomputing", "cray", "hpc", "vintage", "history"],
+    "category": "Retro & Vintage Computing"
+  },
+  {
+    "title": "RS-6000 — IBM's POWER Architecture Roots",
+    "description": "The IBM RS/6000 that brought POWER architecture to the world. The machine that ran Deep Blue. The predecessor to modern POWER servers.",
+    "url": "https://en.wikipedia.org/wiki/IBM_RS/6000",
+    "tags": ["ibm", "power", "workstation", "unix", "vintage"],
+    "category": "Retro & Vintage Computing"
+  },
+  {
+    "title": "DEC Alpha — The 64-bit Legend",
+    "description": "Digital's Alpha architecture — the fastest microprocessor of its era. 64-bit, RISC, and years ahead of its time. The chip that could have taken over the world.",
+    "url": "https://en.wikipedia.org/wiki/DEC_Alpha",
+    "tags": ["dec", "alpha", "64-bit", "risc", "vintage"],
+    "category": "Retro & Vintage Computing"
+  },
+  {
+    "title": "SGI Origin — Visual Computing Giants",
+    "description": "Silicon Graphics workstations and servers — the machines that rendered Jurassic Park and defined 1990s visual computing. MIPS processors, IRIX OS.",
+    "url": "https://en.wikipedia.org/wiki/Silicon_Graphics",
+    "tags": ["sgi", "workstation", "graphics", "irix", "vintage"],
+    "category": "Retro & Vintage Computing"
+  },
+  {
+    "title": "Sun SPARCstation — The Engineer's Workstation",
+    "description": "Sun Microsystems' SPARCstation line — the workstation that powered the early internet. SunOS, Solaris, and the rise of RISC.",
+    "url": "https://en.wikipedia.org/wiki/SPARCstation",
+    "tags": ["sun", "sparc", "workstation", "unix", "vintage"],
+    "category": "Retro & Vintage Computing"
+  },
+  {
+    "title": "NeXT Computer — The Machine That Built the Web",
+    "description": "Tim Berners-Lee invented the World Wide Web on a NeXT computer. Steve Jobs' NeXTSTEP became macOS. A machine that changed history.",
+    "url": "https://en.wikipedia.org/wiki/NeXT_Computer",
+    "tags": ["next", "steve jobs", "web", "history", "workstation"],
+    "category": "Retro & Vintage Computing"
+  },
+  {
+    "title": "Commodore 64 — The Best-Selling Computer of All Time",
+    "description": "The Commodore 64 sold 12.5 million units. An entire generation learned to program on this machine. The golden age of home computing.",
+    "url": "https://en.wikipedia.org/wiki/Commodore_64",
+    "tags": ["commodore", "c64", "home computer", "retro", "gaming"],
+    "category": "Retro & Vintage Computing"
+  },
+  {
+    "title": "Amiga — The Multimedia Revolution",
+    "description": "The Commodore Amiga was a decade ahead in graphics, sound, and multitasking. Video Toaster, Deluxe Paint, and a cult that still exists today.",
+    "url": "https://en.wikipedia.org/wiki/Amiga",
+    "tags": ["amiga", "commodore", "multimedia", "retro", "demoscene"],
+    "category": "Retro & Vintage Computing"
+  },
+  {
+    "title": "ThinkPad History — The Last Great Laptop",
+    "description": "The IBM/Lenovo ThinkPad lineage. From the iconic 700C to the modern X1. The design language that defined mobile computing for three decades.",
+    "url": "https://en.wikipedia.org/wiki/ThinkPad",
+    "tags": ["thinkpad", "ibm", "lenovo", "laptop", "retro"],
+    "category": "Retro & Vintage Computing"
+  },
+  {
+    "title": "VAX — The Architecture That Defined Enterprise Computing",
+    "description": "DEC's VAX architecture dominated enterprise computing for two decades. Virtual memory, VMS, and the machine that ran the world before x86.",
+    "url": "https://en.wikipedia.org/wiki/VAX",
+    "tags": ["dec", "vax", "minicomputer", "vms", "enterprise"],
+    "category": "Retro & Vintage Computing"
+  },
+  {
+    "title": "Toyota Land Cruiser 70 Series — The Indestructible Legend",
+    "description": "The Land Cruiser 70 Series has been in continuous production since 1984. The definitive off-road vehicle used by NGOs, militaries, and explorers worldwide.",
+    "url": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser_(J70)",
+    "tags": ["land cruiser", "toyota", "off-road", "4x4", "legend"],
+    "category": "Off-Road & Heavy Machinery"
+  },
+  {
+    "title": "Toyota Land Cruiser 100 Series — The Gold Standard",
+    "description": "The 100 Series Land Cruiser — the vehicle that combines luxury with unmatched off-road capability. IFS, solid rear axle, and the legendary 2UZ-FE V8.",
+    "url": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser_(J100)",
+    "tags": ["land cruiser", "toyota", "off-road", "100-series", "v8"],
+    "category": "Off-Road & Heavy Machinery"
+  },
+  {
+    "title": "Cummins Diesel Engines — The Heart of Heavy Machinery",
+    "description": "Cummins B-series and ISX diesel engines power everything from pickup trucks to semi-trucks to generators. The 12-valve 5.9L is legendary for reliability.",
+    "url": "https://en.wikipedia.org/wiki/Cummins_B_Series_engine",
+    "tags": ["diesel", "cummins", "engine", "heavy machinery", "truck"],
+    "category": "Off-Road & Heavy Machinery"
+  },
+  {
+    "title": "Detroit Diesel 2-Stroke — The Screaming Jimmy",
+    "description": "The unique 2-stroke Detroit Diesel engines (6-71, 8V-71, 12V-71, 16V-71) — the sound of heavy equipment and highway trucks for decades.",
+    "url": "https://en.wikipedia.org/wiki/Detroit_Diesel",
+    "tags": ["diesel", "detroit diesel", "2-stroke", "engine", "classic"],
+    "category": "Off-Road & Heavy Machinery"
+  },
+  {
+    "title": "Caterpillar D9 — The Bulldozer That Moves Mountains",
+    "description": "The Caterpillar D9 — a 100,000-pound bulldozer with a 600+ hp diesel engine. Used in mining, construction, and military engineering.",
+    "url": "https://en.wikipedia.org/wiki/Caterpillar_D9",
+    "tags": ["caterpillar", "bulldozer", "heavy equipment", "diesel", "mining"],
+    "category": "Off-Road & Heavy Machinery"
+  },
+  {
+    "title": "Unimog — The Ultimate Off-Road Truck",
+    "description": "Mercedes-Benz Unimog — a truck that is also a tractor, a crawler, an implement carrier, and a fire engine. Portal axles, extreme articulation, unstoppable.",
+    "url": "https://en.wikipedia.org/wiki/Unimog",
+    "tags": ["unimog", "mercedes", "off-road", "truck", "expedition"],
+    "category": "Off-Road & Heavy Machinery"
+  },
+  {
+    "title": "Mitsubishi Pajero/Montero — Dakar Legend",
+    "description": "The Pajero won the Dakar Rally 12 times. A masterclass in off-road engineering — Super Select 4WD, rugged independent suspension.",
+    "url": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+    "tags": ["pajero", "montero", "mitsubishi", "off-road", "dakar"],
+    "category": "Off-Road & Heavy Machinery"
+  },
+  {
+    "title": "Nissan Patrol Y61 — The Tough Guy",
+    "description": "The Nissan Patrol Y61 — solid axles front and rear, the legendary TD42 diesel, and a reputation for being nearly indestructible.",
+    "url": "https://en.wikipedia.org/wiki/Nissan_Patrol",
+    "tags": ["nissan", "patrol", "y61", "off-road", "4x4", "diesel"],
+    "category": "Off-Road & Heavy Machinery"
+  },
+  {
+    "title": "The Wärtsilä-Sulzer RTA96-C — The Largest Engine in the World",
+    "description": "A 109,000-horsepower, 2,300-ton marine diesel engine. 14 cylinders, each with a 38-inch bore. The engine that moves container ships across oceans.",
+    "url": "https://en.wikipedia.org/wiki/W%C3%A4rtsil%C3%A4-Sulzer_RTA96-C",
+    "tags": ["diesel", "marine", "engine", "largest", "ship", "industrial"],
+    "category": "Off-Road & Heavy Machinery"
+  },
+  {
+    "title": "Expander — The Overlanding Toyota Coaster Build",
+    "description": "A custom Toyota Coaster bus converted into a serious overlanding expedition vehicle. The ultimate DIY off-grid mobile workshop.",
+    "url": "https://www.expanderoverland.com/",
+    "tags": ["overlanding", "toyota", "expedition", "off-road", "build"],
+    "category": "Off-Road & Heavy Machinery"
+  },
+  {
+    "title": "How the Internet Actually Works — DNS Deep Dive",
+    "description": "An interactive, visual explanation of DNS — from your browser to the root servers to the authoritative name server. The phonebook of the internet.",
+    "url": "https://howdns.works/",
+    "tags": ["dns", "networking", "internet", "infrastructure", "tutorial"],
+    "category": "Internet Infrastructure"
+  },
+  {
+    "title": "BGP — The Routing Protocol That Holds the Internet Together",
+    "description": "Border Gateway Protocol (BGP) is how the internet routes traffic between autonomous systems. When BGP breaks, the internet breaks.",
+    "url": "https://www.cloudflare.com/learning/security/glossary/what-is-bgp/",
+    "tags": ["bgp", "routing", "networking", "infrastructure", "protocol"],
+    "category": "Internet Infrastructure"
+  },
+  {
+    "title": "Internet Exchange Points — The Physical Internet",
+    "description": "IXPs are the physical locations where ISPs and networks connect to exchange traffic. The real fabric of the internet is in these buildings.",
+    "url": "https://en.wikipedia.org/wiki/Internet_exchange_point",
+    "tags": ["ixp", "peering", "infrastructure", "networking", "physical"],
+    "category": "Internet Infrastructure"
+  },
+  {
+    "title": "Submarine Cable Map",
+    "description": "An interactive map of the 400+ undersea fiber optic cables that carry 99% of international data traffic. The physical backbone of the internet.",
+    "url": "https://www.submarinecablemap.com/",
+    "tags": ["submarine cables", "infrastructure", "fiber", "global", "map"],
+    "category": "Internet Infrastructure"
+  },
+  {
+    "title": "How a CPU Works — From Transistors to Computing",
+    "description": "An interactive visual guide to how a CPU works at the transistor level. ALU, control unit, registers, and the fetch-decode-execute cycle.",
+    "url": "https://www.youtube.com/watch?v=cNN_tTXABUA",
+    "tags": ["cpu", "architecture", "transistors", "hardware", "tutorial"],
+    "category": "Internet Infrastructure"
+  },
+  {
+    "title": "Starlink — The Satellite Internet Constellation",
+    "description": "SpaceX's Starlink constellation of thousands of low-earth-orbit satellites providing global internet. The future of rural connectivity and backup infrastructure.",
+    "url": "https://www.starlink.com/",
+    "tags": ["starlink", "satellite", "internet", "spacex", "connectivity"],
+    "category": "Internet Infrastructure"
+  },
+  {
+    "title": "Mesh Networking — The Internet Without ISPs",
+    "description": "How mesh networks like BATMAN, OLSR, and 802.11s allow communities to build their own internet infrastructure without centralized ISPs.",
+    "url": "https://en.wikipedia.org/wiki/Mesh_networking",
+    "tags": ["mesh", "networking", "decentralized", "off-grid", "community"],
+    "category": "Internet Infrastructure"
+  },
+  {
+    "title": "Guifi.net — The World's Largest Community Network",
+    "description": "A massive open, free, and neutral telecommunications network built by citizens in Catalonia. Over 30,000 nodes. Proof that community internet works.",
+    "url": "https://guifi.net/en",
+    "tags": ["community network", "mesh", "isp alternative", "decentralized"],
+    "category": "Internet Infrastructure"
+  },
+  {
+    "title": "NYC Mesh — Community Owned Internet",
+    "description": "New York City's community mesh network. Installing rooftop antennas and fiber to create an ISP that belongs to its users.",
+    "url": "https://www.nycmesh.net/",
+    "tags": ["mesh", "community", "isp", "free internet", "diy"],
+    "category": "Internet Infrastructure"
+  },
+  {
+    "title": "AREDN — Amateur Radio Emergency Data Network",
+    "description": "Amateur radio operators building high-speed data networks using off-the-shelf Wi-Fi gear on ham frequencies. Mesh networking for emergency communications.",
+    "url": "https://www.arednmesh.org/",
+    "tags": ["ham radio", "mesh", "emergency", "data", "amateur radio"],
+    "category": "HAM Radio & Mesh Networks"
+  },
+  {
+    "title": "Meshtastic — Off-Grid Mesh Communication",
+    "description": "Open-source, off-grid, mesh communication using inexpensive LoRa radios. No cell tower or internet required. Text messaging over miles.",
+    "url": "https://meshtastic.org/",
+    "tags": ["meshtastic", "lora", "mesh", "off-grid", "diy"],
+    "category": "HAM Radio & Mesh Networks"
+  },
+  {
+    "title": "Ham Radio General Class Study Guide",
+    "description": "Complete guide to getting your amateur radio General class license. Unlock HF bands and global communication capability.",
+    "url": "https://www.arrl.org/general-class-license-manual",
+    "tags": ["ham radio", "license", "study", "arrl", "hf"],
+    "category": "HAM Radio & Mesh Networks"
+  },
+  {
+    "title": "Winlink — Email Over Radio",
+    "description": "Global email system that works over ham radio frequencies. No internet required. Used by sailors, remote expeditions, and emergency services.",
+    "url": "https://winlink.org/",
+    "tags": ["ham radio", "email", "emergency", "off-grid", "communication"],
+    "category": "HAM Radio & Mesh Networks"
+  },
+  {
+    "title": "APRS — Automatic Packet Reporting System",
+    "description": "A digital communication system used by amateur radio operators for real-time tactical communications, position reporting, and messaging.",
+    "url": "https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System",
+    "tags": ["ham radio", "aprs", "packet", "position", "emergency"],
+    "category": "HAM Radio & Mesh Networks"
+  },
+  {
+    "title": "WSJT-X — Weak Signal Digital Modes",
+    "description": "Software for weak-signal digital communication modes like FT8, JT65, and WSPR. Communicate across the globe with just a few watts.",
+    "url": "https://physics.princeton.edu/pulsar/k1jt/wsjtx.html",
+    "tags": ["ham radio", "digital", "weak signal", "ft8", "dx"],
+    "category": "HAM Radio & Mesh Networks"
+  },
+  {
+    "title": "OpenWebRX — Web-Based SDR Receiver",
+    "description": "Listen to the radio spectrum through your browser. Ham radio operators, weather satellites, and maritime beacons worldwide, right from your laptop.",
+    "url": "https://www.openwebrx.de/",
+    "tags": ["sdr", "ham radio", "receiver", "web", "spectrum"],
+    "category": "HAM Radio & Mesh Networks"
+  },
+  {
+    "title": "Self-Hosting Guide — Run Your Own Services",
+    "description": "Comprehensive guide to self-hosting your own services — email, file storage, media streaming, Git, and more. Reclaim your digital sovereignty.",
+    "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+    "tags": ["self-hosted", "privacy", "server", "diy", "foss"],
+    "category": "Self-Hosting & Digital Sovereignty"
+  },
+  {
+    "title": "YunoHost — Self-Hosting for Everyone",
+    "description": "A Debian-based distribution that makes self-hosting accessible. One-click install of Nextcloud, Jellyfin, WordPress, and hundreds of apps.",
+    "url": "https://yunohost.org/",
+    "tags": ["self-hosted", "yunohost", "server", "debian", "apps"],
+    "category": "Self-Hosting & Digital Sovereignty"
+  },
+  {
+    "title": "Nextcloud — Your Own Cloud Infrastructure",
+    "description": "Self-hosted productivity platform — files, calendar, contacts, chat, video calls, and collaborative document editing. A true Google Workspace alternative.",
+    "url": "https://nextcloud.com/",
+    "tags": ["self-hosted", "cloud", "files", "privacy", "collaboration"],
+    "category": "Self-Hosting & Digital Sovereignty"
+  },
+  {
+    "title": "Jellyfin — Your Own Media Streaming Server",
+    "description": "Free and open-source media server. Stream your own movies, music, TV shows, and books to any device. No subscriptions. No tracking.",
+    "url": "https://jellyfin.org/",
+    "tags": ["self-hosted", "media", "streaming", "jellyfin", "foss"],
+    "category": "Self-Hosting & Digital Sovereignty"
+  },
+  {
+    "title": "Pi-hole — Network-Wide Ad Blocking",
+    "description": "DNS sinkhole that blocks ads and trackers at the network level. Install on a Raspberry Pi and protect your entire home network.",
+    "url": "https://pi-hole.net/",
+    "tags": ["self-hosted", "dns", "ad-blocking", "privacy", "raspberry pi"],
+    "category": "Self-Hosting & Digital Sovereignty"
+  },
+  {
+    "title": "Tor Project — Anonymous Communication",
+    "description": "The Onion Router — browse the internet anonymously and access the dark web. Critical tool for privacy, circumvention, and free speech.",
+    "url": "https://www.torproject.org/",
+    "tags": ["tor", "privacy", "anonymous", "free speech", "networking"],
+    "category": "Self-Hosting & Digital Sovereignty"
+  },
+  {
+    "title": "Standard Notes — Encrypted Notes, Self-Hosted",
+    "description": "End-to-end encrypted notes app with self-hosting option. If you care about your notes being private, this is the answer.",
+    "url": "https://standardnotes.com/",
+    "tags": ["self-hosted", "notes", "encryption", "privacy", "productivity"],
+    "category": "Self-Hosting & Digital Sovereignty"
+  },
+  {
+    "title": "CalyxOS — De-Googled Android",
+    "description": "A privacy-focused Android operating system that removes Google services and tracking. Own your phone again.",
+    "url": "https://calyxos.org/",
+    "tags": ["privacy", "android", "de-googled", "foss", "phone"],
+    "category": "Self-Hosting & Digital Sovereignty"
+  },
+  {
+    "title": "GrapheneOS — The Most Private Mobile OS",
+    "description": "Security and privacy hardened Android. Hardened kernel, verified boot, and no Google services by default. The gold standard for mobile privacy.",
+    "url": "https://grapheneos.org/",
+    "tags": ["privacy", "android", "security", "mobile", "foss"],
+    "category": "Self-Hosting & Digital Sovereignty"
+  },
+  {
+    "title": "F-Droid — Free and Open Source Android Apps",
+    "description": "The catalog of FOSS Android applications. No tracking, no ads, no proprietary dependencies. Install apps directly without Google Play.",
+    "url": "https://f-droid.org/",
+    "tags": ["android", "foss", "apps", "privacy", "open source"],
+    "category": "Self-Hosting & Digital Sovereignty"
+  },
+  {
+    "title": "The Pirate Library — Preserving Knowledge",
+    "description": "A collection of shadow libraries preserving human knowledge. Books, papers, and academic resources that should be accessible to everyone.",
+    "url": "https://en.wikipedia.org/wiki/Shadow_library",
+    "tags": ["piracy", "books", "knowledge", "access", "library"],
+    "category": "Self-Hosting & Digital Sovereignty"
+  },
+  {
+    "title": "Sci-Hub — Access to Scientific Knowledge",
+    "description": "The controversial platform that provides free access to millions of scientific papers behind paywalls. Knowledge should not be locked.",
+    "url": "https://sci-hub.se/",
+    "tags": ["sci-hub", "academic", "papers", "knowledge", "access"],
+    "category": "Self-Hosting & Digital Sovereignty"
+  },
+  {
+    "title": "Z-Library — The World's Largest Library",
+    "description": "A shadow library with millions of books and academic articles. One of the largest collections of human knowledge ever assembled.",
+    "url": "https://z-lib.org/",
+    "tags": ["library", "books", "knowledge", "access", "piracy"],
+    "category": "Self-Hosting & Digital Sovereignty"
+  },
+  {
+    "title": "Prepper Tech — Technology for Uncertain Times",
+    "description": "A comprehensive guide to building technology systems that work when everything else fails. Off-grid power, mesh comms, and local data storage.",
+    "url": "https://www.offgridweb.com/",
+    "tags": ["prepper", "off-grid", "survival", "tech", "resilience"],
+    "category": "Preppers & Survival Tech"
+  },
+  {
+    "title": "Off-Grid Solar Power for Tech Infrastructure",
+    "description": "How to power servers, routers, and communication equipment entirely from solar. Battery sizing, panel selection, and real-world deployments.",
+    "url": "https://www.solarpowerworldonline.com/",
+    "tags": ["solar", "off-grid", "power", "infrastructure", "diy"],
+    "category": "Preppers & Survival Tech"
+  },
+  {
+    "title": "Survival Communication — When the Internet Goes Dark",
+    "description": "A practical guide to communication methods that work without internet infrastructure. HAM radio, FRS/GMRS, satellite messengers, and signal mirrors.",
+    "url": "https://www.ready.gov/communications",
+    "tags": ["emergency", "communication", "survival", "radio", "prepper"],
+    "category": "Preppers & Survival Tech"
+  },
+  {
+    "title": "The Off-Grid Server Stack",
+    "description": "Building a complete server setup that runs on solar power with satellite internet backup. Own your data regardless of what happens to the grid.",
+    "url": "https://www.lowtechmagazine.com/",
+    "tags": ["off-grid", "server", "solar", "resilience", "diy"],
+    "category": "Preppers & Survival Tech"
+  },
+  {
+    "title": "Low-Tech Magazine — High-Tech Solutions on a Budget",
+    "description": "A magazine exploring low-tech, resilient, and sustainable alternatives to high-energy technology. Solar-powered website. No tracking. Pure knowledge.",
+    "url": "https://solar.lowtechmagazine.com/",
+    "tags": ["low-tech", "sustainability", "resilience", "solar", "magazine"],
+    "category": "Preppers & Survival Tech"
+  },
+  {
+    "title": "The Prepared — Survival and Resilience",
+    "description": "A modern, practical guide to preparedness. No bunker mentality — just rational thinking about building resilience into your life and technology.",
+    "url": "https://theprepared.com/",
+    "tags": ["prepper", "survival", "resilience", "preparedness", "guide"],
+    "category": "Preppers & Survival Tech"
+  },
+  {
+    "title": "Doomsday Prepper's Guide to Digital Data",
+    "description": "How to preserve your digital data for decades without cloud services. Optical media, tape backups, redundant storage, and the 3-2-1 rule.",
+    "url": "https://www.backblaze.com/blog/the-3-2-1-backup-strategy/",
+    "tags": ["backup", "data preservation", "prepper", "digital", "storage"],
+    "category": "Preppers & Survival Tech"
+  },
+  {
+    "title": "Habitat — Sustainable Living and Technology",
+    "description": "A community exploring how to build resilient, sustainable habitats that integrate technology with ecological principles.",
+    "url": "https://www.ic.org/",
+    "tags": ["sustainable", "community", "habitat", "resilience", "off-grid"],
+    "category": "Preppers & Survival Tech"
+  },
+  {
+    "title": "The Barter Network — Alternative Economy",
+    "description": "Community-based barter systems built around mutual credit. As financial systems wobble, understanding alternative economies is a survival skill.",
+    "url": "https://en.wikipedia.org/wiki/Local_exchange_trading_system",
+    "tags": ["economics", "barter", "community", "alternative", "resilience"],
+    "category": "Preppers & Survival Tech"
+  },
+  {
+    "title": "Raspberry Pi 5 — The Ultimate Self-Hosting Server",
+    "description": "The latest Raspberry Pi can run a full personal server stack — Nextcloud, Pi-hole, Jellyfin, and more. All for under $100 and 10 watts.",
+    "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+    "tags": ["raspberry pi", "server", "self-hosted", "diy", "low-power"],
+    "category": "Large-Scale & Server Computing"
+  },
+  {
+    "title": "OpenResty — High-Performance Web Server",
+    "description": "A full-fledged web platform based on Nginx and LuaJIT. Used by Cloudflare, Taobao, and others for high-throughput, low-latency systems.",
+    "url": "https://openresty.org/en/",
+    "tags": ["nginx", "lua", "web server", "performance", "infrastructure"],
+    "category": "Large-Scale & Server Computing"
+  },
+  {
+    "title": "Kubernetes — The Data Center Operating System",
+    "description": "Kubernetes orchestrates containerized workloads across thousands of machines. The standard for large-scale server deployments.",
+    "url": "https://kubernetes.io/",
+    "tags": ["kubernetes", "containers", "orchestration", "devops", "scalability"],
+    "category": "Large-Scale & Server Computing"
+  },
+  {
+    "title": "Ceph — Distributed Storage at Petabyte Scale",
+    "description": "Free and open-source distributed storage system that can handle exabytes of data. Used by CERN, DreamHost, and OVH for massive storage clusters.",
+    "url": "https://ceph.io/",
+    "tags": ["storage", "distributed", "ceph", "cluster", "infrastructure"],
+    "category": "Large-Scale & Server Computing"
+  },
+  {
+    "title": "NixOS — The Reproducible Operating System",
+    "description": "An OS with declarative configuration and atomic upgrades. Every system state is defined in a config file. Perfect for reproducible server deployments.",
+    "url": "https://nixos.org/",
+    "tags": ["nixos", "configuration", "reproducible", "linux", "devops"],
+    "category": "Large-Scale & Server Computing"
+  },
+  {
+    "title": "Proxmox VE — Open Source Data Center Virtualization",
+    "description": "Enterprise-grade virtualization platform. Run VMs and containers on a single host. The open-source alternative to VMware vSphere.",
+    "url": "https://www.proxmox.com/en/proxmox-ve",
+    "tags": ["virtualization", "proxmox", "hypervisor", "server", "linux"],
+    "category": "Large-Scale & Server Computing"
+  },
+  {
+    "title": "Mainframes — The 99.999% Reliable Computers",
+    "description": "IBM mainframes like the z16 still power the world's banking, airline, and government systems. Up-time measured in decades, not months.",
+    "url": "https://en.wikipedia.org/wiki/IBM_Z",
+    "tags": ["mainframe", "ibm", "enterprise", "reliability", "legacy"],
+    "category": "Large-Scale & Server Computing"
+  },
+  {
+    "title": "HPC — High Performance Computing Overview",
+    "description": "An introduction to supercomputing architecture — clusters, interconnects (InfiniBand), parallel file systems, and job scheduling (SLURM).",
+    "url": "https://en.wikipedia.org/wiki/High-performance_computing",
+    "tags": ["hpc", "supercomputing", "cluster", "parallel", "infrastructure"],
+    "category": "Large-Scale & Server Computing"
+  },
+  {
+    "title": "Blade Servers — Density Computing",
+    "description": "Blade servers pack dozens of server modules into a single chassis sharing power, cooling, and networking. The ultimate in data center density.",
+    "url": "https://en.wikipedia.org/wiki/Blade_server",
+    "tags": ["blade", "server", "density", "data center", "hardware"],
+    "category": "Large-Scale & Server Computing"
+  },
+  {
+    "title": "Data Center Cooling — The Hidden Infrastructure",
+    "description": "How the world's data centers stay cool. From AC to liquid immersion to building facilities in the Arctic. The invisible cost of cloud computing.",
+    "url": "https://en.wikipedia.org/wiki/Data_center_cooling",
+    "tags": ["data center", "cooling", "infrastructure", "energy", "engineering"],
+    "category": "Large-Scale & Server Computing"
+  },
+  {
+    "title": "Google's Borg — The System That Inspired Kubernetes",
+    "description": "Google's internal cluster management system that runs billions of containers a week. The paper that inspired Kubernetes and changed infrastructure forever.",
+    "url": "https://research.google/pubs/pub43438/",
+    "tags": ["google", "borg", "kubernetes", "cluster", "infrastructure"],
+    "category": "Large-Scale & Server Computing"
+  },
+  {
+    "title": "TempleOS — The Most Interesting OS Ever Written",
+    "description": "A modern operating system written entirely by one person as a divine creation. 100,000 lines of code, 64-bit, with its own compiler, kernel, and graphics stack.",
+    "url": "https://en.wikipedia.org/wiki/TempleOS",
+    "tags": ["operating system", "templeos", "solo project", "weird", "unique"],
+    "category": "Weird Rabbit Holes"
+  },
+  {
+    "title": "Dwarf Fortress — The Most Complex Simulation in Gaming",
+    "description": "A simulation game of literally infinite depth. Generates entire worlds with history, geology, ecology, and civilizations. The definition of emergent complexity.",
+    "url": "https://www.bay12games.com/dwarves/",
+    "tags": ["gaming", "simulation", "emergence", "complexity", "foss"],
+    "category": "Weird Rabbit Holes"
+  },
+  {
+    "title": "Lobsters — The Tech Link Aggregator",
+    "description": "A community-driven link aggregation site for tech enthusiasts. Less noise than Hacker News, more signal, and actual thoughtful discussion.",
+    "url": "https://lobste.rs/",
+    "tags": ["tech", "community", "links", "discussion", "programming"],
+    "category": "Design & Inspiration"
+  }
+]

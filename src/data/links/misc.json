@@ -1,0 +1,421 @@
+[
+  {
+    "title": "3Blue1Brown",
+    "url": "https://www.3blue1brown.com/",
+    "description": "Grant Sanderson's geometric explanations of linear algebra, calculus and neural networks — pure art.",
+    "tags": [
+      "math",
+      "visualization",
+      "education"
+    ],
+    "type": "video",
+    "subcategory": "science"
+  },
+  {
+    "title": "ArduPilot",
+    "url": "https://ardupilot.org/",
+    "description": "The most versatile open-source autopilot — quadcopters to submarines to rovers.",
+    "tags": [
+      "uav",
+      "robotics",
+      "control"
+    ],
+    "type": "docs",
+    "subcategory": "robotics"
+  },
+  {
+    "title": "Backblaze — the 3-2-1 backup rule",
+    "url": "https://www.backblaze.com/blog/the-3-2-1-backup-strategy/",
+    "description": "The one backup rule worth memorizing: three copies, two media, one off-site.",
+    "tags": [
+      "backup",
+      "data",
+      "strategy"
+    ],
+    "type": "article",
+    "subcategory": "resilient"
+  },
+  {
+    "title": "BetterExplained",
+    "url": "https://betterexplained.com/",
+    "description": "Math lessons that focus on intuition — e, imaginary numbers and Bayes so they actually click.",
+    "tags": [
+      "math",
+      "intuition",
+      "education"
+    ],
+    "type": "article",
+    "subcategory": "science"
+  },
+  {
+    "title": "Brutalist Websites",
+    "url": "https://brutalistwebsites.com/",
+    "description": "A gallery of sites embracing raw, honest, unpolished-by-intent web design.",
+    "tags": [
+      "design",
+      "brutalism",
+      "inspiration"
+    ],
+    "type": "project",
+    "subcategory": "design"
+  },
+  {
+    "title": "Caterpillar D9",
+    "url": "https://en.wikipedia.org/wiki/Caterpillar_D9",
+    "description": "Wisdom. So is the D9's blade. The 100,000-pound bulldozer that moves mountains figuratively and literally.",
+    "tags": [
+      "caterpillar",
+      "heavy-equipment",
+      "diesel"
+    ],
+    "type": "archive",
+    "subcategory": "machines"
+  },
+  {
+    "title": "Cummins B-series diesel",
+    "url": "https://en.wikipedia.org/wiki/Cummins_B_Series_engine",
+    "description": "The 5.9L/6.7L engines powering trucks and machinery worldwide — the 12-valve has legendary reliability.",
+    "tags": [
+      "diesel",
+      "engines",
+      "reliability"
+    ],
+    "type": "archive",
+    "subcategory": "machines"
+  },
+  {
+    "title": "Detroit Diesel 2-stroke",
+    "url": "https://en.wikipedia.org/wiki/Detroit_Diesel",
+    "description": "The 'Screaming Jimmy' two-stroke diesels — the sound of heavy equipment and highway trucks for decades.",
+    "tags": [
+      "diesel",
+      "engines",
+      "two-stroke"
+    ],
+    "type": "archive",
+    "subcategory": "machines"
+  },
+  {
+    "title": "Dwarf Fortress",
+    "url": "https://www.bay12games.com/dwarves/",
+    "description": "A simulation game of literally infinite depth — worlds with history, geology and civilizations emergent from simple rules.",
+    "tags": [
+      "gaming",
+      "simulation",
+      "emergence"
+    ],
+    "type": "project",
+    "subcategory": "rabbit-holes"
+  },
+  {
+    "title": "Expander Overland",
+    "url": "https://www.expanderoverland.com/",
+    "description": "A Toyota Coaster turned into a serious expedition vehicle — the ultimate off-grid mobile workshop build.",
+    "tags": [
+      "overlanding",
+      "build",
+      "expedition"
+    ],
+    "type": "article",
+    "subcategory": "machines"
+  },
+  {
+    "title": "Fellowship for Intentional Community",
+    "url": "https://www.ic.org/",
+    "description": "The longest-running directory and network of intentional and ecovillage communities — resilience as a social practice.",
+    "tags": [
+      "community",
+      "sustainability",
+      "ecovillages"
+    ],
+    "type": "org",
+    "subcategory": "resilient"
+  },
+  {
+    "title": "Hacker News",
+    "url": "https://news.ycombinator.com/",
+    "description": "Tech's watering hole — engineering discussion, startup news and the occasional existential crisis.",
+    "tags": [
+      "news",
+      "community"
+    ],
+    "type": "forum",
+    "subcategory": "community"
+  },
+  {
+    "title": "Lobsters",
+    "url": "https://lobste.rs/",
+    "description": "A quieter, more thoughtful tech link aggregator — less noise than HN, more signal.",
+    "tags": [
+      "news",
+      "community",
+      "programming"
+    ],
+    "type": "forum",
+    "subcategory": "community"
+  },
+  {
+    "title": "Local Exchange Trading Systems",
+    "url": "https://en.wikipedia.org/wiki/Local_exchange_trading_system",
+    "description": "Mutual-credit community economies — understanding alternative money as a resilience skill.",
+    "tags": [
+      "economics",
+      "community",
+      "alternatives"
+    ],
+    "type": "archive",
+    "subcategory": "resilient"
+  },
+  {
+    "title": "Low-Tech Magazine",
+    "url": "https://www.lowtechmagazine.com/",
+    "description": "Kris De Decker's exploration of low-tech, resilient alternatives — meet the tech of the year 2000 greener and wiser.",
+    "tags": [
+      "low-tech",
+      "sustainability",
+      "essays"
+    ],
+    "type": "article",
+    "subcategory": "resilient"
+  },
+  {
+    "title": "Low-Tech Magazine (solar version)",
+    "url": "https://solar.lowtechmagazine.com/",
+    "description": "Low-Tech's own website, offline whenever its solar battery runs dry, hosting itself on a grid of its own kind.",
+    "tags": [
+      "solar",
+      "self-hosting",
+      "experiment"
+    ],
+    "type": "project",
+    "subcategory": "resilient"
+  },
+  {
+    "title": "Mercedes-Benz Unimog",
+    "url": "https://en.wikipedia.org/wiki/Unimog",
+    "description": "A truck, a tractor, a crawler and an implement carrier — portal axles and unstoppable articulation.",
+    "tags": [
+      "unimog",
+      "off-road",
+      "expedition"
+    ],
+    "type": "archive",
+    "subcategory": "machines"
+  },
+  {
+    "title": "Mitsubishi Pajero",
+    "url": "https://en.wikipedia.org/wiki/Mitsubishi_Pajero",
+    "description": "Twelve-time Dakar winner — Super Select 4WD and a masterclass in rally-grade off-road engineering.",
+    "tags": [
+      "off-road",
+      "dakar",
+      "4x4"
+    ],
+    "type": "archive",
+    "subcategory": "machines"
+  },
+  {
+    "title": "Nissan Patrol Y61",
+    "url": "https://en.wikipedia.org/wiki/Nissan_Patrol",
+    "description": "Solid axles front and rear, the TD42 diesel and a near-indestructible reputation — the poor man's Land Cruiser.",
+    "tags": [
+      "nissan",
+      "off-road",
+      "diesel"
+    ],
+    "type": "archive",
+    "subcategory": "machines"
+  },
+  {
+    "title": "Off Grid Web",
+    "url": "https://www.offgridweb.com/",
+    "description": "Public safety communications and off-grid technology — gear reviews and field skills.",
+    "tags": [
+      "off-grid",
+      "resilience",
+      "gear"
+    ],
+    "type": "article",
+    "subcategory": "resilient"
+  },
+  {
+    "title": "Permacomputing",
+    "url": "https://permacomputing.net/",
+    "description": "A community of practice for resilient, regenerative computing — permaculture thinking for software and hardware.",
+    "tags": [
+      "resilience",
+      "sustainability",
+      "philosophy"
+    ],
+    "type": "project",
+    "subcategory": "rabbit-holes"
+  },
+  {
+    "title": "PX4 Autopilot Guide",
+    "url": "https://docs.px4.io/main/en/",
+    "description": "The professional open-source autopilot for drones and UAVs — where serious autonomous flight begins.",
+    "tags": [
+      "uav",
+      "drones",
+      "autopilot"
+    ],
+    "type": "docs",
+    "subcategory": "robotics"
+  },
+  {
+    "title": "Ready.gov",
+    "url": "https://www.ready.gov/",
+    "description": "FEMA's preparedness portal — including guidance on communicating during emergencies, a sober checklist for the worst day.",
+    "tags": [
+      "emergency",
+      "communication",
+      "fema"
+    ],
+    "type": "docs",
+    "subcategory": "resilient"
+  },
+  {
+    "title": "ROS 2 Documentation",
+    "url": "https://docs.ros.org/en/rolling/",
+    "description": "The robot operating system (a middleware framework) — the lingua franca of modern robotics.",
+    "tags": [
+      "robotics",
+      "ros",
+      "middleware"
+    ],
+    "type": "docs",
+    "subcategory": "robotics"
+  },
+  {
+    "title": "Solar Power World",
+    "url": "https://www.solarpowerworldonline.com/",
+    "description": "News and engineering for solar — the tech-reading side of keeping infrastructure alive without the grid.",
+    "tags": [
+      "solar",
+      "power",
+      "news"
+    ],
+    "type": "news",
+    "subcategory": "resilient"
+  },
+  {
+    "title": "Stanford Encyclopedia of Philosophy",
+    "url": "https://plato.stanford.edu/",
+    "description": "Peer-reviewed entries on every major philosophical topic — the informal reference library of philosophy.",
+    "tags": [
+      "philosophy",
+      "reference",
+      "academic"
+    ],
+    "type": "archive",
+    "subcategory": "science"
+  },
+  {
+    "title": "Stratechery",
+    "url": "https://stratechery.com/",
+    "description": "Ben Thompson's analysis of tech strategy — aggregation theory and the business of software.",
+    "tags": [
+      "strategy",
+      "business",
+      "analysis"
+    ],
+    "type": "article",
+    "subcategory": "community"
+  },
+  {
+    "title": "TempleOS",
+    "url": "https://en.wikipedia.org/wiki/TempleOS",
+    "description": "A full 64-bit OS written by one man — its own compiler, kernel and graphics stack. The most interesting OS ever written.",
+    "tags": [
+      "operating-systems",
+      "solo",
+      "curiosity"
+    ],
+    "type": "archive",
+    "subcategory": "rabbit-holes"
+  },
+  {
+    "title": "The Embedded Rust Book",
+    "url": "https://docs.rust-embedded.org/book/",
+    "description": "Rust for bare-metal microcontrollers — memory-safe firmware, the future of embedded.",
+    "tags": [
+      "rust",
+      "embedded",
+      "microcontrollers"
+    ],
+    "type": "book",
+    "subcategory": "robotics"
+  },
+  {
+    "title": "The Feynman Lectures on Physics",
+    "url": "https://www.feynmanlectures.caltech.edu/",
+    "description": "Feynman's legendary lectures, free online — the gold standard for fundamental physics.",
+    "tags": [
+      "physics",
+      "feynman",
+      "education"
+    ],
+    "type": "book",
+    "subcategory": "science"
+  },
+  {
+    "title": "The Prepared",
+    "url": "https://theprepared.com/",
+    "description": "Rational, non-bunker preparedness — resilience thinking without the panic-buying.",
+    "tags": [
+      "preparedness",
+      "resilience",
+      "guide"
+    ],
+    "type": "article",
+    "subcategory": "resilient"
+  },
+  {
+    "title": "The Wärtsilä-Sulzer RTA96-C",
+    "url": "https://en.wikipedia.org/wiki/W%C3%A4rtsil%C3%A4-Sulzer_RTA96-C",
+    "description": "The largest engine in the world — 109,000 hp across fourteen 38-inch bores, the heartbeat of container shipping.",
+    "tags": [
+      "marine",
+      "diesel",
+      "largest"
+    ],
+    "type": "archive",
+    "subcategory": "machines"
+  },
+  {
+    "title": "Toyota Land Cruiser 100 Series",
+    "url": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser_(J100)",
+    "description": "The 100 that paired comfort with serious off-road capability — IFS, solid rear axle and the 2UZ-FE V8.",
+    "tags": [
+      "land-cruiser",
+      "off-road",
+      "v8"
+    ],
+    "type": "archive",
+    "subcategory": "machines"
+  },
+  {
+    "title": "Toyota Land Cruiser 70 Series",
+    "url": "https://en.wikipedia.org/wiki/Toyota_Land_Cruiser_(J70)",
+    "description": "In continuous production since 1984 — the 4x4 of NGOs, militaries and explorers everywhere.",
+    "tags": [
+      "land-cruiser",
+      "off-road",
+      "4x4"
+    ],
+    "type": "archive",
+    "subcategory": "machines"
+  },
+  {
+    "title": "Wendover Productions",
+    "url": "https://www.youtube.com/@wendoverproductions",
+    "description": "Well-researched videos on infrastructure, logistics and the quiet machinery of the world.",
+    "tags": [
+      "infrastructure",
+      "logistics",
+      "video"
+    ],
+    "type": "video",
+    "subcategory": "rabbit-holes"
+  }
+]

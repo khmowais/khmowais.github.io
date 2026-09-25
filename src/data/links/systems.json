@@ -1,0 +1,375 @@
+[
+  {
+    "title": "Blade servers — density computing",
+    "url": "https://en.wikipedia.org/wiki/Blade_server",
+    "description": "Sharing power, cooling and networking across a chassis — the density play of data centers.",
+    "tags": [
+      "server",
+      "density",
+      "hardware"
+    ],
+    "type": "archive",
+    "subcategory": "data"
+  },
+  {
+    "title": "Brendan Gregg's site",
+    "url": "https://www.brendangregg.com/",
+    "description": "Methodologies, tools and one-liners for performance analysis, eBPF and Linux internals.",
+    "tags": [
+      "performance",
+      "sysadmin",
+      "blog"
+    ],
+    "type": "article",
+    "subcategory": "linux"
+  },
+  {
+    "title": "Ceph",
+    "url": "https://ceph.io/en/",
+    "description": "Open distributed storage at petabyte scale — the filesystem behind massive clusters.",
+    "tags": [
+      "storage",
+      "distributed",
+      "filesystem"
+    ],
+    "type": "project",
+    "subcategory": "data"
+  },
+  {
+    "title": "Data center cooling",
+    "url": "https://en.wikipedia.org/wiki/Data_center_cooling",
+    "description": "From AC to immersion cooling to Arctic siting — the invisible engineering of keeping the cloud cool.",
+    "tags": [
+      "data-center",
+      "cooling",
+      "energy"
+    ],
+    "type": "archive",
+    "subcategory": "data"
+  },
+  {
+    "title": "eBPF — what it is",
+    "url": "https://ebpf.io/",
+    "description": "The extended Berkeley Packet Filter that turned the kernel into a programmable observability surface.",
+    "tags": [
+      "ebpf",
+      "kernel",
+      "observability"
+    ],
+    "type": "project",
+    "subcategory": "linux"
+  },
+  {
+    "title": "Google SRE Books",
+    "url": "https://sre.google/books/",
+    "description": "Google's free SRE books — how the world's largest systems are engineered, run and kept alive.",
+    "tags": [
+      "sre",
+      "reliability",
+      "monitoring"
+    ],
+    "type": "book",
+    "subcategory": "distributed"
+  },
+  {
+    "title": "Google's Borg",
+    "url": "https://research.google/pubs/pub43438/",
+    "description": "The cluster manager that runs billions of containers weekly and fathered Kubernetes.",
+    "tags": [
+      "google",
+      "borg",
+      "cluster-management"
+    ],
+    "type": "paper",
+    "subcategory": "data",
+    "source": "Google Research"
+  },
+  {
+    "title": "Guifi.net",
+    "url": "https://guifi.net/en",
+    "description": "The world's largest open community network — 30,000+ nodes, proof that community internet works.",
+    "tags": [
+      "community-network",
+      "mesh",
+      "isp-alternative"
+    ],
+    "type": "org",
+    "subcategory": "networking"
+  },
+  {
+    "title": "High-Performance Computing",
+    "url": "https://en.wikipedia.org/wiki/High-performance_computing",
+    "description": "Supercomputer architecture — InfiniBand interconnects, parallel filesystems, SLURM scheduling.",
+    "tags": [
+      "hpc",
+      "cluster",
+      "parallel"
+    ],
+    "type": "archive",
+    "subcategory": "data"
+  },
+  {
+    "title": "How DNS works (interactive)",
+    "url": "https://howdns.works/",
+    "description": "From browser to root servers to authoritative nameserver — visual DNS explained.",
+    "tags": [
+      "dns",
+      "networking",
+      "tutorial"
+    ],
+    "type": "guide",
+    "subcategory": "networking"
+  },
+  {
+    "title": "IBM Z mainframes",
+    "url": "https://en.wikipedia.org/wiki/IBM_Z",
+    "description": "The 99.999%-reliability machines that still run banking, airlines and government — uptime in decades.",
+    "tags": [
+      "mainframe",
+      "enterprise",
+      "reliability"
+    ],
+    "type": "archive",
+    "subcategory": "data"
+  },
+  {
+    "title": "Inferno® Operating System",
+    "url": "https://en.wikipedia.org/wiki/Inferno_(operating_system)",
+    "description": "The distributed OS from Bell Labs that treats the network as a filesystem — a glimpse at an alternate timeline.",
+    "tags": [
+      "operating-systems",
+      "distributed",
+      "bell-labs"
+    ],
+    "type": "archive",
+    "subcategory": "unix"
+  },
+  {
+    "title": "Internet Exchange Points",
+    "url": "https://en.wikipedia.org/wiki/Internet_exchange_point",
+    "description": "The physical buildings where ISPs exchange traffic — the real fabric of the internet.",
+    "tags": [
+      "ixp",
+      "peering",
+      "infrastructure"
+    ],
+    "type": "archive",
+    "subcategory": "networking"
+  },
+  {
+    "title": "Julia Evans",
+    "url": "https://jvns.ca/",
+    "description": "Zines and posts that turn gnarly systems concepts (DNS, strace, HTTP) into things you can actually carry around.",
+    "tags": [
+      "sysadmin",
+      "debugging",
+      "blog"
+    ],
+    "type": "article",
+    "subcategory": "unix"
+  },
+  {
+    "title": "Kubernetes",
+    "url": "https://kubernetes.io/",
+    "description": "Container orchestration at data-center scale — the standards for running fleets.",
+    "tags": [
+      "kubernetes",
+      "containers",
+      "orchestration"
+    ],
+    "type": "org",
+    "subcategory": "web"
+  },
+  {
+    "title": "Mesh networking",
+    "url": "https://en.wikipedia.org/wiki/Mesh_networking",
+    "description": "How BATMAN, OLSR and 802.11s let communities build internet between themselves without ISPs.",
+    "tags": [
+      "mesh",
+      "decentralized",
+      "community"
+    ],
+    "type": "archive",
+    "subcategory": "networking"
+  },
+  {
+    "title": "MIT 6.824 — Distributed Systems",
+    "url": "https://pdos.csail.mit.edu/6.824/",
+    "description": "The canonical distributed systems course — RPC, consensus, replication, fault tolerance.",
+    "tags": [
+      "distributed-systems",
+      "consensus",
+      "course"
+    ],
+    "type": "course",
+    "subcategory": "distributed"
+  },
+  {
+    "title": "NixOS",
+    "url": "https://nixos.org/",
+    "description": "The reproducible operating system — every state defined in config, atomic upgrades, declarative servers.",
+    "tags": [
+      "nix",
+      "reproducible",
+      "linux"
+    ],
+    "type": "project",
+    "subcategory": "unix"
+  },
+  {
+    "title": "NYC Mesh",
+    "url": "https://www.nycmesh.net/",
+    "description": "New York's community-owned network — rooftop antennas and fiber that belongs to its users.",
+    "tags": [
+      "mesh",
+      "community",
+      "diy"
+    ],
+    "type": "project",
+    "subcategory": "networking"
+  },
+  {
+    "title": "OpenResty",
+    "url": "https://openresty.org/en/",
+    "description": "Nginx + LuaJIT as a full web platform — the stack behind much of the high-throughput internet.",
+    "tags": [
+      "nginx",
+      "lua",
+      "web"
+    ],
+    "type": "project",
+    "subcategory": "web"
+  },
+  {
+    "title": "Sneakernet",
+    "url": "https://en.wikipedia.org/wiki/Sneakernet",
+    "description": "The network where data travels on physical media — sometimes the fastest link is a bicycle.",
+    "tags": [
+      "offline",
+      "networking",
+      "resilience"
+    ],
+    "type": "archive",
+    "subcategory": "networking"
+  },
+  {
+    "title": "Starlink",
+    "url": "https://www.starlink.com/",
+    "description": "SpaceX's LEO constellation — a new class of connectivity and the backup many remote sites now buy first.",
+    "tags": [
+      "satellite",
+      "internet",
+      "spacex"
+    ],
+    "type": "org",
+    "subcategory": "networking"
+  },
+  {
+    "title": "Submarine Cable Map",
+    "url": "https://www.submarinecablemap.com/",
+    "description": "Interactive map of the 400+ undersea fiber cables carrying 99% of international data.",
+    "tags": [
+      "submarine-cables",
+      "fiber",
+      "map"
+    ],
+    "type": "tool",
+    "subcategory": "networking"
+  },
+  {
+    "title": "Systems Performance (Brendan Gregg)",
+    "url": "https://www.brendangregg.com/systems-performance-2nd-edition-book.html",
+    "description": "The definitive guide from kernel to application — the performance book I keep within arm's reach.",
+    "tags": [
+      "performance",
+      "linux",
+      "kernel"
+    ],
+    "type": "book",
+    "subcategory": "linux"
+  },
+  {
+    "title": "Tailscale Blog",
+    "url": "https://tailscale.com/blog/",
+    "description": "Deep dives into WireGuard, mesh networking and building secure networks at scale.",
+    "tags": [
+      "networking",
+      "wireguard",
+      "mesh"
+    ],
+    "type": "article",
+    "subcategory": "networking"
+  },
+  {
+    "title": "The 9P network protocol & Plan 9",
+    "url": "https://9p.io/plan9/",
+    "description": "Plan 9 from Bell Labs — the true Unix successor that made everything files and lost the OS war but won the ideas war.",
+    "tags": [
+      "plan9",
+      "distributed",
+      "unix-history"
+    ],
+    "type": "project",
+    "subcategory": "unix"
+  },
+  {
+    "title": "The Art of Unix Programming",
+    "url": "https://www.catb.org/~esr/writings/taoup/html/",
+    "description": "Eric Raymond's study of the Unix philosophy that shaped modern software — the reason the small-tools culture exists.",
+    "tags": [
+      "unix",
+      "philosophy",
+      "programming"
+    ],
+    "type": "book",
+    "subcategory": "unix"
+  },
+  {
+    "title": "The Cathedral and the Bazaar",
+    "url": "https://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/",
+    "description": "Raymond's essay on how the internet builds software — cathedral vs. bazaar, one of the founding texts of open-source",
+    "tags": [
+      "foss",
+      "essay",
+      "history"
+    ],
+    "type": "article",
+    "subcategory": "foss"
+  },
+  {
+    "title": "The Illustrated TLS Connection",
+    "url": "https://tls.ulfheim.net/",
+    "description": "A handshake in frame-by-frame glory — TLS explained one byte at a time.",
+    "tags": [
+      "tls",
+      "crypto",
+      "tutorial"
+    ],
+    "type": "guide",
+    "subcategory": "networking"
+  },
+  {
+    "title": "The System Design Primer",
+    "url": "https://github.com/donnemartin/system-design-primer",
+    "description": "Load balancers, CDNs and consensus algorithms explained with diagrams — the structured map of how big systems fit together.",
+    "tags": [
+      "system-design",
+      "architecture",
+      "scalability"
+    ],
+    "type": "repo",
+    "subcategory": "distributed"
+  },
+  {
+    "title": "What is BGP?",
+    "url": "https://www.cloudflare.com/learning/security/glossary/what-is-bgp/",
+    "description": "Cloudflare's introduction to the routing protocol that holds the internet's autonomous systems together.",
+    "tags": [
+      "bgp",
+      "routing",
+      "protocol"
+    ],
+    "type": "guide",
+    "subcategory": "networking"
+  }
+]

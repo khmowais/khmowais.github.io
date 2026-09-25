@@ -1,0 +1,188 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import InquiryCard from "../components/InquiryCard.astro";
+import { serviceGroups, freelanceNote } from "../data/services";
+import { GOSHAWK, SOCIALS } from "../config";
+
+const howItWorks = [
+  {
+    k: "F/R",
+    t: "Direct freelance",
+    d: "You have a defined problem; I build it. Fixed scope, fixed price after one scoping call, weekly visible progress, full ownership handed to you.",
+    route: "the default — a project, one engineer",
+  },
+  {
+    k: "C/N",
+    t: "Consulting & audits",
+    d: "You have an AI system, a stack, or a plan — and you want an honest second opinion. Architecture review, eval design, or a working session that ends with a decision.",
+    route: "an hour, a day, or a week — timeboxed",
+  },
+  {
+    k: "M/N",
+    t: "Mentoring & coaching",
+    d: "For students, teams, and researchers who want to level up on real work: your code, your project, your questions. From FYP guidance to LLM engineering.",
+    route: "recurring 1:1, workshops, bootcamps",
+  },
+];
+
+const whatToSend = [
+  ["The problem", "one paragraph, not a feature list — what are you actually trying to do?"],
+  ["Who uses it", "and how often? internal tool vs customer-facing changes everything."],
+  ["What 'done' looks like", "what would you point at and say 'that's it'?"],
+  ["When it needs to ship", "plus a rough budget if you have one — it scopes the effort honestly."],
+];
+
+const afterContact = [
+  ["day 0", "a reply — within a business day, usually faster, agreeing a short call or clarifying questions."],
+  ["day 0–2", "a scoping call — 30 minutes, free. You talk, I sketch the shape, we find the risks."],
+  ["after the call", "a written proposal: scope, deliverables, price, timeline. Fixed. No surprises later."],
+];
+---
+
+<BaseLayout
+  title="Work With Me"
+  description="Hire Khawaja M. Owais: freelance AI & LLM engineering, data science, software, automation, and technical mentoring. Fixed scope, honest advice, full ownership."
+>
+  <section class="hero gridpaper">
+    <div class="container hero-inner">
+      <p class="statusline" data-reveal>
+        <span>WORK WITH ME</span><span>·</span><span>OWAIS.QZZ.IO</span><span>·</span><span>UTC+5</span>
+      </p>
+      <h1 data-reveal class="d1">
+        Hire me to build the thing you keep <span class="mark">describing in meetings.</span>
+      </h1>
+      <p class:list={["lede", "d2"]} data-reveal>
+        AI systems, data pipelines, software, automation, and the unglamorous glue.
+        Fixed scope, fixed price, weekly progress, and everything owned by you at the end.
+        <span class="annote">— if I can't do it, I'll tell you in the first call</span>
+      </p>
+      <div class:list={["btn-row", "d3"]} data-reveal>
+        <a class="btn btn-primary" href={`mailto:${SOCIALS.email}?subject=Project%20inquiry`}>
+          Tell me what you need <span class="arr">↗</span>
+        </a>
+        <a class="btn btn-ghost" href="/services">Browse what I build</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 · what I take on -->
+  <section class="band">
+    <div class="container">
+      <p class="kicker" data-reveal>01 — what I take on</p>
+      <h2 data-reveal>Pick a lane. Each one is hireable.</h2>
+      <p class="lead" data-reveal>
+        Five groups, {serviceGroups.reduce((n, g) => n + g.items.length, 0)} concrete
+        capabilities. Nothing here is a keyword list.
+        <span class="annote">— the full catalog lives on /services</span>
+      </p>
+      <div class="spec-sheet" style="margin-top:2rem">
+        {serviceGroups.map((g) => (
+          <div class="spec-item" data-reveal>
+            <span class="spec-k">{g.code}</span>
+            <div class="spec-v">
+              <h3>{g.title}</h3>
+              <p>{g.blurb} — {g.items.length} capabilities.</p>
+              <span class="annote">{g.annote}</span>
+              <a
+                class="mono"
+                style="display:inline-block;margin-top:0.6rem;font-size:0.8rem;color:var(--accent-text);text-decoration:none;border-bottom:1px dashed var(--line-strong)"
+                href={`mailto:${SOCIALS.email}?subject=${encodeURIComponent(g.title + " project inquiry")}&body=${encodeURIComponent("Hi Owais,\n\nI'd like to talk about a " + g.title.toLowerCase() + " project.\n\n")}`}
+              >
+                hire me for this ↗
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 · how it works -->
+  <section class="band band--step">
+    <div class="container">
+      <p class="kicker" data-reveal>02 — three ways to work together</p>
+      <h2 data-reveal>Freelance, consulting, or coaching.</h2>
+      <div class="grid grid-3" style="margin-top:2rem">
+        {howItWorks.map((h) => (
+          <div class="card" data-reveal>
+            <span class="card-k">{h.k}</span>
+            <h3>{h.t}</h3>
+            <p>{h.d}</p>
+            <p class="mono" style="margin-top:1.1rem;padding-top:0.8rem;border-top:1px solid var(--line);font-size:0.76rem;letter-spacing:0.04em;color:var(--faint)">{h.route}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 · what to send -->
+  <section class="band">
+    <div class="container" style="max-width:860px">
+      <p class="kicker" data-reveal>03 — what to send me</p>
+      <h2 data-reveal>A good brief is four lines.</h2>
+      <div class="spec-sheet" style="margin-top:1.8rem">
+        {whatToSend.map(([k, v], i) => (
+          <div class="spec-item" data-reveal style="grid-template-columns:44px minmax(0,1fr)">
+            <span class="spec-k">{"0" + (i + 1)}</span>
+            <div class="spec-v">
+              <h3>{k}</h3>
+              <p>{v}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <p class="muted" style="font-size:0.95rem;margin-top:1.6rem" data-reveal>
+        That's it. You don't need a spec, a Gantt chart, or a PDF. We build the spec together.
+      </p>
+    </div>
+  </section>
+
+  <!-- 04 · the form -->
+  <section class="band band--step" style="padding-top:1rem">
+    <div class="container" style="max-width:720px">
+      <p class="kicker" data-reveal>04 — the short brief</p>
+      <h2 data-reveal>Four fields, <span class="annote">no ticketing system.</span></h2>
+      <InquiryCard recipient={SOCIALS.email} />
+      <p class="mono" style="font-size:0.78rem;color:var(--muted);margin-top:1.6rem" data-reveal>{freelanceNote}</p>
+    </div>
+  </section>
+
+  <!-- 05 · what happens next -->
+  <section class="band band--ink">
+    <div class="container" style="max-width:860px">
+      <p class="kicker" data-reveal>05 — what happens next</p>
+      <h2 data-reveal>The pipeline, in plain language.</h2>
+      <div style="margin-top:1.8rem">
+        {afterContact.map(([k, v]) => (
+          <div class="belief" data-reveal style="grid-template-columns:110px minmax(0,1fr)">
+            <span class="num">{k}</span>
+            <div><p style="max-width:64ch">{v}</p></div>
+          </div>
+        ))}
+      </div>
+      <div class="btn-row" data-reveal style="margin-top:1.6rem">
+        <a class="btn btn-primary" href={`mailto:${SOCIALS.email}?subject=Project%20inquiry`}>Start the pipeline <span class="arr">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 · bigger than solo -->
+  <section class="band">
+    <div class="container" style="max-width:860px">
+      <div class="duotile">
+        <a class="tile" href={GOSHAWK.basePath + "/"} data-reveal>
+          <span class="tile-k">bigger · structured</span>
+          <h3>Needs more than one engineer?</h3>
+          <p>Websites, custom software and AI systems at studio scale — brief → build → handover, weekly increments, fixed price.</p>
+          <span class="tile-meta">Goshawk Labs · {GOSHAWK.name}</span>
+        </a>
+        <a class="tile" href="/links" data-reveal>
+          <span class="tile-k">curious · not hiring</span>
+          <h3>Just here for the brain?</h3>
+          <p>The notes and the link shelf are free. Both are updated from the same bench that does the client work.</p>
+          <span class="tile-meta">writing · links · op notes</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

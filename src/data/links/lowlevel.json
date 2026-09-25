@@ -1,0 +1,650 @@
+[
+  {
+    "title": "Adrian's Digital Basement (YouTube)",
+    "url": "https://www.youtube.com/@adriansdigitalbasement",
+    "description": "Restoring and reverse-engineering 80s/90s hardware — endgame electronics content for the homebrew crowd.",
+    "tags": [
+      "retro",
+      "restoration",
+      "video"
+    ],
+    "type": "video",
+    "subcategory": "retro"
+  },
+  {
+    "title": "ARM Assembly (AArch64)",
+    "url": "https://developer.arm.com/documentation/den0024/",
+    "description": "ARM's learn-the-architecture guide to AArch64 assembly.",
+    "tags": [
+      "assembly",
+      "arm"
+    ],
+    "type": "docs",
+    "subcategory": "assembly"
+  },
+  {
+    "title": "Basilisk II",
+    "url": "https://basilisk.cebix.net/",
+    "description": "The mainline Classic Mac emulator — emulates a full 68K Mac OS system.",
+    "tags": [
+      "mac",
+      "emulation"
+    ],
+    "type": "project",
+    "subcategory": "emulation"
+  },
+  {
+    "title": "Beej's Guide to C",
+    "url": "https://beej.us/guide/bgc/",
+    "description": "A modern, friendly introduction to C.",
+    "tags": [
+      "c",
+      "guide"
+    ],
+    "type": "guide",
+    "subcategory": "guides"
+  },
+  {
+    "title": "Beej's Guide to Network Programming",
+    "url": "https://beej.us/guide/bgnet/",
+    "description": "Sockets programming in C, explained with humour and no fluff.",
+    "tags": [
+      "networking",
+      "c",
+      "guide"
+    ],
+    "type": "guide",
+    "subcategory": "guides"
+  },
+  {
+    "title": "Ben Eater 8-bit computer (site)",
+    "url": "https://eater.net/8bit",
+    "description": "Companion course site and kit for the breadboard CPU series.",
+    "tags": [
+      "8-bit",
+      "course"
+    ],
+    "type": "course",
+    "subcategory": "homebrew"
+  },
+  {
+    "title": "Ben Eater's 8-bit computer (YouTube)",
+    "url": "https://www.youtube.com/@BenEater",
+    "description": "Building a working 8-bit computer from breadboards — the video series that taught a generation how CPUs actually work.",
+    "tags": [
+      "8-bit",
+      "breadboard",
+      "cpu",
+      "video"
+    ],
+    "type": "video",
+    "subcategory": "homebrew"
+  },
+  {
+    "title": "Binary Ninja",
+    "url": "https://binary.ninja/",
+    "description": "A modern reverse engineering platform; the cloud demo lets you decompile in a browser.",
+    "tags": [
+      "reverse-engineering",
+      "decompiler"
+    ],
+    "type": "tool",
+    "subcategory": "binary"
+  },
+  {
+    "title": "Bipolar junction transistors",
+    "url": "https://en.wikipedia.org/wiki/Bipolar_junction_transistor",
+    "description": "How a BJT really works — current-controlled operation, three regions, and what makes it amplify.",
+    "tags": [
+      "electronics",
+      "transistors"
+    ],
+    "type": "archive",
+    "subcategory": "electronics"
+  },
+  {
+    "title": "CHM Software History collection",
+    "url": "https://www.computerhistory.org/collections/",
+    "description": "The Computer History Museum's collected software, manuals and source artifacts.",
+    "tags": [
+      "history",
+      "software",
+      "archive"
+    ],
+    "type": "archive",
+    "subcategory": "retro"
+  },
+  {
+    "title": "Computer Organization and Design",
+    "url": "https://shop.elsevier.com/books/computer-organization-and-design/patterson/978-0-12-820612-6",
+    "description": "Patterson & Hennessy RISC-V edition — the how-the-hardware-really-works classic.",
+    "tags": [
+      "book",
+      "computer-architecture",
+      "risc-v"
+    ],
+    "type": "book",
+    "subcategory": "books"
+  },
+  {
+    "title": "Computer Systems: A Programmer's Perspective",
+    "url": "https://csapp.cs.cmu.edu/",
+    "description": "CS:APP — C, memory, linking, processes, systems I/O explained for programmers. The book that makes the machine legible.",
+    "tags": [
+      "book",
+      "systems",
+      "c"
+    ],
+    "type": "book",
+    "subcategory": "books"
+  },
+  {
+    "title": "Fabrice Bellard",
+    "url": "https://bellard.org/",
+    "description": "The personal page of Fabrice Bellard — QEMU, FFmpeg, tcc, and a Pi-record program. A masterclass in lone-engineer output.",
+    "tags": [
+      "engineer",
+      "author"
+    ],
+    "type": "org",
+    "subcategory": "personas"
+  },
+  {
+    "title": "Game Boy hardware reference (Pan Docs)",
+    "url": "https://gbdev.io/pandocs/",
+    "description": "The community-written, extremely detailed Game Boy hardware documentation.",
+    "tags": [
+      "emulation",
+      "gameboy",
+      "docs"
+    ],
+    "type": "docs",
+    "subcategory": "emulation"
+  },
+  {
+    "title": "Ghidra",
+    "url": "https://github.com/NationalSecurityAgency/ghidra",
+    "description": "NSA's open-source reverse engineering suite — decompiler, disassembler, scripting.",
+    "tags": [
+      "reverse-engineering",
+      "decompiler"
+    ],
+    "type": "repo",
+    "subcategory": "binary"
+  },
+  {
+    "title": "GNU objdump / binutils",
+    "url": "https://www.gnu.org/software/binutils/",
+    "description": "The classic toolkit — objdump, nm, readelf — for looking at the inside of binaries.",
+    "tags": [
+      "binary",
+      "toolkit",
+      "elf"
+    ],
+    "type": "org",
+    "subcategory": "binary"
+  },
+  {
+    "title": "Godbolt: Compiler Explorer",
+    "url": "https://godbolt.org/",
+    "description": "See what your C/Rust/etc. compiles to in assembly, with any compiler from the last two decades.",
+    "tags": [
+      "assembly",
+      "compilers",
+      "tool"
+    ],
+    "type": "tool",
+    "subcategory": "assembly"
+  },
+  {
+    "title": "How do CPUs work?",
+    "url": "https://cpu.land/",
+    "description": "A friendly book-on-a-page about what CPUs actually do, written for curious programmers.",
+    "tags": [
+      "cpu",
+      "courses",
+      "book"
+    ],
+    "type": "guide",
+    "subcategory": "guides"
+  },
+  {
+    "title": "How ELF files work",
+    "url": "https://man7.org/linux/man-pages/man5/elf.5.html",
+    "description": "The ELF format man page — headers, sections, symbols, segments, from the ground truth.",
+    "tags": [
+      "elf",
+      "binary",
+      "format"
+    ],
+    "type": "docs",
+    "subcategory": "binary"
+  },
+  {
+    "title": "How to write an emulator (CHIP-8)",
+    "url": "https://tobiasvl.github.io/blog/write-a-chip-8-emulator/",
+    "description": "Tobias's gentle intro — a CHIP-8 emulator in ~100 lines of any language.",
+    "tags": [
+      "emulation",
+      "chip-8",
+      "tutorial"
+    ],
+    "type": "article",
+    "subcategory": "emulation",
+    "source": "tobiasvl.github.io"
+  },
+  {
+    "title": "How x86 boot works",
+    "url": "https://github.com/cfenollosa/os-tutorial",
+    "description": "A guided walkthrough building a boot sector to a working OS — with commentary the whole way.",
+    "tags": [
+      "osdev",
+      "bootloader",
+      "tutorial"
+    ],
+    "type": "repo",
+    "subcategory": "os"
+  },
+  {
+    "title": "Ken Shirriff's Blog",
+    "url": "https://www.righto.com/",
+    "description": "Reverse-engineering silicon: integrated circuits from calculators to FPGAs, photographed and explained.",
+    "tags": [
+      "silicon",
+      "reverse-engineering",
+      "blog"
+    ],
+    "type": "article",
+    "subcategory": "silicon",
+    "source": "righto.com"
+  },
+  {
+    "title": "Linux Kernel Documentation",
+    "url": "https://www.kernel.org/doc/html/latest/",
+    "description": "The official kernel docs — subsystems, drivers, locking, APIs.",
+    "tags": [
+      "kernel",
+      "docs"
+    ],
+    "type": "docs",
+    "subcategory": "os"
+  },
+  {
+    "title": "Linux System Programming (docs)",
+    "url": "https://man7.org/linux/man-pages/",
+    "description": "man7.org man pages — the ground truth for Linux syscalls.",
+    "tags": [
+      "linux",
+      "syscalls"
+    ],
+    "type": "docs",
+    "subcategory": "os"
+  },
+  {
+    "title": "Macintosh.js (classic Mac emulator)",
+    "url": "https://github.com/felixrieseberg/macintosh.js",
+    "description": "A downloadable Classic Mac emulator; the fun demonstration of how far browser-served emulation has come.",
+    "tags": [
+      "mac",
+      "emulation"
+    ],
+    "type": "repo",
+    "subcategory": "emulation"
+  },
+  {
+    "title": "MAME",
+    "url": "https://www.mamedev.org/",
+    "description": "The Multiple Arcade Machine Emulator — preservation of arcade hardware in software.",
+    "tags": [
+      "arcade",
+      "emulation",
+      "preservation"
+    ],
+    "type": "project",
+    "subcategory": "emulation"
+  },
+  {
+    "title": "Nand2Tetris course",
+    "url": "https://nand2tetris.org/course",
+    "description": "The entire course that takes you from a single NAND gate to a bootable OS.",
+    "tags": [
+      "course",
+      "computer-architecture"
+    ],
+    "type": "course",
+    "subcategory": "courses"
+  },
+  {
+    "title": "nandgame",
+    "url": "https://nandgame.com/",
+    "description": "Playable online course that walks you from NAND gates to a working CPU.",
+    "tags": [
+      "course",
+      "interactive",
+      "computer-architecture"
+    ],
+    "type": "course",
+    "subcategory": "courses"
+  },
+  {
+    "title": "Open-source silicon (Libre Silicon)",
+    "url": "https://libresilicon.com/",
+    "description": "A serious attempt at open silicon as an economic venture — fascinating engineering economics.",
+    "tags": [
+      "silicon",
+      "open-source"
+    ],
+    "type": "project",
+    "subcategory": "silicon"
+  },
+  {
+    "title": "Operating Systems: Three Easy Pieces (OSTEP)",
+    "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+    "description": "Remzi & Andrea's free, genuinely readable OS textbook — virtualization, concurrency, persistence.",
+    "tags": [
+      "book",
+      "os",
+      "free"
+    ],
+    "type": "book",
+    "subcategory": "books"
+  },
+  {
+    "title": "OSDev Wiki",
+    "url": "https://wiki.osdev.org/",
+    "description": "The reference for writing your own operating system — interrupts, memory, drivers, bootloaders.",
+    "tags": [
+      "osdev",
+      "kernel"
+    ],
+    "type": "docs",
+    "subcategory": "os"
+  },
+  {
+    "title": "Pico-8",
+    "url": "https://www.lexaloffle.com/pico-8.php",
+    "description": "The fantasy console that keeps a whole scene coding within a deliberately tiny spec.",
+    "tags": [
+      "pico-8",
+      "game",
+      "fantasy-console"
+    ],
+    "type": "project",
+    "subcategory": "homebrew"
+  },
+  {
+    "title": "Programming Rust",
+    "url": "https://github.com/ProgrammingRust",
+    "description": "Reference companion code for the O'Reilly Rust book.",
+    "tags": [
+      "rust",
+      "book"
+    ],
+    "type": "repo",
+    "subcategory": "books"
+  },
+  {
+    "title": "QEMU",
+    "url": "https://www.qemu.org/",
+    "description": "The emulator/virtualizer at the heart of most low-level tinkering and CI.",
+    "tags": [
+      "emulation",
+      "virtualization"
+    ],
+    "type": "project",
+    "subcategory": "emulation"
+  },
+  {
+    "title": "QEMU docs",
+    "url": "https://www.qemu.org/docs/master/",
+    "description": "Official QEMU documentation.",
+    "tags": [
+      "docs",
+      "emulation"
+    ],
+    "type": "docs",
+    "subcategory": "emulation"
+  },
+  {
+    "title": "radare2",
+    "url": "https://github.com/radareorg/radare2",
+    "description": "The reverse-engineering command-line framework — disassemble, patch, analyse binaries.",
+    "tags": [
+      "reverse-engineering",
+      "binary"
+    ],
+    "type": "repo",
+    "subcategory": "binary"
+  },
+  {
+    "title": "Reading a hex dump",
+    "url": "https://en.wikipedia.org/wiki/Hex_dump",
+    "description": "How to read hex dumps and why they still matter when the format docs stop.",
+    "tags": [
+      "binary",
+      "hex"
+    ],
+    "type": "archive",
+    "subcategory": "binary"
+  },
+  {
+    "title": "The Art of Assembly Language (AoA)",
+    "url": "https://www.plantation-productions.com/Webster/www.artofasm.com/",
+    "description": "Randy Hyde's massive, opinionated textbook on assembly programming, now with a 64-bit edition.",
+    "tags": [
+      "book",
+      "assembly",
+      "x86"
+    ],
+    "type": "book",
+    "subcategory": "books"
+  },
+  {
+    "title": "The C Programming Language",
+    "url": "https://www.slpress.com/titles/brian-w-kernighan/",
+    "description": "K&R — the original C book, still the standard way to argue about C.",
+    "tags": [
+      "book",
+      "c",
+      "classic"
+    ],
+    "type": "book",
+    "subcategory": "books"
+  },
+  {
+    "title": "The Computer History Museum",
+    "url": "https://www.computerhistory.org/",
+    "description": "The world's best history of computing, with enormous artifact and document archives online.",
+    "tags": [
+      "museum",
+      "history"
+    ],
+    "type": "archive",
+    "subcategory": "retro"
+  },
+  {
+    "title": "The CPU Shack",
+    "url": "https://www.cpushack.com/",
+    "description": "Museum-grade archives of retro processors — die photos, silicon, and processor history.",
+    "tags": [
+      "cpu",
+      "retro",
+      "silicon"
+    ],
+    "type": "archive",
+    "subcategory": "silicon"
+  },
+  {
+    "title": "The Elements of Computing Systems (Nand2Tetris)",
+    "url": "https://www.nand2tetris.org/",
+    "description": "Build a computer from NAND gates up to a running Tetris — hardware, assembler, virtual machine, compiler, OS.",
+    "tags": [
+      "book",
+      "computer-architecture",
+      "course"
+    ],
+    "type": "book",
+    "subcategory": "courses"
+  },
+  {
+    "title": "The Linux Kernel source",
+    "url": "https://github.com/torvalds/linux",
+    "description": "The kernel itself; start with kernel/doc or arch/x86 if you want to get lost productively.",
+    "tags": [
+      "kernel",
+      "source"
+    ],
+    "type": "repo",
+    "subcategory": "os"
+  },
+  {
+    "title": "The Little Book About OS Development",
+    "url": "https://littleosbook.github.io/",
+    "description": "A short tutorial that gets a hobby kernel booting and printing.",
+    "tags": [
+      "osdev",
+      "kernel",
+      "tutorial"
+    ],
+    "type": "guide",
+    "subcategory": "os"
+  },
+  {
+    "title": "The MOS 6502",
+    "url": "https://www.waitingforfriday.com/index.php/Visual_6502",
+    "description": "Visual 6502 — play with the actual transistor layout of the 6502 in-browser.",
+    "tags": [
+      "6502",
+      "silicon",
+      "chip"
+    ],
+    "type": "tool",
+    "subcategory": "silicon"
+  },
+  {
+    "title": "The Retrocomputing Stack Exchange",
+    "url": "https://retrocomputing.stackexchange.com/",
+    "description": "Q&A with the people who actually remember punching cards.",
+    "tags": [
+      "community",
+      "retro"
+    ],
+    "type": "forum",
+    "subcategory": "retro"
+  },
+  {
+    "title": "The Rust Programming Language",
+    "url": "https://doc.rust-lang.org/book/",
+    "description": "The official Rust book — the language that made low-level code memory-safe.",
+    "tags": [
+      "book",
+      "rust",
+      "safe-systems"
+    ],
+    "type": "book",
+    "subcategory": "books"
+  },
+  {
+    "title": "The Terminal: MITS Altair 8800",
+    "url": "https://vintagecomputer.com/",
+    "description": "Altair Historical Society page tracking the Altair 8800 and the beginning of microcomputing.",
+    "tags": [
+      "altair",
+      "history"
+    ],
+    "type": "archive",
+    "subcategory": "reverence"
+  },
+  {
+    "title": "The Transistor",
+    "url": "https://en.wikipedia.org/wiki/Transistor",
+    "description": "The background article on the device everything here is built on.",
+    "tags": [
+      "electronics",
+      "transistors"
+    ],
+    "type": "archive",
+    "subcategory": "electronics"
+  },
+  {
+    "title": "The Transistor-level journey of a RISC-V",
+    "url": "https://www.zeete.com/",
+    "description": "Documentation and die photos of home-built microprocessors.",
+    "tags": [
+      "risc-v",
+      "silicon"
+    ],
+    "type": "project",
+    "subcategory": "silicon"
+  },
+  {
+    "title": "Tiny Emulators Index (Fogleman)",
+    "url": "https://github.com/fogleman/nes",
+    "description": "Michael Fogleman's NES emulator in Go — GitHub's most famous 'how an emulator works' example.",
+    "tags": [
+      "emulation",
+      "nes",
+      "tutorial"
+    ],
+    "type": "repo",
+    "subcategory": "emulation"
+  },
+  {
+    "title": "Tiny-C Compiler (tcc)",
+    "url": "https://bellard.org/tcc/",
+    "description": "Fabrice Bellard's tiny C compiler — compiles C in a flash; a marvel of minimalism.",
+    "tags": [
+      "compiler",
+      "c",
+      "bellard"
+    ],
+    "type": "tool",
+    "subcategory": "compiler"
+  },
+  {
+    "title": "Vintage Computer Federation (VCF)",
+    "url": "https://vcfed.org/",
+    "description": "Org behind VCF events — museums, forums, and a whole community keeping old iron running.",
+    "tags": [
+      "org",
+      "retro"
+    ],
+    "type": "org",
+    "subcategory": "retro"
+  },
+  {
+    "title": "Visual 6502 project",
+    "url": "https://www.visual6502.org/",
+    "description": "Transistor-level simulation of classic microprocessors, built from microscope photographs of the silicon.",
+    "tags": [
+      "6502",
+      "silicon",
+      "chip"
+    ],
+    "type": "project",
+    "subcategory": "silicon"
+  },
+  {
+    "title": "x86 Assembly Guide",
+    "url": "https://www.cs.virginia.edu/~evans/cs216/guides/x86.html",
+    "description": "UVa's compact x86-64 cheat sheet and tutorial.",
+    "tags": [
+      "assembly",
+      "x86"
+    ],
+    "type": "guide",
+    "subcategory": "assembly"
+  },
+  {
+    "title": "Z80 CPU documentation",
+    "url": "https://www.z80.info/",
+    "description": "The community hub for the Z80 microprocessor that powered the 80s home-computer wave — datasheets, docs, forums.",
+    "tags": [
+      "z80",
+      "microprocessor",
+      "retro"
+    ],
+    "type": "archive",
+    "subcategory": "retro"
+  }
+]

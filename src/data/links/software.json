@@ -1,0 +1,281 @@
+[
+  {
+    "title": "Architecture of Open Source Applications",
+    "url": "https://aosabook.org/",
+    "description": "The maintainers of big projects explain how they actually fit together — the anatomy of real software.",
+    "tags": [
+      "architecture",
+      "case-studies"
+    ],
+    "type": "book",
+    "subcategory": "craft"
+  },
+  {
+    "title": "Build Your Own X",
+    "url": "https://github.com/codecrafters-io/build-your-own-x",
+    "description": "Learn how things work by building them — databases, git, Docker, compilers, from scratch.",
+    "tags": [
+      "learning-by-building",
+      "projects"
+    ],
+    "type": "repo",
+    "subcategory": "learning"
+  },
+  {
+    "title": "Code: The Hidden Language of Computer Hardware and Software",
+    "url": "https://www.amazon.com/Code-Language-Computer-Hardware-Software/dp/0735611319",
+    "description": "Petzold's journey from Morse code to CPUs — how computers work at every layer.",
+    "tags": [
+      "computer-science",
+      "hardware",
+      "book"
+    ],
+    "type": "book",
+    "subcategory": "learning"
+  },
+  {
+    "title": "Conventional Commits",
+    "url": "https://www.conventionalcommits.org/",
+    "description": "The commit message convention that makes git history machine-readable.",
+    "tags": [
+      "git",
+      "commit",
+      "spec"
+    ],
+    "type": "guide",
+    "subcategory": "tools"
+  },
+  {
+    "title": "Crafting Interpreters",
+    "url": "https://craftinginterpreters.com/",
+    "description": "Build a language from parsing to GC — bytecode, closures, marking — one of the best technical books ever written.",
+    "tags": [
+      "compilers",
+      "languages",
+      "book"
+    ],
+    "type": "book",
+    "subcategory": "languages"
+  },
+  {
+    "title": "Designing Data-Intensive Applications",
+    "url": "https://dataintensive.net/",
+    "description": "The definitive map of reliable, scalable, maintainable data systems — non-negotiable for distributed data work.",
+    "tags": [
+      "data",
+      "distributed-systems",
+      "book"
+    ],
+    "type": "book",
+    "subcategory": "data"
+  },
+  {
+    "title": "Excalidraw",
+    "url": "https://excalidraw.com/",
+    "description": "Hand-drawn-style collaborative diagrams — the architecture-sketching tool of choice.",
+    "tags": [
+      "diagrams",
+      "collaboration"
+    ],
+    "type": "tool",
+    "subcategory": "tools"
+  },
+  {
+    "title": "FastAPI",
+    "url": "https://fastapi.tiangolo.com/",
+    "description": "The modern Python API framework — async, typed, with auto docs. The default where this site's machines live.",
+    "tags": [
+      "python",
+      "api",
+      "framework"
+    ],
+    "type": "org",
+    "subcategory": "tools"
+  },
+  {
+    "title": "Git — documentation",
+    "url": "https://git-scm.com/doc/",
+    "description": "The reference, book, and videos for the tool that version controls our thoughts.",
+    "tags": [
+      "git",
+      "docs"
+    ],
+    "type": "docs",
+    "subcategory": "tools"
+  },
+  {
+    "title": "Gödel, Escher, Bach",
+    "url": "https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach",
+    "description": "Hofstadter's exploration of self-reference and formal systems — a book that rewires how you read systems.",
+    "tags": [
+      "consciousness",
+      "books",
+      "math"
+    ],
+    "type": "archive",
+    "subcategory": "craft"
+  },
+  {
+    "title": "Keep a Changelog",
+    "url": "https://keepachangelog.com/",
+    "description": "Why user-facing changelogs matter, and a format that makes them not-awful.",
+    "tags": [
+      "changelog",
+      "docs"
+    ],
+    "type": "guide",
+    "subcategory": "craft"
+  },
+  {
+    "title": "MDN Web Docs",
+    "url": "https://developer.mozilla.org/en-US/",
+    "description": "The web platform reference — HTML, CSS, JS and the standards that carry the web.",
+    "tags": [
+      "web",
+      "javascript",
+      "reference"
+    ],
+    "type": "docs",
+    "subcategory": "tools"
+  },
+  {
+    "title": "MIT Missing Semester",
+    "url": "https://missing.csail.mit.edu/",
+    "description": "The tools every programmer should know and nobody teaches — shell, git, debugging, security.",
+    "tags": [
+      "tools",
+      "shell",
+      "git"
+    ],
+    "type": "course",
+    "subcategory": "learning"
+  },
+  {
+    "title": "Observable",
+    "url": "https://observablehq.com/",
+    "description": "Interactive data notebooks — D3 and reactive programming in the browser.",
+    "tags": [
+      "data",
+      "visualization",
+      "d3"
+    ],
+    "type": "tool",
+    "subcategory": "tools"
+  },
+  {
+    "title": "PostgreSQL documentation",
+    "url": "https://www.postgresql.org/docs/",
+    "description": "The reference for the database half the world's data really lives in.",
+    "tags": [
+      "postgres",
+      "database",
+      "docs"
+    ],
+    "type": "docs",
+    "subcategory": "data"
+  },
+  {
+    "title": "Python documentation",
+    "url": "https://docs.python.org/",
+    "description": "The humble official docs — the first and last reference for the language that pays the rent.",
+    "tags": [
+      "python",
+      "docs"
+    ],
+    "type": "docs",
+    "subcategory": "tools"
+  },
+  {
+    "title": "Semantic Versioning",
+    "url": "https://semver.org/",
+    "description": "MAJOR.MINOR.PATCH and what it means — worth re-reading twice a year.",
+    "tags": [
+      "versioning",
+      "spec"
+    ],
+    "type": "guide",
+    "subcategory": "craft"
+  },
+  {
+    "title": "SICP",
+    "url": "https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/index.html",
+    "description": "Programming as a way of thinking — Scheme, metacircular evaluators, and the beauty of abstraction.",
+    "tags": [
+      "cs",
+      "classic",
+      "book"
+    ],
+    "type": "book",
+    "subcategory": "learning"
+  },
+  {
+    "title": "SQLite",
+    "url": "https://sqlite.org/",
+    "description": "The library database that outlives everything — zero-config, everywhere, forever.",
+    "tags": [
+      "database",
+      "embedded",
+      "sql"
+    ],
+    "type": "org",
+    "subcategory": "data"
+  },
+  {
+    "title": "Teach Yourself Computer Science",
+    "url": "https://teachyourselfcs.com/",
+    "description": "A self-directed CS curriculum with no fluff — the real essential subjects.",
+    "tags": [
+      "cs",
+      "curriculum",
+      "self-study"
+    ],
+    "type": "guide",
+    "subcategory": "learning"
+  },
+  {
+    "title": "The Codeless Code",
+    "url": "https://thecodelesscode.com/contents",
+    "description": "Zen-koan parables about software engineering — thoughts on code, teams and craft.",
+    "tags": [
+      "philosophy",
+      "stories",
+      "craft"
+    ],
+    "type": "article",
+    "subcategory": "craft"
+  },
+  {
+    "title": "The Pragmatic Programmer",
+    "url": "https://pragprog.com/titles/tpp20/",
+    "description": "The 20th-anniversary edition of the software-craftsmanship classic — DRY, knowledge portfolios, broken windows.",
+    "tags": [
+      "craftsmanship",
+      "career",
+      "book"
+    ],
+    "type": "book",
+    "subcategory": "craft"
+  },
+  {
+    "title": "The Twelve-Factor App",
+    "url": "https://12factor.net/",
+    "description": "What good, deployable web services look like — config in env, stateless processes, logs as streams.",
+    "tags": [
+      "deployment",
+      "best-practice"
+    ],
+    "type": "guide",
+    "subcategory": "craft"
+  },
+  {
+    "title": "The Zen of Python — PEP 20",
+    "url": "https://peps.python.org/pep-0020/",
+    "description": "Twenty aphorisms that define the Python aesthetic.",
+    "tags": [
+      "python",
+      "philosophy"
+    ],
+    "type": "docs",
+    "subcategory": "tools"
+  }
+]

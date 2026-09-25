@@ -1,0 +1,1346 @@
+[
+  {
+    "title": "Anthropic Cookbook",
+    "url": "https://github.com/anthropics/anthropic-cookbook",
+    "description": "Working examples for agents, RAG, structured outputs and evaluations on Anthropic models.",
+    "tags": [
+      "agents",
+      "rag",
+      "examples"
+    ],
+    "type": "repo",
+    "subcategory": "agents"
+  },
+  {
+    "title": "Anthropic Research",
+    "url": "https://www.anthropic.com/research",
+    "description": "Interpretability, alignment and scaling research from Anthropic.",
+    "tags": [
+      "research",
+      "alignment"
+    ],
+    "type": "org",
+    "subcategory": "research"
+  },
+  {
+    "title": "Attention Is All You Need",
+    "url": "https://arxiv.org/abs/1706.03762",
+    "description": "The Transformer paper that replaced recurrence with self-attention. The architecture almost every modern LLM is built on.",
+    "tags": [
+      "transformer",
+      "paper"
+    ],
+    "type": "paper",
+    "subcategory": "models",
+    "year": 2017,
+    "source": "arXiv"
+  },
+  {
+    "title": "AutoGen",
+    "url": "https://github.com/microsoft/autogen",
+    "description": "Microsoft's multi-conversation agent framework for LLM applications.",
+    "tags": [
+      "agents",
+      "multi-agent"
+    ],
+    "type": "repo",
+    "subcategory": "agents"
+  },
+  {
+    "title": "AWQ: Activation-aware Weight Quantization",
+    "url": "https://arxiv.org/abs/2306.00978",
+    "description": "Quantization that protects the small fraction of weights that matter, protecting fewer, protecting activation-focused salience.",
+    "tags": [
+      "quantization",
+      "inference"
+    ],
+    "type": "paper",
+    "subcategory": "quantization",
+    "year": 2023,
+    "source": "arXiv"
+  },
+  {
+    "title": "Axolotl",
+    "url": "https://github.com/axolotl-ai-cloud/axolotl",
+    "description": "Configuration-driven fine-tuning of open models — LoRA, QLoRA, full fine-tune, from one YAML.",
+    "tags": [
+      "finetuning"
+    ],
+    "type": "repo",
+    "subcategory": "finetuning"
+  },
+  {
+    "title": "BERT: Pre-training of Deep Bidirectional Transformers",
+    "url": "https://arxiv.org/abs/1810.04805",
+    "description": "The masked-language-model pretraining recipe that made transfer learning the default in NLP.",
+    "tags": [
+      "pretraining",
+      "nlp"
+    ],
+    "type": "paper",
+    "subcategory": "models",
+    "year": 2018,
+    "source": "arXiv"
+  },
+  {
+    "title": "BIG-bench",
+    "url": "https://github.com/google/BIG-bench",
+    "description": "Collaborative benchmark of 200+ tasks designed to stay useful as models get smarter.",
+    "tags": [
+      "evaluation",
+      "benchmark"
+    ],
+    "type": "repo",
+    "subcategory": "eval"
+  },
+  {
+    "title": "bitsandbytes",
+    "url": "https://github.com/bitsandbytes-foundation/bitsandbytes",
+    "description": "8-bit and 4-bit quantization primitives for training and inference inside PyTorch.",
+    "tags": [
+      "quantization",
+      "training"
+    ],
+    "type": "repo",
+    "subcategory": "quantization"
+  },
+  {
+    "title": "Braintrust",
+    "url": "https://github.com/braintrustdata/braintrust-sdk",
+    "description": "Evaluation, tracing and prompt management with datacenter-grade collaboration.",
+    "tags": [
+      "evaluation",
+      "observability"
+    ],
+    "type": "repo",
+    "subcategory": "production"
+  },
+  {
+    "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+    "url": "https://arxiv.org/abs/2201.11903",
+    "description": "The paper that showed intermediate reasoning steps unlock arithmetic and reasoning in LLMs.",
+    "tags": [
+      "prompting",
+      "reasoning"
+    ],
+    "type": "paper",
+    "subcategory": "prompt-engineering",
+    "year": 2022,
+    "source": "arXiv"
+  },
+  {
+    "title": "Chroma",
+    "url": "https://github.com/chroma-core/chroma",
+    "description": "Embedding database that runs in-process — a simple on-ramp to vector search.",
+    "tags": [
+      "vector-db",
+      "embeddings"
+    ],
+    "type": "repo",
+    "subcategory": "vector-db"
+  },
+  {
+    "title": "Claude Code Docs",
+    "url": "https://docs.anthropic.com/en/docs/claude-code",
+    "description": "Official docs for Anthropic's terminal coding agent — a real production agent loop you can study.",
+    "tags": [
+      "agents",
+      "coding",
+      "docs"
+    ],
+    "type": "docs",
+    "subcategory": "agents"
+  },
+  {
+    "title": "CLIP (OpenAI)",
+    "url": "https://arxiv.org/abs/2103.00020",
+    "description": "Contrastive image-text pretraining — the embedding backbone behind modern vision-language systems.",
+    "tags": [
+      "multimodal",
+      "vision"
+    ],
+    "type": "paper",
+    "subcategory": "multimodal",
+    "year": 2021,
+    "source": "arXiv"
+  },
+  {
+    "title": "ColPali",
+    "url": "https://arxiv.org/abs/2407.01449",
+    "description": "Retrieval over documents by embedding page + query jointly — strong results for RAG over PDFs/slides.",
+    "tags": [
+      "multimodal",
+      "retrieval",
+      "rag"
+    ],
+    "type": "paper",
+    "subcategory": "multimodal",
+    "year": 2024,
+    "source": "arXiv"
+  },
+  {
+    "title": "Constitutional AI: Harmlessness from AI Feedback",
+    "url": "https://arxiv.org/abs/2212.08073",
+    "description": "Anthropic's method for steering models with written principles instead of pure labeled data.",
+    "tags": [
+      "alignment",
+      "safety"
+    ],
+    "type": "paper",
+    "subcategory": "alignment",
+    "year": 2022,
+    "source": "arXiv"
+  },
+  {
+    "title": "Coqui TTS",
+    "url": "https://github.com/coqui-ai/TTS",
+    "description": "Deep learning TTS research library — XTTS and friends.",
+    "tags": [
+      "speech",
+      "tts"
+    ],
+    "type": "repo",
+    "subcategory": "voice"
+  },
+  {
+    "title": "CrewAI",
+    "url": "https://github.com/crewAIInc/crewAI",
+    "description": "Role-based multi-agent framework for planning, execution and handoff between specialized agents.",
+    "tags": [
+      "agents",
+      "multi-agent"
+    ],
+    "type": "repo",
+    "subcategory": "agents"
+  },
+  {
+    "title": "CTranslate2",
+    "url": "https://github.com/OpenNMT/CTranslate2",
+    "description": "Fast inference engine for transformer models with efficient CPU/GPU execution and quantization.",
+    "tags": [
+      "inference",
+      "cpu"
+    ],
+    "type": "repo",
+    "subcategory": "inference"
+  },
+  {
+    "title": "DeepEval",
+    "url": "https://github.com/confident-ai/deepeval",
+    "description": "Unit-testing for LLM apps — metrics for answer relevance, faithfulness, hallucination, plus Pytest integration.",
+    "tags": [
+      "evaluation",
+      "testing"
+    ],
+    "type": "repo",
+    "subcategory": "eval"
+  },
+  {
+    "title": "DeepSpeed",
+    "url": "https://github.com/microsoft/DeepSpeed",
+    "description": "Microsoft's distributed training/inference stack — ZeRO sharding, offload, inference optimizations.",
+    "tags": [
+      "training",
+      "distributed"
+    ],
+    "type": "repo",
+    "subcategory": "training-infra"
+  },
+  {
+    "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+    "url": "https://arxiv.org/abs/2305.18290",
+    "description": "Replaces the separate reward model in RLHF with the policy itself — simpler, stable preference optimization.",
+    "tags": [
+      "alignment",
+      "rlhf"
+    ],
+    "type": "paper",
+    "subcategory": "alignment",
+    "year": 2023,
+    "source": "arXiv"
+  },
+  {
+    "title": "Distill",
+    "url": "https://distill.pub/",
+    "description": "Interactive explanations of machine learning ideas — the gold standard for making research genuinely understandable.",
+    "tags": [
+      "visualization",
+      "interactive",
+      "research"
+    ],
+    "type": "archive",
+    "subcategory": "research"
+  },
+  {
+    "title": "DSPy",
+    "url": "https://github.com/stanfordnlp/dspy",
+    "description": "Programming instead of prompting — declare the pipeline, let the compiler optimize prompts/weights.",
+    "tags": [
+      "programming",
+      "prompting",
+      "optimization"
+    ],
+    "type": "repo",
+    "subcategory": "agents"
+  },
+  {
+    "title": "Effective context engineering for AI agents (Anthropic)",
+    "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+    "description": "Anthropic engineering's practical guide to context windows — what to load, when, and how to keep agents on task.",
+    "tags": [
+      "context-engineering",
+      "agents",
+      "blog"
+    ],
+    "type": "article",
+    "subcategory": "context-engineering",
+    "source": "Anthropic"
+  },
+  {
+    "title": "EleutherAI Pythia",
+    "url": "https://github.com/EleutherAI/pythia",
+    "description": "A fully documented, interpretable suite of 70M-to-12B models for studying scaling and safety.",
+    "tags": [
+      "research",
+      "interpretability",
+      "models"
+    ],
+    "type": "repo",
+    "subcategory": "research"
+  },
+  {
+    "title": "FAISS",
+    "url": "https://github.com/facebookresearch/faiss",
+    "description": "Meta's library for efficient similarity search and clustering of dense vectors.",
+    "tags": [
+      "vector-search",
+      "similarity"
+    ],
+    "type": "repo",
+    "subcategory": "vector-db"
+  },
+  {
+    "title": "faster-whisper",
+    "url": "https://github.com/SYSTRAN/faster-whisper",
+    "description": "Reimplementation of Whisper with CTranslate2 — several times faster, surprisingly cheap.",
+    "tags": [
+      "speech",
+      "asr",
+      "optimization"
+    ],
+    "type": "repo",
+    "subcategory": "voice"
+  },
+  {
+    "title": "FlagEmbedding (BGE)",
+    "url": "https://github.com/FlagOpen/FlagEmbedding",
+    "description": "BAAI's open embedding family (BGE) plus training/inference code for retrieval and reranking.",
+    "tags": [
+      "embeddings",
+      "reranking"
+    ],
+    "type": "repo",
+    "subcategory": "embeddings"
+  },
+  {
+    "title": "Gemma (Google)",
+    "url": "https://github.com/google-deepmind/gemma",
+    "description": "Google's open-weight family for research and experimentation.",
+    "tags": [
+      "models",
+      "open-weights"
+    ],
+    "type": "repo",
+    "subcategory": "models"
+  },
+  {
+    "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+    "url": "https://arxiv.org/abs/2304.03442",
+    "description": "Stanford/Google small-town simulation — memory, reflection and planning inside a multi-agent world.",
+    "tags": [
+      "agents",
+      "multi-agent"
+    ],
+    "type": "paper",
+    "subcategory": "agents",
+    "year": 2023,
+    "source": "arXiv"
+  },
+  {
+    "title": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+    "url": "https://arxiv.org/abs/2210.17323",
+    "description": "Post-training weight quantization that keeps accuracy at 2-4 bits per weight.",
+    "tags": [
+      "quantization",
+      "inference"
+    ],
+    "type": "paper",
+    "subcategory": "quantization",
+    "year": 2022,
+    "source": "arXiv"
+  },
+  {
+    "title": "Guidance",
+    "url": "https://github.com/guidance-ai/guidance",
+    "description": "Template-based structured generation that constrains token choice while keeping the prompt readable.",
+    "tags": [
+      "structured-outputs",
+      "prompting"
+    ],
+    "type": "repo",
+    "subcategory": "structured-outputs"
+  },
+  {
+    "title": "Gwern",
+    "url": "https://gwern.net/",
+    "description": "A meticulous essay library covering scaling laws, model memorization and rationality — long-form analysis at its best.",
+    "tags": [
+      "essays",
+      "scaling",
+      "research"
+    ],
+    "type": "article",
+    "subcategory": "research"
+  },
+  {
+    "title": "HELM",
+    "url": "https://github.com/stanford-crfm/helm",
+    "description": "Stanford's Holistic Evaluation of Language Models — 80+ scenarios, broad and transparent.",
+    "tags": [
+      "evaluation",
+      "benchmark"
+    ],
+    "type": "repo",
+    "subcategory": "eval"
+  },
+  {
+    "title": "Hugging Face Docs",
+    "url": "https://huggingface.co/docs",
+    "description": "Documentation for the HF ecosystem — transformers, datasets, tokenizers, diffusers, and the Hub.",
+    "tags": [
+      "docs",
+      "models",
+      "library"
+    ],
+    "type": "docs",
+    "subcategory": "libraries"
+  },
+  {
+    "title": "Hugging Face Open LLM Leaderboard",
+    "url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
+    "description": "Community leaderboard of open models across standard benchmarks.",
+    "tags": [
+      "benchmark",
+      "models"
+    ],
+    "type": "tool",
+    "subcategory": "eval"
+  },
+  {
+    "title": "Hugging Face Transformers",
+    "url": "https://github.com/huggingface/transformers",
+    "description": "The standard library for downloading, using and training open model architectures in PyTorch/TF.",
+    "tags": [
+      "models",
+      "library",
+      "pytorch"
+    ],
+    "type": "repo",
+    "subcategory": "libraries",
+    "year": 2018,
+    "source": "GitHub"
+  },
+  {
+    "title": "Indirect Prompt Injection (Not what you've signed up for)",
+    "url": "https://arxiv.org/abs/2302.12173",
+    "description": "Greshake et al.: attacks that arrive through the content an app ingests, not user input.",
+    "tags": [
+      "security",
+      "prompt-injection"
+    ],
+    "type": "paper",
+    "subcategory": "security",
+    "year": 2023,
+    "source": "arXiv"
+  },
+  {
+    "title": "Instructor",
+    "url": "https://github.com/instructor-ai/instructor",
+    "description": "Structured outputs from LLMs via Pydantic validation with retries and JSON parsing.",
+    "tags": [
+      "structured-outputs",
+      "pydantic"
+    ],
+    "type": "repo",
+    "subcategory": "structured-outputs"
+  },
+  {
+    "title": "Karpathy — Neural Networks: Zero to Hero",
+    "url": "https://karpathy.ai/zero-to-hero.html",
+    "description": "Andrej Karpathy builds neural networks from absolute scratch — no frameworks, just math and code.",
+    "tags": [
+      "education",
+      "video",
+      "backprop"
+    ],
+    "type": "video",
+    "subcategory": "models"
+  },
+  {
+    "title": "Langfuse",
+    "url": "https://github.com/langfuse/langfuse",
+    "description": "Open-source LLM engineering platform — tracing, prompts, evals, experiments.",
+    "tags": [
+      "observability",
+      "tracing"
+    ],
+    "type": "repo",
+    "subcategory": "observability"
+  },
+  {
+    "title": "LangGraph",
+    "url": "https://github.com/langchain-ai/langgraph",
+    "description": "Graph-based agent runtime for building stateful, controllable multi-step agent workflows.",
+    "tags": [
+      "agents",
+      "orchestration"
+    ],
+    "type": "repo",
+    "subcategory": "agents"
+  },
+  {
+    "title": "LangSmith",
+    "url": "https://docs.smith.langchain.com/",
+    "description": "Production tracing, evaluation and prompt management for LLM apps — LangChain's observability platform.",
+    "tags": [
+      "observability",
+      "evaluation",
+      "tracing"
+    ],
+    "type": "docs",
+    "subcategory": "observability"
+  },
+  {
+    "title": "Language Models are Few-Shot Learners (GPT-3)",
+    "url": "https://arxiv.org/abs/2005.14165",
+    "description": "The original scale paper — emergence of in-context learning as models grow.",
+    "tags": [
+      "models",
+      "scaling",
+      "in-context-learning"
+    ],
+    "type": "paper",
+    "subcategory": "models",
+    "year": 2020,
+    "source": "arXiv"
+  },
+  {
+    "title": "Lil'Log — Lillian Weng",
+    "url": "https://lilianweng.github.io/",
+    "description": "Some of the clearest technical writing on LLMs, RLHF and agents — the masterclass blog of the field.",
+    "tags": [
+      "blog",
+      "papers",
+      "research"
+    ],
+    "type": "article",
+    "subcategory": "research",
+    "source": "LilianWeng"
+  },
+  {
+    "title": "LiteLLM",
+    "url": "https://github.com/BerriAI/litellm",
+    "description": "One interface to 100+ LLM providers, plus a proxy with routing, budgets and logging.",
+    "tags": [
+      "routing",
+      "api",
+      "proxy"
+    ],
+    "type": "repo",
+    "subcategory": "production"
+  },
+  {
+    "title": "LlamaIndex",
+    "url": "https://github.com/run-llama/llama_index",
+    "description": "Data framework for connecting LLMs to your data — ingestion, indexes, retrievers and query engines.",
+    "tags": [
+      "rag",
+      "retrieval"
+    ],
+    "type": "repo",
+    "subcategory": "rag"
+  },
+  {
+    "title": "LLaVA: Large Language and Vision Assistant",
+    "url": "https://arxiv.org/abs/2304.08485",
+    "description": "The open vision-language assistant recipe that kicked off the VLM boom.",
+    "tags": [
+      "multimodal",
+      "vision"
+    ],
+    "type": "paper",
+    "subcategory": "multimodal",
+    "year": 2023,
+    "source": "arXiv"
+  },
+  {
+    "title": "LLMTest Needle In A Haystack",
+    "url": "https://github.com/gkamradt/LLMTest_NeedleInAHaystack",
+    "description": "The tool that made everyone measure real long-context behavior instead of trusting the spec sheet.",
+    "tags": [
+      "long-context",
+      "evaluation",
+      "context-engineering"
+    ],
+    "type": "repo",
+    "subcategory": "eval"
+  },
+  {
+    "title": "lm-evaluation-harness",
+    "url": "https://github.com/EleutherAI/lm-evaluation-harness",
+    "description": "EleutherAI's harness for running standard benchmarks (MMLU, GSM8K, etc.) on local or API models.",
+    "tags": [
+      "evaluation",
+      "benchmark",
+      "local"
+    ],
+    "type": "repo",
+    "subcategory": "eval"
+  },
+  {
+    "title": "LMArena",
+    "url": "https://chat.lmsys.org/",
+    "description": "Crowdsourced blind comparison of models — millions of votes, Elo rankings.",
+    "tags": [
+      "benchmark",
+      "arena"
+    ],
+    "type": "tool",
+    "subcategory": "eval"
+  },
+  {
+    "title": "LongBench",
+    "url": "https://github.com/THUDM/LongBench",
+    "description": "Adversarial and long-document eval suite for long-context LLMs.",
+    "tags": [
+      "long-context",
+      "evaluation"
+    ],
+    "type": "repo",
+    "subcategory": "eval"
+  },
+  {
+    "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "url": "https://arxiv.org/abs/2106.09685",
+    "description": "Train a handful of low-rank matrices instead of the whole model — the technique that made fine-tuning affordable.",
+    "tags": [
+      "finetuning"
+    ],
+    "type": "paper",
+    "subcategory": "finetuning",
+    "year": 2021,
+    "source": "arXiv"
+  },
+  {
+    "title": "MCP Specification (GitHub)",
+    "url": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+    "description": "The reference specification and SDKs for the Model Context Protocol.",
+    "tags": [
+      "mcp",
+      "protocol"
+    ],
+    "type": "repo",
+    "subcategory": "agents"
+  },
+  {
+    "title": "Meta Llama (official)",
+    "url": "https://www.llama.com/",
+    "description": "Meta's open-weight family — model docs, licensing and the hosted API.",
+    "tags": [
+      "models",
+      "open-weights"
+    ],
+    "type": "docs",
+    "subcategory": "models"
+  },
+  {
+    "title": "MetaGPT",
+    "url": "https://github.com/FoundationAgents/MetaGPT",
+    "description": "Multi-agent framework where agents play software-company roles (PM, architect, engineer).",
+    "tags": [
+      "agents",
+      "multi-agent"
+    ],
+    "type": "repo",
+    "subcategory": "agents"
+  },
+  {
+    "title": "Microsoft GraphRAG",
+    "url": "https://github.com/microsoft/graphrag",
+    "description": "Graph-based RAG: builds a knowledge graph then answers over communities — for global, relational questions.",
+    "tags": [
+      "rag",
+      "knowledge-graph"
+    ],
+    "type": "repo",
+    "subcategory": "rag"
+  },
+  {
+    "title": "Milvus",
+    "url": "https://github.com/milvus-io/milvus",
+    "description": "Purpose-built vector database for large-scale similarity search.",
+    "tags": [
+      "vector-db"
+    ],
+    "type": "repo",
+    "subcategory": "vector-db"
+  },
+  {
+    "title": "Mistral",
+    "url": "https://mistral.ai/",
+    "description": "European open-weights lab — small dense models and the MoE line.",
+    "tags": [
+      "models",
+      "open-weights"
+    ],
+    "type": "org",
+    "subcategory": "models"
+  },
+  {
+    "title": "MLflow(LLM tracing)",
+    "url": "https://github.com/mlflow/mlflow",
+    "description": "Open platform for the ML lifecycle; its LLM tracing complements evaluation with run-level insight.",
+    "tags": [
+      "observability",
+      "mlops"
+    ],
+    "type": "repo",
+    "subcategory": "observability"
+  },
+  {
+    "title": "MMLU (paper)",
+    "url": "https://arxiv.org/abs/2009.03300",
+    "description": "Measuring Massive Multitask Language Understanding — 57 subjects, the academic benchmark that defined a generation.",
+    "tags": [
+      "evaluation",
+      "benchmark"
+    ],
+    "type": "paper",
+    "subcategory": "eval",
+    "year": 2020,
+    "source": "arXiv"
+  },
+  {
+    "title": "Model Context Protocol",
+    "url": "https://modelcontextprotocol.io/",
+    "description": "Open standard from Anthropic giving LLMs a uniform way to talk to tools, data and resources.",
+    "tags": [
+      "mcp",
+      "protocol",
+      "tools"
+    ],
+    "type": "docs",
+    "subcategory": "agents"
+  },
+  {
+    "title": "MT-Bench & Chatbot Arena (FastChat)",
+    "url": "https://github.com/lm-sys/FastChat",
+    "description": "The LMSYS codebase behind MT-Bench and the (now LMArena) crowdsourced model comparisons.",
+    "tags": [
+      "benchmark",
+      "arena"
+    ],
+    "type": "repo",
+    "subcategory": "eval"
+  },
+  {
+    "title": "MTEB",
+    "url": "https://github.com/embeddings-benchmark/mteb",
+    "description": "Massive Text Embedding Benchmark — the standard across embedding models.",
+    "tags": [
+      "embeddings",
+      "benchmark",
+      "evaluation"
+    ],
+    "type": "repo",
+    "subcategory": "eval"
+  },
+  {
+    "title": "Ollama",
+    "url": "https://ollama.com/",
+    "description": "Run open-weight LLMs locally with a one-line command; ships a model library and a simple REST API.",
+    "tags": [
+      "local",
+      "models",
+      "serving"
+    ],
+    "type": "project",
+    "subcategory": "local",
+    "year": 2023
+  },
+  {
+    "title": "ONNX Runtime",
+    "url": "https://github.com/microsoft/onnxruntime",
+    "description": "Cross-platform inference engine for ONNX models — the interchange format many quantized models ship in.",
+    "tags": [
+      "inference",
+      "cross-platform"
+    ],
+    "type": "repo",
+    "subcategory": "inference"
+  },
+  {
+    "title": "OpenAI Agents SDK",
+    "url": "https://github.com/openai/openai-agents-python",
+    "description": "OpenAI's lightweight framework for agents, handoffs and tools.",
+    "tags": [
+      "agents",
+      "framework"
+    ],
+    "type": "repo",
+    "subcategory": "agents"
+  },
+  {
+    "title": "OpenAI Evals",
+    "url": "https://github.com/openai/evals",
+    "description": "OpenAI's framework for creating and running evals; great pattern reference for grading scaffolding.",
+    "tags": [
+      "evaluation"
+    ],
+    "type": "repo",
+    "subcategory": "eval"
+  },
+  {
+    "title": "OpenAI Guides: Function Calling",
+    "url": "https://platform.openai.com/docs/guides/function-calling",
+    "description": "Official docs on reliable tool calling — schemas, parameters, and when to call tools.",
+    "tags": [
+      "tool-use",
+      "docs"
+    ],
+    "type": "docs",
+    "subcategory": "agents"
+  },
+  {
+    "title": "OpenAI Guides: Structured Outputs",
+    "url": "https://platform.openai.com/docs/guides/structured-outputs",
+    "description": "Constraints that guarantee model outputs match a JSON schema.",
+    "tags": [
+      "structured-outputs",
+      "docs"
+    ],
+    "type": "docs",
+    "subcategory": "structured-outputs"
+  },
+  {
+    "title": "OpenAI Research Index",
+    "url": "https://openai.com/research/",
+    "description": "Papers and technical reports from OpenAI — from GPT to evals.",
+    "tags": [
+      "research"
+    ],
+    "type": "docs",
+    "subcategory": "research"
+  },
+  {
+    "title": "OpenRouter",
+    "url": "https://openrouter.ai/",
+    "description": "Universal gateway/routing across many models with a single API key.",
+    "tags": [
+      "routing",
+      "api"
+    ],
+    "type": "tool",
+    "subcategory": "production"
+  },
+  {
+    "title": "OpenTelemetry GenAI semantic conventions",
+    "url": "https://opentelemetry.io/docs/specs/semconv/gen-ai/",
+    "description": "The vendor-neutral trace spec for LLM apps — the boring, durable way to observe agents.",
+    "tags": [
+      "observability",
+      "tracing",
+      "protocol"
+    ],
+    "type": "docs",
+    "subcategory": "observability"
+  },
+  {
+    "title": "Outlines",
+    "url": "https://github.com/dottxt-ai/outlines",
+    "description": "Guaranteed structured generation — regex, JSON schema, grammars — by constraining the model's token stream.",
+    "tags": [
+      "structured-outputs",
+      "json"
+    ],
+    "type": "repo",
+    "subcategory": "structured-outputs"
+  },
+  {
+    "title": "OWASP Top 10 for LLM Applications",
+    "url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications",
+    "description": "The community-driven risk catalog for LLM apps — prompt injection, data poisoning, and the rest.",
+    "tags": [
+      "security",
+      "prompt-injection"
+    ],
+    "type": "repo",
+    "subcategory": "security"
+  },
+  {
+    "title": "PEFT",
+    "url": "https://github.com/huggingface/peft",
+    "description": "Parameter-efficient fine-tuning methods (LoRA and friends) in one library.",
+    "tags": [
+      "finetuning",
+      "lora"
+    ],
+    "type": "repo",
+    "subcategory": "finetuning"
+  },
+  {
+    "title": "pgvector",
+    "url": "https://github.com/pgvector/pgvector",
+    "description": "Postgres extension for vector similarity — keep relational and vector data in one database.",
+    "tags": [
+      "vector-db",
+      "postgres"
+    ],
+    "type": "repo",
+    "subcategory": "vector-db"
+  },
+  {
+    "title": "Phi-3 (Microsoft)",
+    "url": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+    "description": "Microsoft's small model line — surprisingly good reasoning per parameter.",
+    "tags": [
+      "models",
+      "small-models"
+    ],
+    "type": "repo",
+    "subcategory": "models"
+  },
+  {
+    "title": "Phoenix (Arize)",
+    "url": "https://github.com/Arize-ai/phoenix",
+    "description": "Open observability and evaluation for AI apps — tracing, embedding inference, evals.",
+    "tags": [
+      "observability",
+      "tracing",
+      "evaluation"
+    ],
+    "type": "repo",
+    "subcategory": "observability"
+  },
+  {
+    "title": "Piper",
+    "url": "https://github.com/rhasspy/piper",
+    "description": "Fast, local, neural text-to-speech that runs great on a Raspberry Pi.",
+    "tags": [
+      "speech",
+      "tts",
+      "offline"
+    ],
+    "type": "repo",
+    "subcategory": "voice"
+  },
+  {
+    "title": "Prompt Injection attack against LLM-integrated applications",
+    "url": "https://arxiv.org/abs/2306.05499",
+    "description": "Appfluent attack toolkit and taxonomy of prompt-injection vectors across apps.",
+    "tags": [
+      "security",
+      "prompt-injection"
+    ],
+    "type": "paper",
+    "subcategory": "security",
+    "year": 2023,
+    "source": "arXiv"
+  },
+  {
+    "title": "Promptfoo",
+    "url": "https://github.com/promptfoo/promptfoo",
+    "description": "CLI/CI evaluation and red-teaming for prompts and providers — assert on outputs, catch regressions.",
+    "tags": [
+      "evaluation",
+      "red-teaming"
+    ],
+    "type": "repo",
+    "subcategory": "eval"
+  },
+  {
+    "title": "PyTorch",
+    "url": "https://github.com/pytorch/pytorch",
+    "description": "The deep learning framework most open-model work is built on.",
+    "tags": [
+      "ml",
+      "framework",
+      "pytorch"
+    ],
+    "type": "repo",
+    "subcategory": "libraries"
+  },
+  {
+    "title": "Qdrant",
+    "url": "https://github.com/qdrant/qdrant",
+    "description": "Rust vector search engine with filtering, payloads and similarity scoring.",
+    "tags": [
+      "vector-db",
+      "search"
+    ],
+    "type": "repo",
+    "subcategory": "vector-db"
+  },
+  {
+    "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+    "url": "https://arxiv.org/abs/2305.14314",
+    "description": "Backprop through 4-bit quantized weights, making full fine-tuning fit on a single consumer GPU.",
+    "tags": [
+      "finetuning",
+      "quantization"
+    ],
+    "type": "paper",
+    "subcategory": "finetuning",
+    "year": 2023,
+    "source": "arXiv"
+  },
+  {
+    "title": "Qwen (Alibaba Cloud)",
+    "url": "https://github.com/QwenLM/Qwen3",
+    "description": "Open-weight model family known for strong small models and aggressive context windows.",
+    "tags": [
+      "models",
+      "open-weights"
+    ],
+    "type": "repo",
+    "subcategory": "models"
+  },
+  {
+    "title": "Ragas",
+    "url": "https://github.com/explodinggradients/ragas",
+    "description": "Evaluation framework for RAG pipelines — faithfulness, answer relevance, context precision.",
+    "tags": [
+      "rag",
+      "evaluation"
+    ],
+    "type": "repo",
+    "subcategory": "eval"
+  },
+  {
+    "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "url": "https://arxiv.org/abs/2210.03629",
+    "description": "Interleaving thought traces with actions — the basis of most modern tool-using agent loops.",
+    "tags": [
+      "agents",
+      "tool-use"
+    ],
+    "type": "paper",
+    "subcategory": "agents",
+    "year": 2022,
+    "source": "arXiv"
+  },
+  {
+    "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2303.11366",
+    "description": "Agents that keep a natural-language memory of what went wrong and improve over episodes.",
+    "tags": [
+      "agents",
+      "reinforcement"
+    ],
+    "type": "paper",
+    "subcategory": "agents",
+    "year": 2023,
+    "source": "arXiv"
+  },
+  {
+    "title": "Reinforcement Learning: An Introduction (Sutton & Barto)",
+    "url": "http://incompleteideas.net/book/the-book-2nd.html",
+    "description": "The textbook of RL — if you want agents that learn from interaction, this is non-negotiable.",
+    "tags": [
+      "rl",
+      "book",
+      "agents"
+    ],
+    "type": "book",
+    "subcategory": "models"
+  },
+  {
+    "title": "Replicate",
+    "url": "https://replicate.com/",
+    "description": "Hosted running of open models (and fine-tunes) behind a simple API.",
+    "tags": [
+      "serving",
+      "api"
+    ],
+    "type": "tool",
+    "subcategory": "production"
+  },
+  {
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "url": "https://arxiv.org/abs/2005.11401",
+    "description": "Karpukhin et al.'s original RAG — parametric + non-parametric memory combined at generation time.",
+    "tags": [
+      "rag",
+      "retrieval"
+    ],
+    "type": "paper",
+    "subcategory": "rag",
+    "year": 2020,
+    "source": "arXiv"
+  },
+  {
+    "title": "Self-Refine: Iterative Refinement with Self-Feedback",
+    "url": "https://arxiv.org/abs/2303.17651",
+    "description": "Generate, critique, refine — a minimal loop that makes one model act as its own editor.",
+    "tags": [
+      "agents",
+      "refinement"
+    ],
+    "type": "paper",
+    "subcategory": "agents",
+    "year": 2023,
+    "source": "arXiv"
+  },
+  {
+    "title": "Sentence Transformers",
+    "url": "https://github.com/UKPLab/sentence-transformers",
+    "description": "The library most embedding models were served from.",
+    "tags": [
+      "embeddings"
+    ],
+    "type": "repo",
+    "subcategory": "embeddings"
+  },
+  {
+    "title": "SGLang",
+    "url": "https://github.com/sgl-project/sglang",
+    "description": "Fast serving framework with structured generation, radical state sharing and RadixAttention for prefix caching.",
+    "tags": [
+      "serving",
+      "inference",
+      "structured-outputs"
+    ],
+    "type": "repo",
+    "subcategory": "inference"
+  },
+  {
+    "title": "sherpa-onnx",
+    "url": "https://github.com/k2-fsa/sherpa-onnx",
+    "description": "Speech + LLM inference (ASR, TTS, speaker ID) on the edge via ONNX — phones, Pi, browsers.",
+    "tags": [
+      "speech",
+      "edge",
+      "asr",
+      "tts"
+    ],
+    "type": "repo",
+    "subcategory": "voice"
+  },
+  {
+    "title": "SmolLM / SmolLM2 (HF)",
+    "url": "https://huggingface.co/blog/smollm",
+    "description": "Hugging Face's tiny (135M-1.7B) models trained on high-quality data, plus the blog explaining the recipe.",
+    "tags": [
+      "models",
+      "small-models"
+    ],
+    "type": "article",
+    "subcategory": "models"
+  },
+  {
+    "title": "SWE-bench",
+    "url": "https://github.com/princeton-nlp/SWE-bench",
+    "description": "Real GitHub issues + tests — the benchmark that made coding agents measurable.",
+    "tags": [
+      "evaluation",
+      "coding",
+      "agents"
+    ],
+    "type": "repo",
+    "subcategory": "eval"
+  },
+  {
+    "title": "Text Generation Inference (TGI)",
+    "url": "https://github.com/huggingface/text-generation-inference",
+    "description": "Hugging Face's production server for LLMs, powering their hosted inference API.",
+    "tags": [
+      "serving",
+      "inference"
+    ],
+    "type": "repo",
+    "subcategory": "inference"
+  },
+  {
+    "title": "The Annotated Transformer",
+    "url": "https://nlp.seas.harvard.edu/2018/04/03/attention.html",
+    "description": "The Transformer paper with a line-by-line PyTorch implementation — the fastest way from idea to 'I can build it'.",
+    "tags": [
+      "transformer",
+      "tutorial",
+      "pytorch"
+    ],
+    "type": "article",
+    "subcategory": "models",
+    "source": "Harvard NLP"
+  },
+  {
+    "title": "The Bitter Lesson",
+    "url": "https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf",
+    "description": "Rich Sutton's essay: general methods that leverage computation keep winning over human-engineered knowledge. Short, sharp, often debated, never really refuted.",
+    "tags": [
+      "ai",
+      "philosophy",
+      "scaling"
+    ],
+    "type": "article",
+    "subcategory": "research",
+    "year": 2019,
+    "source": "incompleteideas"
+  },
+  {
+    "title": "TinyLlama",
+    "url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+    "description": "A 1.1B model from a 3-trillion-token pretraining experiment — small-scale training, unexpectedly capable.",
+    "tags": [
+      "models",
+      "small-models",
+      "open-weights"
+    ],
+    "type": "repo",
+    "subcategory": "models"
+  },
+  {
+    "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+    "url": "https://arxiv.org/abs/2302.04761",
+    "description": "Self-supervised learning of when to call external tools.",
+    "tags": [
+      "agents",
+      "tool-use",
+      "self-supervised"
+    ],
+    "type": "paper",
+    "subcategory": "agents",
+    "year": 2023,
+    "source": "arXiv"
+  },
+  {
+    "title": "Training language models to follow instructions with human feedback (InstructGPT)",
+    "url": "https://arxiv.org/abs/2203.02155",
+    "description": "RLHF done right: preferenced-based steering that aligned GPT-3 to instruction following.",
+    "tags": [
+      "alignment",
+      "rlhf"
+    ],
+    "type": "paper",
+    "subcategory": "alignment",
+    "year": 2022,
+    "source": "arXiv"
+  },
+  {
+    "title": "TRL",
+    "url": "https://github.com/huggingface/trl",
+    "description": "Transformer Reinforcement Learning — SFT, PPO, DPO and friends for aligning models.",
+    "tags": [
+      "alignment",
+      "rlhf",
+      "finetuning"
+    ],
+    "type": "repo",
+    "subcategory": "finetuning"
+  },
+  {
+    "title": "Universal and Transferable Attacks on Aligned LLMs",
+    "url": "https://arxiv.org/abs/2307.15043",
+    "description": "The GCG optimisation that showed even aligned models can be jailbroken with a crafted suffix.",
+    "tags": [
+      "security",
+      "jailbreaks"
+    ],
+    "type": "paper",
+    "subcategory": "security",
+    "year": 2023,
+    "source": "arXiv"
+  },
+  {
+    "title": "Unsloth",
+    "url": "https://github.com/unslothai/unsloth",
+    "description": "Fast memory-efficient QLoRA/LoRA fine-tuning with hand-optimized kernels; big speedups on consumer GPUs.",
+    "tags": [
+      "finetuning",
+      "optimization"
+    ],
+    "type": "repo",
+    "subcategory": "finetuning"
+  },
+  {
+    "title": "Vercel AI SDK",
+    "url": "https://github.com/vercel/ai",
+    "description": "TypeScript toolkit for streaming generative UI and agent tools across providers.",
+    "tags": [
+      "framework",
+      "streaming"
+    ],
+    "type": "repo",
+    "subcategory": "production"
+  },
+  {
+    "title": "Vision Transformers (ViT)",
+    "url": "https://arxiv.org/abs/2010.11929",
+    "description": "Applying the Transformer directly to image patches — no convolutions.",
+    "tags": [
+      "multimodal",
+      "vision",
+      "transformer"
+    ],
+    "type": "paper",
+    "subcategory": "multimodal",
+    "year": 2020,
+    "source": "arXiv"
+  },
+  {
+    "title": "vLLM",
+    "url": "https://github.com/vllm-project/vllm",
+    "description": "High-throughput LLM serving with PagedAttention — the de-facto engine for serving LLMs on GPUs.",
+    "tags": [
+      "serving",
+      "inference",
+      "gpu"
+    ],
+    "type": "repo",
+    "subcategory": "inference"
+  },
+  {
+    "title": "Vosk",
+    "url": "https://github.com/alphacep/vosk-api",
+    "description": "Offline speech recognition languages, small models, works on embedded devices.",
+    "tags": [
+      "speech",
+      "asr",
+      "offline"
+    ],
+    "type": "repo",
+    "subcategory": "voice"
+  },
+  {
+    "title": "Weaviate",
+    "url": "https://github.com/weaviate/weaviate",
+    "description": "Open vector database with hybrid search (dense + sparse) and modules.",
+    "tags": [
+      "vector-db",
+      "hybrid-search"
+    ],
+    "type": "repo",
+    "subcategory": "vector-db"
+  },
+  {
+    "title": "Whisper (OpenAI)",
+    "url": "https://github.com/openai/whisper",
+    "description": "Robust speech recognition across dozens of languages — the open ASR standard.",
+    "tags": [
+      "speech",
+      "asr"
+    ],
+    "type": "repo",
+    "subcategory": "voice"
+  }
+]

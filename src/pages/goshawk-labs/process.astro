@@ -1,0 +1,82 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { GOSHAWK } from "../../config";
+
+const steps = [
+  {
+    n: "01",
+    title: "Brief",
+    body: "A free scoping call. You describe the problem — not the stack. We tell you whether we're the right team, sketch the shape, and give a fixed price after the plan is agreed. No invoice before you're happy with the shape.",
+  },
+  {
+    n: "02",
+    title: "Build",
+    body: "Weekly visible increments: a working preview, plain-language updates, and a runway you can steer. For AI builds, the eval harness ships beside the feature — you see it fail before real users do.",
+  },
+  {
+    n: "03",
+    title: "Handover",
+    body: "You own everything: repositories, DNS, documentation and credentials. We deploy, hand over a guide written for humans, and stand behind the work with a sensible warranty period for fixes.",
+  },
+];
+
+const rails = [
+  { k: "CAD", t: "Cadence", d: "One preview + one plain-language update per week. No silent sprints." },
+  { k: "SCO", t: "Scope lock", d: "Agreed scope, fixed price, change requests as a clean conversation." },
+  { k: "EVAL", t: "Evaluations", d: "AI work ships with a harness that reports failures on every deploy." },
+  { k: "WRR", t: "Warranty", d: "Fixes free for a sensible window after handover. Afterwards, we know the code." },
+  { k: "OWN", t: "Ownership", d: "Transferred on day one of handover. You can leave whenever." },
+  { k: "OPS", t: "Observability", d: "Logs, alerts and dashboards, so maintenance is a routine, not archaeology." },
+];
+---
+
+<BaseLayout goshawk title="Process" description="How Goshawk Labs works — brief, build, handover. Weekly increments, fixed price, full ownership for the client.">
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="kicker" data-reveal>04 — process</p>
+      <h1 data-reveal>A process you could <span class="mark">set a watch to.</span></h1>
+      <p class="lede" data-reveal>
+        Three steps, weekly visibility, fixed price, full handover. The studio's whole job
+        is to make the project's shape boring and its outcome anything but.
+        <span class="annote">— the diagram is the promise</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="band band--step" style="padding-top:1rem">
+    <div class="container">
+      <div class="pflow">
+        {steps.map((s) => (
+          <div class="pstep" data-reveal>
+            <div></div>
+            <div>
+              <h4>{s.title}</h4>
+              <p>{s.body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="container">
+      <p class="kicker" data-reveal>operating rails</p>
+      <h2 data-reveal>Six rails every engagement runs on.</h2>
+      <div class="grid grid-3" style="margin-top:2rem">
+        {rails.map((r) => (
+          <div class="card" data-reveal>
+            <span class="card-k">{r.k}</span>
+            <h3>{r.t}</h3>
+            <p>{r.d}</p>
+          </div>
+        ))}
+      </div>
+
+      <div style="margin-top:2.6rem;display:flex;gap:1rem;flex-wrap:wrap">
+        <a class="btn btn-primary" href={GOSHAWK.basePath + "/contact"}>Start with the brief <span class="arr">↗</span></a>
+        <a class="btn btn-ghost" href={GOSHAWK.basePath + "/work"}>See what it produces</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

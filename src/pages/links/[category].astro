@@ -1,0 +1,194 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LinkCard from "../../components/LinkCard.astro";
+import LinkFilterBar from "../../components/LinkFilterBar.astro";
+import { CATEGORIES, categoryById } from "../../lib/links";
+
+export async function getStaticPaths() {
+  return CATEGORIES.map((cat) => ({
+    params: { category: cat.id },
+    props: { id: cat.id },
+  }));
+}
+
+interface Props {
+  id: string;
+}
+
+const { id } = Astro.props;
+const cat = categoryById(id)!;
+
+const EDITORIAL: Record<string, string[]> = {
+  radio: [
+    "Radio is the street-level internet: no contracts, no uptime SLA — just operators and physics. " +
+      "This shelf runs from the entry exam (licensing) to what you actually do after: APRS, packet, HF " +
+      "weak-signal modes, SDR receivers, and the newer off-grid stacks (LoRa, Meshtastic, Reticulum) that " +
+      "turned \u201ccommunications that survive\u201d back into a hobby.",
+  ],
+  wildlife: [
+    "The bird that names this workstation is the goshawk — an accipiter that treats woodland as a weapon. " +
+      "The wildlife shelf starts at identification and reference material, then moves through raptor biology " +
+      "and falconry (a sport that is one long lesson in pay-per-performance), with a pocket here for Pakistan " +
+      "and the Himalaya. It's home ground; it gets the generous header.",
+  ],
+  history: [
+    "The Kashmir shelf is primary-source work: gazetteers, travel accounts, and Rajatarangini scholarship " +
+      "scanned out of physical archives, alongside the organizations that document the present. These are " +
+      "co-ordinates, not a version of events — the pages link to sources, and the sources are the story.",
+  ],
+  ownership: [
+    "Digital ownership is the quiet civil-rights battle of the century: DRM, repair, long-term storage, and " +
+      "the peer-to-peer answer to entropy. The ethics and FOSS shelves are the theory; preservation, repair, " +
+      "and local-first are the practice. Everything here is about being able to say \u201cmine,\u201d and mean it.",
+  ],
+};
+
+const FEATURED: Record<string, string> = {
+  radio: "WSJT-X",
+  wildlife: "All About Birds — Northern Goshawk",
+  history: "The Valley of Kashmir (Lawrence)",
+  ownership: "Archive Team",
+};
+
+const FEATURED_NOTE: Record<string, string> = {
+  radio:
+    "the mode suite that made weak-signal HF a usable hobby — FT8/FT4 decoding on a laptop and a wire.",
+  wildlife:
+    "the bird that keeps the wallpapers honest. \u201cAccipiter atricapillus\u201d does not respond to well-reasoned argument.",
+  history:
+    "the 1895 Gazetteer of Kashmir and Jammu — a primary source, scanned and open on the Internet Archive.",
+  ownership:
+    "the hoarders the internet deserves: capturing dying sites before the owners unplug them.",
+};
+
+const intro = EDITORIAL[id] ?? [cat.blurb];
+const featuredTitle = FEATURED[id];
+const featured = featuredTitle ? cat.items.find((it) => it.title === featuredTitle) : undefined;
+const featuredNote = FEATURED_NOTE[id];
+
+interface Group {
+  label: string;
+  display: string;
+  items: typeof cat.items;
+}
+const groups: Group[] = [];
+for (const it of cat.items) {
+  const sub = it.subcategory ?? "general";
+  let g = groups.find((x) => x.label === sub);
+  if (!g) {
+    g = { label: sub, display: sub, items: [] };
+    groups.push(g);
+  }
+  g.items.push(it);
+}
+for (const g of groups) g.display = g.label === "org" ? "organizations" : g.label.replace(/-/g, " ");
+---
+
+<BaseLayout
+  title={`${cat.name} — the link shelf`}
+  description={`${cat.blurb} ${cat.items.length} hand-picked links, every href verified.`}
+>
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="kicker" data-reveal>
+        <a href="/links" style="text-decoration:none">links</a> / {id}
+      </p>
+      <h1 data-reveal>{cat.name} <span class="mark">shelf.</span></h1>
+      {intro.map((p) => (
+        <p class="lede lede--long" data-reveal>{p}</p>
+      ))}
+      <div class="statline statline--links" data-reveal>
+        <span>
+          <b>{cat.items.length}</b>
+          links
+        </span>
+        <span>
+          <b>{groups.filter((g) => g.label !== "general").length}</b>
+          sections
+        </span>
+        <span>
+          <b>0</b>
+          dead links
+        </span>
+        <a class="mono back-link" href="/links" style="text-decoration:none">← all shelves</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--step" style="padding-top:0">
+    <div class="container">
+      {featured && (
+        <article class="card featured-card" data-reveal>
+          <span class="card-k mono">{featured.type} · featured</span>
+          <div class="featured-main">
+            <div>
+              <h3 style="font-size:1.35rem;margin:0.1em 0 0.35em">
+                <a href={featured.url} target="_blank" rel="noopener noreferrer" style="text-decoration:none">
+                  {featured.title}
+                </a>
+              </h3>
+              <p style="color:var(--muted);max-width:58ch">{featured.description}</p>
+            </div>
+            <p class="serif featured-note">{featuredNote}</p>
+          </div>
+        </article>
+      )}
+    </div>
+  </section>
+
+  <section class="band" style="padding-top:1rem">
+    <div class="container">
+      <div class="filter-wrap" data-reveal>
+        <LinkFilterBar total={cat.items.length} />
+      </div>
+
+      <div id="fs-empty" class="no-results" hidden>
+        <p class="muted">Nothing on this shelf matches — loosen the filter or check another shelf.</p>
+      </div>
+
+      {groups.map((group) => (
+        <section class="lc-shelf" data-reveal style="margin-bottom:2.8rem">
+          <div class="lc-shelf-head">
+            <h2 style="font-size:1.2rem;margin:3rem 0 0">
+              <span class="mono" style="color:var(--accent-text);font-size:0.8rem;letter-spacing:0.1em">
+                {String(groups.indexOf(group)).padStart(2, "0")} ·
+              </span>
+              {group.display}
+            </h2>
+            <span class="mono lc-shelf-count">{group.items.length} links</span>
+          </div>
+          <div class="lc-grid">
+            {group.items.map((item) => (
+              <div
+                class="lci"
+                data-lc
+                data-cat={id}
+                data-type={item.type}
+                data-search={`${item.title} ${item.description} ${item.tags.join(" ")}`.toLowerCase()}
+              >
+                <LinkCard item={item} />
+              </div>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  </section>
+
+  <section class="band band--ink" data-reveal>
+    <div class="container">
+      <div class="card cta-box" style="background:transparent;border-color:var(--line)">
+        <span class="cb-k">the bench, on hire</span>
+        <h3>A shelf is a shortcut. A team is a speed limit.</h3>
+        <p>
+          Half the job is knowing which link to reach for; the other half is
+          building the thing it points at. That half is my actual job.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/hire">Work with me <span class="arr">↗</span></a>
+          <a class="btn btn-ghost" href="/links">Back to all shelves</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,624 @@
+[
+  {
+    "title": "AnythingLLM",
+    "url": "https://github.com/Mintplex-Labs/anything-llm",
+    "description": "All-in-one local AI workspace: documents → private knowledge base + chat, many backend options.",
+    "tags": [
+      "rag",
+      "workspace"
+    ],
+    "type": "repo",
+    "subcategory": "apps"
+  },
+  {
+    "title": "awesome-selfhosted",
+    "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+    "description": "The canonical list of self-hosted alternatives to mainstream services, with licenses.",
+    "tags": [
+      "list",
+      "self-hosted"
+    ],
+    "type": "repo",
+    "subcategory": "index"
+  },
+  {
+    "title": "BorgBackup",
+    "url": "https://github.com/borgbackup/borg",
+    "description": "Deduplicating backup program with compression and encryption.",
+    "tags": [
+      "backup",
+      "dedup"
+    ],
+    "type": "repo",
+    "subcategory": "backup"
+  },
+  {
+    "title": "Caddy",
+    "url": "https://caddyserver.com/docs/",
+    "description": "Web server / reverse proxy with automatic HTTPS — the friendly face of self-hosting.",
+    "tags": [
+      "reverse-proxy",
+      "https"
+    ],
+    "type": "docs",
+    "subcategory": "networking"
+  },
+  {
+    "title": "ComfyUI",
+    "url": "https://github.com/comfyanonymous/ComfyUI",
+    "description": "Node-based interface for stable diffusion and image workflows — the power-user's local image tool.",
+    "tags": [
+      "image",
+      "generative",
+      "ui"
+    ],
+    "type": "repo",
+    "subcategory": "apps"
+  },
+  {
+    "title": "Docker Docs",
+    "url": "https://docs.docker.com/",
+    "description": "The docs every self-hoster ends up reading before breakfast.",
+    "tags": [
+      "containers",
+      "docs"
+    ],
+    "type": "docs",
+    "subcategory": "containers"
+  },
+  {
+    "title": "Docs: Open WebUI",
+    "url": "https://docs.openwebui.com/",
+    "description": "Official docs for the self-hosted chat frontend.",
+    "tags": [
+      "docs",
+      "ui"
+    ],
+    "type": "docs",
+    "subcategory": "apps"
+  },
+  {
+    "title": "exllamav2",
+    "url": "https://github.com/turboderp/exllamav2",
+    "description": "Fast GPU inference for EXL2/GPTQ models — strong speed and low memory for dense models on desktop GPUs.",
+    "tags": [
+      "inference",
+      "gpu",
+      "quantization"
+    ],
+    "type": "repo",
+    "subcategory": "engines"
+  },
+  {
+    "title": "Frigate",
+    "url": "https://github.com/blakeblackshear/frigate",
+    "description": "NVR with real-time local object detection — cameras that never phone home.",
+    "tags": [
+      "homelab",
+      "cameras",
+      "computer-vision"
+    ],
+    "type": "repo",
+    "subcategory": "homelab"
+  },
+  {
+    "title": "ggml",
+    "url": "https://github.com/ggml-org/ggml",
+    "description": "The tensor library behind llama.cpp and whisper.cpp; GGUF is defined here.",
+    "tags": [
+      "inference",
+      "c++",
+      "format"
+    ],
+    "type": "repo",
+    "subcategory": "engines"
+  },
+  {
+    "title": "GPT4All",
+    "url": "https://github.com/nomic-ai/gpt4all",
+    "description": "Local chat with open models on consumer hardware, plus a training data consciousness claim — run anything on a laptop.",
+    "tags": [
+      "local",
+      "offline",
+      "desktop"
+    ],
+    "type": "repo",
+    "subcategory": "engines"
+  },
+  {
+    "title": "Grafana",
+    "url": "https://grafana.com/docs/",
+    "description": "Dashboards over Prometheus (and everything else) — turning numbers into pictures.",
+    "tags": [
+      "monitoring",
+      "dashboards"
+    ],
+    "type": "docs",
+    "subcategory": "monitoring"
+  },
+  {
+    "title": "Grafana Loki",
+    "url": "https://github.com/grafana/loki",
+    "description": "Horizontally scalable log aggregation built to be cheap to run at home.",
+    "tags": [
+      "logs",
+      "monitoring"
+    ],
+    "type": "repo",
+    "subcategory": "monitoring"
+  },
+  {
+    "title": "Headscale",
+    "url": "https://github.com/juanfont/headscale",
+    "description": "Self-hosted implementation of the Tailscale control server — your mesh, your server.",
+    "tags": [
+      "vpn",
+      "mesh",
+      "self-hosted"
+    ],
+    "type": "repo",
+    "subcategory": "networking"
+  },
+  {
+    "title": "Home Assistant",
+    "url": "https://github.com/home-assistant/core",
+    "description": "Open-source home automation that runs entirely on your own hardware.",
+    "tags": [
+      "homelab",
+      "automation"
+    ],
+    "type": "repo",
+    "subcategory": "homelab"
+  },
+  {
+    "title": "Immich",
+    "url": "https://github.com/immich-app/immich",
+    "description": "Self-hosted Google Photos replacement with on-device face/object data and mobile apps.",
+    "tags": [
+      "homelab",
+      "photos"
+    ],
+    "type": "repo",
+    "subcategory": "homelab"
+  },
+  {
+    "title": "Jan",
+    "url": "https://github.com/janhq/jan",
+    "description": "Offline-first desktop AI assistant — your data stays in your machine.",
+    "tags": [
+      "local",
+      "offline",
+      "desktop"
+    ],
+    "type": "repo",
+    "subcategory": "engines"
+  },
+  {
+    "title": "Jellyfin",
+    "url": "https://jellyfin.org/",
+    "description": "Free media server — own your movies, music and TV, stream to every device.",
+    "tags": [
+      "homelab",
+      "media"
+    ],
+    "type": "org",
+    "subcategory": "homelab"
+  },
+  {
+    "title": "k3s",
+    "url": "https://k3s.io/",
+    "description": "A lightweight certified Kubernetes for small machines and labs.",
+    "tags": [
+      "orchestration",
+      "k8s",
+      "edge"
+    ],
+    "type": "project",
+    "subcategory": "containers"
+  },
+  {
+    "title": "koboldcpp",
+    "url": "https://github.com/LostRuins/koboldcpp",
+    "description": "A self-contained llama.cpp fork tuned for roleplay/story flows with a web UI — also a good generic single-file server.",
+    "tags": [
+      "inference",
+      "ui"
+    ],
+    "type": "repo",
+    "subcategory": "engines"
+  },
+  {
+    "title": "KTransformers",
+    "url": "https://github.com/kvcache-ai/KTransformers",
+    "description": "Long-context, low-latency local inference — exploits CPU/GPU heterogeneity to run big models on small machines.",
+    "tags": [
+      "inference",
+      "cpu",
+      "long-context"
+    ],
+    "type": "repo",
+    "subcategory": "engines"
+  },
+  {
+    "title": "Kubernetes Docs",
+    "url": "https://kubernetes.io/docs/",
+    "description": "Container orchestration at scale — the boring coordination layer for fleets.",
+    "tags": [
+      "orchestration",
+      "k8s"
+    ],
+    "type": "docs",
+    "subcategory": "containers"
+  },
+  {
+    "title": "llama-cpp-python",
+    "url": "https://github.com/abetlen/llama-cpp-python",
+    "description": "Python bindings for llama.cpp with an OpenAI-compatible server — the fastest way to prototype GGUF apps.",
+    "tags": [
+      "python",
+      "llama.cpp",
+      "api"
+    ],
+    "type": "repo",
+    "subcategory": "engines"
+  },
+  {
+    "title": "llama.cpp",
+    "url": "https://github.com/ggml-org/llama.cpp",
+    "description": "LLM inference in plain C/C++, no GPU required — the backbone of the local-AI movement and the reference for GGUF.",
+    "tags": [
+      "inference",
+      "cpu",
+      "c++"
+    ],
+    "type": "repo",
+    "subcategory": "engines"
+  },
+  {
+    "title": "LM Studio",
+    "url": "https://lmstudio.ai/",
+    "description": "Grab-and-run local models with a nice GUI and OpenAI-compatible server.",
+    "tags": [
+      "local",
+      "gui"
+    ],
+    "type": "project",
+    "subcategory": "engines"
+  },
+  {
+    "title": "LocalAI",
+    "url": "https://github.com/mudler/LocalAI",
+    "description": "Drop-in OpenAI-compatible local inference covering text, vision, TTS and embeddings.",
+    "tags": [
+      "local",
+      "serving",
+      "api"
+    ],
+    "type": "repo",
+    "subcategory": "engines"
+  },
+  {
+    "title": "Netdata",
+    "url": "https://github.com/netdata/netdata",
+    "description": "Real-time, per-second system monitoring with almost zero setup.",
+    "tags": [
+      "monitoring"
+    ],
+    "type": "repo",
+    "subcategory": "monitoring"
+  },
+  {
+    "title": "Nextcloud",
+    "url": "https://github.com/nextcloud/server",
+    "description": "Self-hosted files, calendar, contacts, talk and notes — your own cloud.",
+    "tags": [
+      "homelab",
+      "files",
+      "cloud"
+    ],
+    "type": "repo",
+    "subcategory": "homelab"
+  },
+  {
+    "title": "Nginx Proxy Manager",
+    "url": "https://github.com/NginxProxyManager/nginx-proxy-manager",
+    "description": "GUI-based reverse proxy with Let's Encrypt — the homelab staple.",
+    "tags": [
+      "reverse-proxy",
+      "gui"
+    ],
+    "type": "repo",
+    "subcategory": "networking"
+  },
+  {
+    "title": "Ollama",
+    "url": "https://github.com/ollama/ollama",
+    "description": "The repo behind the one-command local model runner; server, model library and desktop apps.",
+    "tags": [
+      "local",
+      "serving"
+    ],
+    "type": "repo",
+    "subcategory": "engines"
+  },
+  {
+    "title": "Open WebUI",
+    "url": "https://github.com/open-webui/open-webui",
+    "description": "Self-hosted ChatGPT-style interface for Ollama/OpenAI-compatible backends — users, models, RAG chat.",
+    "tags": [
+      "ui",
+      "rag",
+      "ollama"
+    ],
+    "type": "repo",
+    "subcategory": "apps"
+  },
+  {
+    "title": "OpenMediaVault",
+    "url": "https://github.com/openmediavault/openmediavault",
+    "description": "Debian-based NAS OS — lightweight, plugins for everything.",
+    "tags": [
+      "nas"
+    ],
+    "type": "repo",
+    "subcategory": "storage"
+  },
+  {
+    "title": "OpenSSH",
+    "url": "https://www.openssh.com/",
+    "description": "The system every Linux box runs on; also your tunnelling Swiss-army knife.",
+    "tags": [
+      "ssh",
+      "security"
+    ],
+    "type": "org",
+    "subcategory": "networking"
+  },
+  {
+    "title": "OpenZFS Docs",
+    "url": "https://openzfs.github.io/openzfs-docs/",
+    "description": "Documentation for the ZFS filesystem — checksumming, snapshots, RAID-Z, self-healing.",
+    "tags": [
+      "filesystem",
+      "zfs",
+      "storage"
+    ],
+    "type": "docs",
+    "subcategory": "storage"
+  },
+  {
+    "title": "Podman",
+    "url": "https://podman.io/",
+    "description": "Daemonless container engine — containers without a central daemon, rootless by design.",
+    "tags": [
+      "containers",
+      "linux"
+    ],
+    "type": "project",
+    "subcategory": "containers"
+  },
+  {
+    "title": "PrivateGPT",
+    "url": "https://github.com/zylon-ai/private-gpt",
+    "description": "Ask questions over private documents with no data leaving your machine.",
+    "tags": [
+      "rag",
+      "privacy",
+      "offline"
+    ],
+    "type": "repo",
+    "subcategory": "apps"
+  },
+  {
+    "title": "Prometheus",
+    "url": "https://prometheus.io/docs/",
+    "description": "Time-series monitoring and alerting — the default metrics backend of the self-hosted world.",
+    "tags": [
+      "monitoring",
+      "metrics"
+    ],
+    "type": "docs",
+    "subcategory": "monitoring"
+  },
+  {
+    "title": "Proxmox Docs",
+    "url": "https://pve.proxmox.com/wiki/",
+    "description": "The wiki/docs for Proxmox VE administration.",
+    "tags": [
+      "docs",
+      "virtualization"
+    ],
+    "type": "docs",
+    "subcategory": "homelab"
+  },
+  {
+    "title": "Proxmox VE",
+    "url": "https://www.proxmox.com/",
+    "description": "Open-source virtualization platform (KVM + LXC) — the homelab hypervisor of choice.",
+    "tags": [
+      "virtualization",
+      "homelab"
+    ],
+    "type": "project",
+    "subcategory": "homelab"
+  },
+  {
+    "title": "r/homelab",
+    "url": "https://www.reddit.com/r/homelab/",
+    "description": "Homelab hardware, racks and the eternal 'how much is this costing me' thread.",
+    "tags": [
+      "community",
+      "homelab"
+    ],
+    "type": "forum",
+    "subcategory": "index"
+  },
+  {
+    "title": "r/selfhosted",
+    "url": "https://www.reddit.com/r/selfhosted/",
+    "description": "Reddit community — what people actually run, and what breaks.",
+    "tags": [
+      "community",
+      "self-hosted"
+    ],
+    "type": "forum",
+    "subcategory": "index"
+  },
+  {
+    "title": "RaspberryPi Official Documentation",
+    "url": "https://www.raspberrypi.com/documentation/",
+    "description": "The docs for the little board that powers half of homelab-land.",
+    "tags": [
+      "docs",
+      "hardware",
+      "pi"
+    ],
+    "type": "docs",
+    "subcategory": "homelab"
+  },
+  {
+    "title": "rclone",
+    "url": "https://rclone.org/",
+    "description": "Sync and mount files to/from 40+ cloud and local backends — the Swiss-army copy tool.",
+    "tags": [
+      "sync",
+      "backup"
+    ],
+    "type": "tool",
+    "subcategory": "backup"
+  },
+  {
+    "title": "restic",
+    "url": "https://github.com/restic/restic",
+    "description": "Fast, encrypted, deduplicated backups that actually restore.",
+    "tags": [
+      "backup",
+      "encryption"
+    ],
+    "type": "repo",
+    "subcategory": "backup"
+  },
+  {
+    "title": "Sanoid",
+    "url": "https://github.com/jimsalterjrs/sanoid",
+    "description": "Policy-driven ZFS snapshot management and replication.",
+    "tags": [
+      "zfs",
+      "snapshots",
+      "backup"
+    ],
+    "type": "repo",
+    "subcategory": "backup"
+  },
+  {
+    "title": "Stable Diffusion WebUI (AUTOMATIC1111)",
+    "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+    "description": "The browser interface that made local image generation accessible to everyone.",
+    "tags": [
+      "image",
+      "generative",
+      "ui"
+    ],
+    "type": "repo",
+    "subcategory": "apps"
+  },
+  {
+    "title": "Syncthing",
+    "url": "https://syncthing.net/",
+    "description": "Continuous peer-to-peer file sync without a central server — your data, your devices.",
+    "tags": [
+      "sync",
+      "p2p"
+    ],
+    "type": "project",
+    "subcategory": "backup"
+  },
+  {
+    "title": "Tailscale",
+    "url": "https://tailscale.com/",
+    "description": "WireGuard-based mesh VPN that makes your machines feel like one network, anywhere.",
+    "tags": [
+      "vpn",
+      "mesh"
+    ],
+    "type": "project",
+    "subcategory": "networking"
+  },
+  {
+    "title": "Talos Linux",
+    "url": "https://github.com/siderolabs/talos",
+    "description": "Kubernetes-optimized minimal Linux — you only ever write YAML, never SSH.",
+    "tags": [
+      "linux",
+      "k8s"
+    ],
+    "type": "repo",
+    "subcategory": "containers"
+  },
+  {
+    "title": "Text Generation WebUI (oobabooga)",
+    "url": "https://github.com/oobabooga/text-generation-webui",
+    "description": "The classic browser UI for local models — LoRA loading, multimodal, extensions.",
+    "tags": [
+      "ui",
+      "local"
+    ],
+    "type": "repo",
+    "subcategory": "apps"
+  },
+  {
+    "title": "Traefik",
+    "url": "https://traefik.io/",
+    "description": "Cloud-native reverse proxy and edge router that watches your containers.",
+    "tags": [
+      "reverse-proxy"
+    ],
+    "type": "project",
+    "subcategory": "networking"
+  },
+  {
+    "title": "TrueNAS",
+    "url": "https://www.truenas.com/",
+    "description": "Open-source NAS operating system built on ZFS — the serious home data appliance.",
+    "tags": [
+      "nas",
+      "zfs"
+    ],
+    "type": "project",
+    "subcategory": "storage"
+  },
+  {
+    "title": "Uptime Kuma",
+    "url": "https://github.com/louislam/uptime-kuma",
+    "description": "Self-hosted uptime monitoring with status pages and notifications.",
+    "tags": [
+      "monitoring",
+      "uptime"
+    ],
+    "type": "repo",
+    "subcategory": "monitoring"
+  },
+  {
+    "title": "whisper.cpp",
+    "url": "https://github.com/ggml-org/whisper.cpp",
+    "description": "Whisper speech recognition ported to plain C/C++ — runs on phone, Pi, laptop, no GPU.",
+    "tags": [
+      "speech",
+      "offline",
+      "c++"
+    ],
+    "type": "repo",
+    "subcategory": "engines"
+  },
+  {
+    "title": "WireGuard",
+    "url": "https://www.wireguard.com/",
+    "description": "The crypto-audited, fast VPN that replaced a decade of complexity.",
+    "tags": [
+      "vpn",
+      "crypto"
+    ],
+    "type": "project",
+    "subcategory": "networking"
+  }
+]
